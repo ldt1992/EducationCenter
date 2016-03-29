@@ -1,0 +1,231 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DinhCu.master.cs" Inherits="ThemeDinhCu_DinhCu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Invent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" />
+    <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/style.less" rel="stylesheet/less" type="text/css" />
+    <script src="js/less.js"></script>
+    <%--<link href="css/DinhCu.css" rel="stylesheet" />--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <header>
+                <%-- Nav --%>
+                <nav class="navbar navbar-static-top" id="Nav">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                                <span class="sr-only">Navigation toggle</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="Default.aspx" class="navbar-brand">
+                                <img src="img/logo.png" class="img-responsive" alt="logo" />
+                            </a>
+                            <a href="Default.aspx" class="navbar-brand">
+                                <img src="img/logo-2.png" class="img-responsive" alt="logo" />
+                            </a>
+                        </div>
+                        <div id="menu" class="collapse navbar-collapse">
+                            <%-- Search --%>
+                            <div class="navbar-form navbar-right search">
+                                <div class="input-group">
+                                    <input type="search" placeholder="Search..." class="form-control" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <%-- Links --%>
+                            <ul class="nav navbar-nav navbar-right" id="MainMenu" runat="server">
+                                <%--<li class="active"><a href="Default.aspx">Trang Chủ</a></li>
+                                <li><a href="#">Giới Thiệu</a></li>
+                                <li><a href="#">Tin Tức</a></li>
+                                <li><a href="#">Bài Viết</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle">Định Cư</a>
+                                    <ul class="dropdown-menu dropdown-menu-left">
+                                        <li><a href="#">Bài viết 1</a></li>
+                                        <li><a href="#">Bài viết 2</a></li>
+                                        <li><a href="#">Bài viết 1</a></li>
+                                        <li><a href="#">Bài viết 2</a></li>
+                                        <li><a href="#">Bài viết 1</a></li>
+                                        <li><a href="#">Bài viết 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle">Chuyên Mục</a>
+                                    <ul class="dropdown-menu dropdown-menu-left">
+                                        <li><a href="FAQs.aspx">FAQs</a></li>
+                                        <li><a href="Testimonials.aspx">Testimonials</a></li>
+                                        <li><a href="#">Teachers</a></li>
+                                        <li><a href="ListBlogs.aspx">Blogs</a></li>
+                                        <li><a href="#">Event</a></li>
+                                        <li><a href="Gallery.aspx">Gallery</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Liên Hệ</a></li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="about">
+                            <h1 class="title">ABOUT</h1>
+                            <hr />
+                            <p class="meta">Invent WordPress Theme is crafted by @live_mesh (LiveMesh). If you need help on your projects you can email us: log@mysite.com.</p>
+                            <h1 class="title">FIND US ONLINE</h1>
+                            <hr />
+                            <div class="social">
+                                <a href="#" data-toggle="tooltip" title="facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" title="twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
+                                <a href="#" data-toggle="tooltip" title="youtube" data-placement="top"><i class="fa fa-youtube"></i></a>
+                                <a href="#" data-toggle="tooltip" title="facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                                <a href="#" data-toggle="tooltip" title="twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
+                                <a href="#" data-toggle="tooltip" title="youtube" data-placement="top"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="instagram">
+                            <h1 class="title">INSTAGRAM</h1>
+                            <hr />
+                            <a href="#">
+                                <img src="img/footer_image1.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image2.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image3.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image4.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image5.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image6.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image7.jpg" class="img-responsive pull-left" /></a>
+                            <a href="#">
+                                <img src="img/footer_image8.jpg" class="img-responsive pull-left" /></a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="recent">
+                            <h1 class="title">RECENT TWEETS</h1>
+                            <hr />
+                            <div class="meta">
+                                <p>If you not done so already, do check out the elegant tiles based Wired Portfolio WordPress theme on ThemeForest - https://t.co/yZZyZz6X37 </p>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>&nbsp;&nbsp;68 days ago
+                                </a>
+                            </div>
+                            <div class="meta">
+                                <p>If you not done so already, do check out the elegant tiles based Wired Portfolio WordPress theme on ThemeForest - https://t.co/yZZyZz6X37 </p>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>&nbsp;&nbsp;68 days ago
+                                </a>
+                            </div>
+                            <div class="meta">
+                                <p>If you not done so already, do check out the elegant tiles based Wired Portfolio WordPress theme on ThemeForest - https://t.co/yZZyZz6X37 </p>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>&nbsp;&nbsp;68 days ago
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <a href="#" id="Backtop"><i class="fa fa-chevron-up"></i></a>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/DucTai.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            less.watch();
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+            //Hover dropdown menu
+            if (window.innerWidth >= 768) {
+                $('.dropdown').hover(function () {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn('fast');
+                }, function () {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut('fast');
+                });
+            }
+
+            new WOW().init();
+            $('#myWelcome').carousel({
+                interval: false
+            });
+
+            $("#myWelcome li").each(function () {
+                $(this).click(function () {
+                    $("#myWelcome li.active").removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() != 0) {
+                    $("#Backtop").fadeIn();
+                }
+                else {
+                    $("#Backtop").fadeOut();
+                }
+            });
+
+            if (window.innerWidth >= 768) {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() != 0) {
+                        $("#Nav.navbar").addClass("navbar-fixed-top");
+                    }
+                    else {
+                        $("#Nav.navbar").removeClass("navbar-fixed-top");
+                    }
+                });
+            }
+
+            $('[rel="prettyPhoto[gallery1]"]').prettyPhoto();
+
+            $("#Owl-carousel-number").carousel({
+                interval: false
+            });
+
+            $("#Backtop").click(function () {
+                $("body,html").animate({ scrollTop: 0 }, 800);
+            });
+
+            //Isotope Filter
+            var container = $(".isotope").isotope({
+                itemSelector: '.element-item',
+                layoutMode: 'fitRows'
+            });
+
+            container.isotope({ filter: '*' });
+
+            $('#FilterGroup button').click(function (e) {
+                var FilterValue = $(this).attr("data-filter");
+                container.isotope({ filter: FilterValue });
+            });
+
+            $('[rel=prettyPhoto]').prettyPhoto();
+        });
+    </script>
+</body>
+</html>

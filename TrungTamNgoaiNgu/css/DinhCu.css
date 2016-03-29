@@ -1,0 +1,3260 @@
+@font-face {
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+/*#Login {
+    background-color: #2F2E3C;
+    padding: 2% 0;
+
+    .log {
+        color: #757575;
+        padding-right: 0;
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .log-right {
+        display: none;
+    }
+
+    border-bottom: 1px solid #424242;
+}*/
+/*#Nav.navbar {
+    background-color: #2F2E3C;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-bottom: 0;
+
+    .navbar-toggle {
+        border: 1px solid white;
+
+        .icon-bar {
+            border: 1px solid white;
+        }
+    }
+
+    #menu {
+        .search {
+                width: 20%;
+                padding: 0;
+            }
+        ul.navbar-nav {
+            li {
+                a {
+                    color: #F5F5F5;
+                    font-size: 120%;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        ul.dropdown-menu {
+            position: absolute;
+            top: 110%;
+            padding: 0;
+
+            li {
+                a {
+                    color: black;
+                    border-bottom: 1px solid #E0E0E0;
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        background-color: #2196F3;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}*/
+/*#footer {
+    background-color: #212121;
+    color: #F5F5F5;
+    padding: 2% 0;
+
+    .title {
+        font-size: 160%;
+    }
+
+    #about {
+        margin-bottom: 10%;
+
+        .social {
+            a {
+                margin-right: 5%;
+                color: #616161;
+
+                .fa {
+                    font-size: 200%;
+                }
+            }
+        }
+    }
+
+    #instagram {
+        margin-bottom: 10%;
+
+        img {
+            margin-right: 3%;
+            margin-bottom: 3%;
+            width: 22%;
+        }
+    }
+}*/
+/*#Backtop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    background-color: gray;
+    color: white;
+    padding: 10px 13px 11px;
+}*/
+/*#TrangChu {
+    #Welcome {
+        background-color: #EEEEEE;
+        padding: 2% 0 0 0;
+
+        .title {
+            margin-bottom: 5%;
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        #myWelcome {
+            ul.nav-pills {
+                border-bottom: 1px solid #2196F3;
+                margin-bottom: 4%;
+
+                li.active {
+                    a {
+                        background-color: transparent;
+                        border-bottom: 3px solid #2196F3;
+                    }
+                }
+
+                li {
+                    margin-right: 5%;
+
+                    a {
+                        padding-left: 0;
+                        padding-right: 0;
+                        font-size: 120%;
+                        color: black;
+                        font-weight: bold;
+                        .border-radius(0px);
+                        border-bottom: 3px solid transparent;
+
+                        &:hover {
+                            color: #2196F3;
+                        }
+                    }
+                }
+            }
+
+            .pic {
+                height: 300px;
+                padding-left: 0;
+            }
+
+            .content {
+                position: relative;
+                left: 0;
+                top: -100px;
+                padding: 0;
+                text-align: left;
+                color: black;
+
+                .title {
+                    margin-top: 0;
+                    font-size: 150%;
+                    margin-bottom: 3%;
+                    text-shadow: none;
+                }
+
+                .meta {
+                    line-height: 200%;
+                    text-shadow: none;
+                    overflow: hidden;
+                    height: 220px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 8;
+                }
+
+                .btn {
+                    background-color: transparent;
+                    .border-radius(0px);
+                    padding: 2% 4%;
+                    color: black;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        background-color: #2196F3;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    #Activities {
+        background-color: #EEEEEE;
+        padding: 2% 0;
+
+        .act {
+            width: 100%;
+            padding: 0;
+
+            > div {
+                overflow: hidden;
+            }
+
+            a {
+                img {
+                    width: 100%;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        transform: scale(1.1,1.1);
+                    }
+                }
+            }
+
+            .caption {
+                padding: 2%;
+
+                .title {
+                    font-weight: bold;
+                }
+
+                .meta {
+                    line-height: 200%;
+                    padding-right: 20%;
+                }
+
+                .btn {
+                    font-style: italic;
+                    padding-left: 0;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: #BDBDBD;
+                    }
+                }
+            }
+        }
+    }
+
+    #News {
+        background-color: #E0E0E0;
+        padding: 4% 0;
+
+        .title {
+            margin-bottom: 2%;
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        hr {
+            width: 10%;
+            border: 1px solid #2196F3;
+        }
+
+        .meta {
+            margin-bottom: 10%;
+        }
+
+        .news {
+            .border-radius(0px);
+            padding: 0;
+
+            .overlay {
+                position: relative;
+                padding: 0;
+                overflow: hidden;
+                height: 200px;
+
+                img {
+                    transition: all 0.2s linear;
+                    z-index: 5;
+                    height: 100%;
+                }
+
+                .mask {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    padding-top: 7%;
+                    opacity: 0;
+                    transition: all 0.2s linear;
+                    z-index: 10;
+
+                    .title {
+                        color: white;
+                        padding: 0 7%;
+                        font-size: 130%;
+                        margin-bottom: 5%;
+                    }
+
+                    .btn {
+                        .border-radius(0px);
+                        background-color: transparent;
+                        color: white;
+                        margin-right: 1%;
+                        border: 3px solid white;
+                        z-index: 10;
+                        padding: 3%;
+                    }
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1,1.1);
+                    }
+
+                    .mask {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .tag {
+                position: relative;
+                .border-radius(0px);
+                padding: 2% 8%;
+                top: -20px;
+                z-index: 10;
+                margin-bottom: 0;
+            }
+
+            .caption {
+                text-align: center;
+                padding-top: 0;
+
+                .title {
+                    color: black;
+                    margin: 0;
+                    font-weight: normal;
+
+                    &:hover {
+                        color: deepskyblue;
+                    }
+                }
+
+                hr {
+                    width: 80%;
+                }
+
+                .meta {
+                    line-height: 180%;
+                    padding: 0 5%;
+                    overflow: hidden;
+                    height: 70px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                }
+            }
+        }
+    }
+
+    #Numbers {
+        padding: 2% 0;
+        background: url('../img/bg-pallarax.jpg') no-repeat;
+        background-size: 400%;
+        color: white;
+
+        hr {
+            width: 10%;
+        }
+
+        .number {
+            display: none;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            background-color: white;
+            position: relative;
+            height: 300%;
+            .border-radius(10px);
+
+            .fa {
+                position: absolute;
+                top: -10%;
+                color: white;
+                left: 40%;
+                font-size: 200%;
+                background-color: #2196F3;
+                padding: 5% 6%;
+            }
+
+            .num {
+                color: #2196F3;
+                padding-top: 20%;
+                font-weight: bold;
+                font-size: 500%;
+            }
+
+            .title {
+                color: black;
+                margin-bottom: 20%;
+            }
+        }
+
+        .first {
+            display: block;
+        }
+
+        ul.nav {
+            display: none;
+        }
+    }
+
+    #Campus {
+        background-color: #F5F5F5;
+        padding: 4% 0;
+
+        .title {
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        hr {
+            width: 25%;
+            border: 1px solid #2196F3;
+        }
+
+        .meta {
+            margin-bottom: 5%;
+            font-size: 100%;
+            padding: 0 2%;
+        }
+
+        .campus {
+            display: none;
+            padding: 0;
+            margin-bottom: 0;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            .border-radius(0px);
+
+            img {
+                transition: all 0.2s linear;
+            }
+
+            .caption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 0.2s linear;
+                padding-top: 10%;
+
+                .title {
+                    color: white;
+                    z-index: 10;
+                }
+
+                .btn {
+                    .border-radius(0px);
+                    background-color: transparent;
+                    color: white;
+                    border: 3px solid white;
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1,1.1);
+                }
+
+                .caption {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .first {
+            display: block;
+        }
+    }
+
+    #Blogs {
+        background-color: #F5F5F5;
+        padding-bottom: 5%;
+
+        .title {
+            font-size: 200%;
+        }
+
+        hr {
+            width: 30%;
+            border: 1px solid #2196F3;
+        }
+
+        .meta {
+            margin-bottom: 10%;
+            font-size: 100%;
+            padding: 0 5%;
+        }
+
+        .blog {
+            padding: 0;
+            .border-radius(0px);
+
+            .overlay {
+                position: relative;
+                overflow: hidden;
+                height: 200px;
+
+                img {
+                    transition: all 0.2s linear;
+                    height: 100%;
+                }
+
+                .mask {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    padding-top: 10%;
+                    opacity: 0;
+                    transition: all 0.2s linear;
+
+                    .title {
+                        color: white;
+                    }
+
+                    .btn {
+                        .border-radius(0px);
+                        background-color: transparent;
+                        color: white;
+                        border: 3px solid white;
+                        margin-right: 2%;
+                    }
+                }
+
+                .tag {
+                    .border-radius(0px);
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1,1.1);
+                    }
+
+                    .mask {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .caption {
+                padding-left: 5%;
+                padding-right: 5%;
+                height: 200px;
+
+                .title {
+                    font-size: 200%;
+                    padding: 0 3%;
+                }
+
+                hr {
+                    width: 100%;
+                    border: 1px solid #E0E0E0;
+                }
+
+                .meta {
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+
+    #Mission {
+        padding: 2% 0;
+        background: url('../img/news-2.jpg') no-repeat;
+        background-size: 200%;
+        position: relative;
+        height: 300px;
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #03A9F4;
+            opacity: 0.7;
+            color: white;
+            padding-top: 1%;
+
+            .title {
+                font-size: 200%;
+                font-weight: bold;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .meta {
+                font-size: 120%;
+                margin-bottom: 5%;
+                padding: 0 5%;
+                z-index: 10;
+            }
+        }
+    }
+
+    #Invent {
+        padding: 4% 0;
+
+        .title {
+            font-size: 250%;
+            margin-bottom: 2%;
+        }
+
+        hr {
+            width: 30%;
+            border: 1px solid #2196F3;
+            margin-bottom: 10%;
+        }
+
+        label {
+            font-size: 200%;
+            font-weight: initial;
+            margin-right: 8%;
+            margin-bottom: 10%;
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+}*/
+/*#FAQs {
+    #Path {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    #Content {
+
+        .breadcrumb {
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    }
+
+    #Sidebar {
+        #FeaturedPosts {
+            margin-bottom: 10%;
+
+            .post {
+                margin-bottom: 10%;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .title {
+                color: black;
+
+                &:hover {
+                    color: #2196F3;
+                }
+            }
+        }
+    }
+}*/
+/*#Testimonials {
+    #Path {
+        background-color: #2196F3;
+        color: white;
+        padding-bottom: 3%;
+    }
+
+    #Content {
+        .breadcrumb {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #MainContent {
+            .testi {
+                padding: 10%;
+
+                footer {
+                    text-align: right;
+                    margin-top: 3%;
+                    font-style: italic;
+                    color: #2196F3;
+                }
+            }
+        }
+
+        #Sidebar {
+            #FeaturedPosts {
+                .post {
+                    img {
+                        width: 50%;
+                    }
+
+                    .title {
+                        font-size: 150%;
+                        color: black;
+
+                        &:hover {
+                            color: #2196F3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+/*#ListBlogs {
+    #Path {
+        background-color: #2196F3;
+        color: white;
+        padding-bottom: 3%;
+    }
+
+    #Content {
+        .breadcrumb {
+            margin: 0 5% 5%;
+        }
+
+        #MainContent {
+            .blog {
+                padding: 0;
+                .border-radius(0px);
+                margin-bottom: 10%;
+
+                img {
+                    margin-bottom: 2%;
+                }
+
+                .title {
+                    margin: 0;
+                    margin-bottom: 5%;
+                    color: black;
+
+                    &:hover {
+                        color: #2196F3;
+                    }
+                }
+
+                .meta {
+                    line-height: 170%;
+                    overflow: hidden;
+                    height: 90px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    margin-bottom: 5%;
+                }
+
+                .btn {
+                    .border-radius(0px);
+
+                    &:hover {
+                        background-color: #FF9800;
+                        border: 1px solid #FF9800;
+                    }
+                }
+            }
+        }
+
+        #Sidebar {
+            #FeaturedPosts {
+                .post {
+                    margin-bottom: 15%;
+
+                    img {
+                        margin-bottom: 5%;
+                    }
+
+                    .title {
+                        color: black;
+
+                        &:hover {
+                            color: #2196F3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+/*#Gallery {
+    padding-bottom: 5%;
+    background-color: #E0E0E0;
+
+    #Path {
+        background-color: #2196F3;
+        color: white;
+        padding-bottom: 4%;
+    }
+
+    .breadcrumb {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #FilterGroup {
+        margin-bottom: 2%;
+
+        button {
+            margin-bottom: 2%;
+        }
+    }
+
+    .element-item {
+        margin-bottom: 10%;
+    }
+
+    .post {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0;
+            transition: all 0.2s linear;
+            text-align: center;
+
+            .title {
+                color: white;
+                font-weight: bold;
+                transform: translateY(150%);
+            }
+
+            .btn {
+                .border-radius(0px);
+                background-color: transparent;
+                color: white;
+                font-weight: bold;
+                border: 2px solid white;
+                margin-right: 2%;
+                transform: translateY(110%);
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}*/
+/*#Blog_Detail {
+    #Path {
+        background-color: #2196F3;
+        color: white;
+        padding-bottom: 3%;
+    }
+
+    .breadcrumb {
+        margin: 4% 0;
+    }
+
+    #Content {
+        padding: 0;
+
+        #MainContent {
+            padding: 0;
+
+            .title {
+                font-size: 150%;
+                margin: 0;
+                margin-bottom: 5%;
+                font-weight: bold;
+            }
+
+            img {
+                margin-bottom: 5%;
+                padding: 3%;
+            }
+
+            .meta {
+                line-height: 150%;
+                text-align: justify;
+            }
+        }
+
+        #Sidebar {
+            #Category {
+                margin-bottom: 10%;
+            }
+
+            #FeaturedPosts {
+                .post {
+                    margin-bottom: 20%;
+
+                    img {
+                        width: 50%;
+                        margin-right: 5%;
+                    }
+
+                    .title {
+                        font-size: 100%;
+                        font-weight: bold;
+                        color: black;
+                        line-height: 140%;
+
+                        &:hover {
+                            color: #2196F3;
+                        }
+                    }
+
+                    .btn {
+                        .border-radius(0px);
+                        color: white;
+                        background-color: #2196F3;
+
+                        &:hover {
+                            background-color: orangered;
+                            border: 1px solid orangered;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+@media (min-width: 480px) {
+  a:hover {
+    text-decoration: none;
+  }
+  #Login {
+    background-color: #2F2E3C;
+    padding: 2% 0;
+    border-bottom: 1px solid #424242;
+  }
+  #Login .log {
+    color: #757575;
+    padding-right: 0;
+    font-size: 120%;
+  }
+  #Login .log-right {
+    display: none;
+  }
+  #Nav.navbar {
+    background-color: #2F2E3C;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-bottom: 0;
+  }
+  #Nav.navbar .navbar-toggle {
+    border: 1px solid white;
+  }
+  #Nav.navbar .navbar-toggle .icon-bar {
+    border: 1px solid white;
+  }
+  #Nav.navbar #menu {
+    /*.search {
+                width: 20%;
+                padding: 0;
+            }*/
+  }
+  #Nav.navbar #menu ul.navbar-nav li a {
+    color: #F5F5F5;
+    font-size: 120%;
+  }
+  #Nav.navbar #menu ul.navbar-nav li a:hover {
+    background-color: transparent;
+  }
+  #Nav.navbar #menu ul.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    padding: 0;
+  }
+  #Nav.navbar #menu ul.dropdown-menu li a {
+    color: black;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    transition: all 0.2s linear;
+  }
+  #Nav.navbar #menu ul.dropdown-menu li a:hover {
+    background-color: #2196F3;
+    color: white;
+  }
+  #footer {
+    background-color: #212121;
+    color: #F5F5F5;
+    padding: 2% 0;
+  }
+  #footer .title {
+    font-size: 160%;
+  }
+  #footer #about {
+    margin-bottom: 10%;
+  }
+  #footer #about .social a {
+    margin-right: 5%;
+    color: #616161;
+  }
+  #footer #about .social a .fa {
+    font-size: 200%;
+  }
+  #footer #instagram {
+    margin-bottom: 10%;
+  }
+  #footer #instagram img {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    width: 22%;
+  }
+  #footer #recent {
+    padding-bottom: 5%;
+  }
+  #TrangChu #Welcome {
+    background-color: #EEEEEE;
+    padding: 4% 0;
+  }
+  #TrangChu #Welcome .title {
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 150%;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills {
+    border-bottom: 1px solid #2196F3;
+    margin-bottom: 4%;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li.active a {
+    background-color: transparent;
+    border-bottom: 3px solid #2196F3;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li {
+    margin-right: 5%;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li a {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 120%;
+    color: black;
+    font-weight: bold;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-bottom: 3px solid transparent;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li a:hover {
+    color: #2196F3;
+  }
+  #TrangChu #Welcome #myWelcome .pic {
+    height: 300px;
+    padding-left: 0;
+  }
+  #TrangChu #Welcome #myWelcome .content {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0;
+    text-align: left;
+    color: black;
+  }
+  #TrangChu #Welcome #myWelcome .content .title {
+    margin-top: 0;
+    font-size: 150%;
+    margin-bottom: 3%;
+    text-shadow: none;
+  }
+  #TrangChu #Welcome #myWelcome .content .meta {
+    line-height: 200%;
+    text-shadow: none;
+    overflow: hidden;
+    height: 170px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
+  #TrangChu #Welcome #myWelcome .content .btn {
+    background-color: transparent;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 2% 4%;
+    color: black;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Welcome #myWelcome .content .btn:hover {
+    background-color: #2196F3;
+    color: white;
+  }
+  #TrangChu #Activities {
+    background-color: #EEEEEE;
+    padding: 2% 0;
+  }
+  #TrangChu #Activities .act {
+    width: 100%;
+    padding: 0;
+  }
+  #TrangChu #Activities .act > div {
+    overflow: hidden;
+  }
+  #TrangChu #Activities .act a img {
+    width: 100%;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Activities .act a img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Activities .act .caption {
+    padding: 2%;
+  }
+  #TrangChu #Activities .act .caption .title {
+    font-weight: bold;
+  }
+  #TrangChu #Activities .act .caption .meta {
+    line-height: 200%;
+    padding-right: 20%;
+  }
+  #TrangChu #Activities .act .caption .btn {
+    font-style: italic;
+    padding-left: 0;
+    text-decoration: underline;
+  }
+  #TrangChu #Activities .act .caption .btn:hover {
+    color: #BDBDBD;
+  }
+  #TrangChu #News {
+    background-color: #E0E0E0;
+    padding: 4% 0;
+  }
+  #TrangChu #News .title {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 150%;
+  }
+  #TrangChu #News hr {
+    width: 10%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #News .meta {
+    margin-bottom: 10%;
+  }
+  #TrangChu #News .news {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 0;
+  }
+  #TrangChu #News .news .overlay {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    height: 200px;
+  }
+  #TrangChu #News .news .overlay img {
+    transition: all 0.2s linear;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+  }
+  #TrangChu #News .news .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 7%;
+    opacity: 0;
+    transition: all 0.2s linear;
+    z-index: 10;
+  }
+  #TrangChu #News .news .overlay .mask .title {
+    color: white;
+    padding: 0 7%;
+    font-size: 130%;
+    margin-bottom: 5%;
+  }
+  #TrangChu #News .news .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    margin-right: 1%;
+    border: 3px solid white;
+    z-index: 10;
+    padding: 3%;
+  }
+  #TrangChu #News .news .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #News .news .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #TrangChu #News .news .tag {
+    position: relative;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 2% 8%;
+    top: -20px;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+  #TrangChu #News .news .caption {
+    text-align: center;
+    padding-top: 0;
+  }
+  #TrangChu #News .news .caption .title {
+    color: black;
+    margin: 0;
+    font-weight: normal;
+  }
+  #TrangChu #News .news .caption .title:hover {
+    color: deepskyblue;
+  }
+  #TrangChu #News .news .caption hr {
+    width: 80%;
+  }
+  #TrangChu #News .news .caption .meta {
+    line-height: 180%;
+    padding: 0 5%;
+    overflow: hidden;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  #TrangChu #Numbers {
+    padding: 2% 0;
+    background: url('../img/bg-pallarax.jpg') no-repeat;
+    background-size: 400%;
+    color: white;
+  }
+  #TrangChu #Numbers hr {
+    width: 10%;
+  }
+  #TrangChu #Numbers .number {
+    display: none;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: white;
+    position: relative;
+    height: 300%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+  #TrangChu #Numbers .number .fa {
+    position: absolute;
+    top: -10%;
+    color: white;
+    left: 40%;
+    font-size: 200%;
+    background-color: #2196F3;
+    padding: 5% 6%;
+  }
+  #TrangChu #Numbers .number .num {
+    color: #2196F3;
+    padding-top: 20%;
+    font-weight: bold;
+    font-size: 500%;
+  }
+  #TrangChu #Numbers .number .title {
+    color: black;
+    margin-bottom: 20%;
+  }
+  #TrangChu #Numbers .first {
+    display: block;
+  }
+  #TrangChu #Numbers ul.nav {
+    display: none;
+  }
+  #TrangChu #Campus {
+    background-color: #F5F5F5;
+    padding: 4% 0;
+  }
+  #TrangChu #Campus .title {
+    font-weight: bold;
+    font-size: 150%;
+  }
+  #TrangChu #Campus hr {
+    width: 25%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #Campus .meta {
+    margin-bottom: 5%;
+    font-size: 100%;
+    padding: 0 2%;
+  }
+  #TrangChu #Campus .campus {
+    display: none;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #TrangChu #Campus .campus img {
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Campus .campus .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    padding-top: 15%;
+  }
+  #TrangChu #Campus .campus .caption .title {
+    color: white;
+    z-index: 10;
+  }
+  #TrangChu #Campus .campus .caption .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+  }
+  #TrangChu #Campus .campus:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Campus .campus:hover .caption {
+    opacity: 0.7;
+  }
+  #TrangChu #Campus .first {
+    display: block;
+  }
+  #TrangChu #Blogs {
+    background-color: #F5F5F5;
+    padding-bottom: 5%;
+  }
+  #TrangChu #Blogs .title {
+    font-size: 200%;
+  }
+  #TrangChu #Blogs hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #Blogs .meta {
+    margin-bottom: 10%;
+    font-size: 100%;
+    padding: 0 5%;
+  }
+  #TrangChu #Blogs .blog {
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #TrangChu #Blogs .blog .overlay {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  #TrangChu #Blogs .blog .overlay img {
+    transition: all 0.2s linear;
+    height: 100%;
+    width: 100%;
+  }
+  #TrangChu #Blogs .blog .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 10%;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Blogs .blog .overlay .mask .title {
+    color: white;
+  }
+  #TrangChu #Blogs .blog .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    margin-right: 2%;
+  }
+  #TrangChu #Blogs .blog .overlay .tag {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #TrangChu #Blogs .blog .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Blogs .blog .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #TrangChu #Blogs .blog .caption {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 200px;
+  }
+  #TrangChu #Blogs .blog .caption .title {
+    font-size: 200%;
+    padding: 0 3%;
+  }
+  #TrangChu #Blogs .blog .caption hr {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+  }
+  #TrangChu #Blogs .blog .caption .meta {
+    font-size: 100%;
+  }
+  #TrangChu #Mission {
+    padding: 2% 0;
+    background: url('../img/news-2.jpg') no-repeat;
+    background-size: 200%;
+    position: relative;
+    height: 300px;
+  }
+  #TrangChu #Mission .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #03A9F4;
+    opacity: 0.7;
+    color: white;
+    padding-top: 1%;
+  }
+  #TrangChu #Mission .overlay .title {
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #TrangChu #Mission .overlay .meta {
+    font-size: 120%;
+    margin-bottom: 5%;
+    padding: 0 5%;
+    z-index: 10;
+  }
+  #TrangChu #Invent {
+    padding: 4% 0;
+  }
+  #TrangChu #Invent .title {
+    font-size: 250%;
+    margin-bottom: 2%;
+  }
+  #TrangChu #Invent hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+    margin-bottom: 10%;
+  }
+  #TrangChu #Invent label {
+    font-size: 200%;
+    font-weight: initial;
+    margin-right: 8%;
+    margin-bottom: 10%;
+  }
+  #TrangChu #Invent label:hover {
+    color: gray;
+  }
+  #FAQs #Path {
+    background-color: #2196F3;
+    color: white;
+  }
+  #FAQs #Content .breadcrumb {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #FAQs #Sidebar #FeaturedPosts {
+    margin-bottom: 10%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .title {
+    color: black;
+  }
+  #FAQs #Sidebar #FeaturedPosts .title:hover {
+    color: #2196F3;
+  }
+  #Testimonials #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 3%;
+  }
+  #Testimonials #Content .breadcrumb {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  #Testimonials #Content #MainContent .testi {
+    padding: 5%;
+  }
+  #Testimonials #Content #MainContent .testi footer {
+    text-align: right;
+    margin-top: 3%;
+    font-style: italic;
+    color: #2196F3;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post img {
+    width: 50%;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 150%;
+    color: black;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #ListBlogs #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 3%;
+  }
+  #ListBlogs #Content .breadcrumb {
+    margin: 0 3% 5%;
+  }
+  #ListBlogs #Content #MainContent .blog {
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 10%;
+  }
+  #ListBlogs #Content #MainContent .blog img {
+    margin-bottom: 2%;
+  }
+  #ListBlogs #Content #MainContent .blog .title {
+    margin: 0;
+    margin-bottom: 5%;
+    color: black;
+  }
+  #ListBlogs #Content #MainContent .blog .title:hover {
+    color: #2196F3;
+  }
+  #ListBlogs #Content #MainContent .blog .meta {
+    line-height: 170%;
+    overflow: hidden;
+    height: 90px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    margin-bottom: 5%;
+  }
+  #ListBlogs #Content #MainContent .blog .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #ListBlogs #Content #MainContent .blog .btn:hover {
+    background-color: #FF9800;
+    border: 1px solid #FF9800;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 15%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post img {
+    margin-bottom: 5%;
+    width: 50%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title {
+    color: black;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #Gallery {
+    padding-bottom: 5%;
+    background-color: #E0E0E0;
+  }
+  #Gallery #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 4%;
+  }
+  #Gallery .breadcrumb {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #Gallery #FilterGroup {
+    margin-bottom: 2%;
+  }
+  #Gallery #FilterGroup button {
+    margin-bottom: 2%;
+  }
+  #Gallery .element-item {
+    margin-bottom: 7%;
+  }
+  #Gallery .post {
+    position: relative;
+  }
+  #Gallery .post img {
+    width: 100%;
+  }
+  #Gallery .post .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.2s linear;
+    text-align: center;
+    padding-top: 10%;
+  }
+  #Gallery .post .caption .title {
+    color: white;
+    font-weight: bold;
+    transform: translateY(150%);
+  }
+  #Gallery .post .caption .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-right: 2%;
+    transform: translateY(110%);
+  }
+  #Gallery .post .caption:hover {
+    opacity: 0.7;
+  }
+  #Blog_Detail #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 3%;
+  }
+  #Blog_Detail .breadcrumb {
+    margin: 4% 0;
+  }
+  #Blog_Detail #Content {
+    padding: 0;
+  }
+  #Blog_Detail #Content #MainContent {
+    padding: 0;
+  }
+  #Blog_Detail #Content #MainContent .title {
+    font-size: 150%;
+    margin: 0;
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+  #Blog_Detail #Content #MainContent img {
+    margin-bottom: 5%;
+    padding: 3%;
+  }
+  #Blog_Detail #Content #MainContent .meta {
+    line-height: 150%;
+    text-align: justify;
+  }
+  #Blog_Detail #Content #Sidebar #Category {
+    margin-bottom: 10%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post img {
+    width: 40%;
+    margin-right: 5%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+    line-height: 140%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    color: white;
+    background-color: #2196F3;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+  }
+}
+@media (min-width: 768px) {
+  a:hover {
+    text-decoration: none;
+  }
+  #Login {
+    background-color: #2F2E3C;
+    padding: 2% 0;
+    border-bottom: 1px solid #424242;
+  }
+  #Login .log {
+    display: block;
+    color: #757575;
+    padding-right: 0;
+    font-size: 100%;
+  }
+  #Nav.navbar {
+    background-color: #2F2E3C;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0;
+  }
+  #Nav.navbar .navbar-toggle {
+    border: 1px solid white;
+  }
+  #Nav.navbar .navbar-toggle .icon-bar {
+    border: 1px solid white;
+  }
+  #Nav.navbar #menu .search {
+    width: 20%;
+    padding: 0;
+  }
+  #Nav.navbar #menu ul.navbar-nav li a {
+    color: #F5F5F5;
+    font-size: 90%;
+  }
+  #Nav.navbar #menu ul.navbar-nav li a:hover {
+    background-color: transparent;
+  }
+  #Nav.navbar #menu ul.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    padding: 0;
+  }
+  #Nav.navbar #menu ul.dropdown-menu li a {
+    color: black;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    transition: all 0.2s linear;
+  }
+  #Nav.navbar #menu ul.dropdown-menu li a:hover {
+    background-color: #2196F3;
+    color: white;
+  }
+  #footer {
+    background-color: #212121;
+    color: #F5F5F5;
+    padding: 2% 0;
+  }
+  #footer .title {
+    font-size: 160%;
+  }
+  #footer #about {
+    margin-bottom: 10%;
+  }
+  #footer #about .social a {
+    margin-right: 5%;
+    color: #616161;
+  }
+  #footer #about .social a .fa {
+    font-size: 200%;
+  }
+  #footer #instagram {
+    margin-bottom: 10%;
+  }
+  #footer #instagram img {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    width: 22%;
+  }
+  #footer #recent {
+    padding-bottom: 5%;
+  }
+  #TrangChu #Welcome {
+    background-color: #EEEEEE;
+    padding: 4% 0;
+  }
+  #TrangChu #Welcome .title {
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 150%;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills {
+    border-bottom: 1px solid #2196F3;
+    margin-bottom: 4%;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li.active a {
+    background-color: transparent;
+    border-bottom: 3px solid #2196F3;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li {
+    margin-right: 5%;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li a {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 120%;
+    color: black;
+    font-weight: bold;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-bottom: 3px solid transparent;
+  }
+  #TrangChu #Welcome #myWelcome ul.nav-pills li a:hover {
+    color: #2196F3;
+  }
+  #TrangChu #Welcome #myWelcome .pic {
+    height: 300px;
+    padding-left: 0;
+  }
+  #TrangChu #Welcome #myWelcome .content {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0;
+    text-align: left;
+    color: black;
+  }
+  #TrangChu #Welcome #myWelcome .content .title {
+    margin-top: 0;
+    font-size: 150%;
+    margin-bottom: 3%;
+    text-shadow: none;
+  }
+  #TrangChu #Welcome #myWelcome .content .meta {
+    line-height: 200%;
+    text-shadow: none;
+    overflow: hidden;
+    height: 140px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  #TrangChu #Welcome #myWelcome .content .btn {
+    background-color: transparent;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 2% 4%;
+    color: black;
+    transition: all 0.2s linear;
+    margin-top: 1%;
+  }
+  #TrangChu #Welcome #myWelcome .content .btn:hover {
+    background-color: #2196F3;
+    color: white;
+  }
+  #TrangChu #Activities {
+    background-color: #EEEEEE;
+    padding: 2% 0;
+  }
+  #TrangChu #Activities .act {
+    width: 100%;
+    padding: 0;
+  }
+  #TrangChu #Activities .act > div {
+    overflow: hidden;
+  }
+  #TrangChu #Activities .act a img {
+    width: 100%;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Activities .act a img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Activities .act .caption {
+    padding: 2%;
+  }
+  #TrangChu #Activities .act .caption .title {
+    font-weight: bold;
+  }
+  #TrangChu #Activities .act .caption .meta {
+    line-height: 200%;
+    padding-right: 20%;
+  }
+  #TrangChu #Activities .act .caption .btn {
+    font-style: italic;
+    padding-left: 0;
+    text-decoration: underline;
+  }
+  #TrangChu #Activities .act .caption .btn:hover {
+    color: #BDBDBD;
+  }
+  #TrangChu #News {
+    background-color: #E0E0E0;
+    padding: 4% 0;
+  }
+  #TrangChu #News .title {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 150%;
+  }
+  #TrangChu #News hr {
+    width: 10%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #News .meta {
+    margin-bottom: 10%;
+  }
+  #TrangChu #News .news {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 0;
+  }
+  #TrangChu #News .news .overlay {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    height: 200px;
+  }
+  #TrangChu #News .news .overlay img {
+    transition: all 0.2s linear;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+  }
+  #TrangChu #News .news .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 7%;
+    opacity: 0;
+    transition: all 0.2s linear;
+    z-index: 10;
+  }
+  #TrangChu #News .news .overlay .mask .title {
+    color: white;
+    padding: 0 7%;
+    font-size: 130%;
+    margin-bottom: 5%;
+  }
+  #TrangChu #News .news .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    margin-right: 1%;
+    border: 3px solid white;
+    z-index: 10;
+    padding: 3%;
+  }
+  #TrangChu #News .news .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #News .news .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #TrangChu #News .news .tag {
+    position: relative;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 2% 8%;
+    top: -20px;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+  #TrangChu #News .news .caption {
+    text-align: center;
+    padding-top: 0;
+  }
+  #TrangChu #News .news .caption .title {
+    color: black;
+    margin: 0;
+    font-weight: normal;
+  }
+  #TrangChu #News .news .caption .title:hover {
+    color: deepskyblue;
+  }
+  #TrangChu #News .news .caption hr {
+    width: 80%;
+  }
+  #TrangChu #News .news .caption .meta {
+    line-height: 180%;
+    padding: 0 5%;
+    overflow: hidden;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  #TrangChu #News .last-item .overlay .mask {
+    padding: 5% 15%;
+  }
+  #TrangChu #News .last-item .overlay .mask .btn {
+    padding: 2%;
+  }
+  #TrangChu #Numbers {
+    padding: 2% 0;
+    background: url('../img/bg-pallarax.jpg') no-repeat;
+    background-size: 400%;
+    color: white;
+  }
+  #TrangChu #Numbers hr {
+    width: 10%;
+  }
+  #TrangChu #Numbers .number {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: white;
+    position: relative;
+    height: 300%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+  #TrangChu #Numbers .number .fa {
+    position: absolute;
+    top: -10%;
+    color: white;
+    left: 40%;
+    font-size: 200%;
+    background-color: #2196F3;
+    padding: 5% 6%;
+  }
+  #TrangChu #Numbers .number .num {
+    color: #2196F3;
+    padding-top: 20%;
+    font-weight: bold;
+    font-size: 500%;
+  }
+  #TrangChu #Numbers .number .title {
+    color: black;
+    margin-bottom: 20%;
+  }
+  #TrangChu #Numbers ul.nav {
+    display: none;
+  }
+  #TrangChu #Campus {
+    background-color: #F5F5F5;
+    padding: 4% 0;
+  }
+  #TrangChu #Campus .title {
+    font-weight: bold;
+    font-size: 150%;
+  }
+  #TrangChu #Campus hr {
+    width: 25%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #Campus .meta {
+    margin-bottom: 5%;
+    font-size: 100%;
+    padding: 0 2%;
+  }
+  #TrangChu #Campus .campus {
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #TrangChu #Campus .campus img {
+    transition: all 0.2s linear;
+    height: 150px;
+  }
+  #TrangChu #Campus .campus .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    padding-top: 5%;
+  }
+  #TrangChu #Campus .campus .caption .title {
+    color: white;
+    z-index: 10;
+  }
+  #TrangChu #Campus .campus .caption .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+  }
+  #TrangChu #Campus .campus:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Campus .campus:hover .caption {
+    opacity: 0.7;
+  }
+  #TrangChu #Blogs {
+    background-color: #F5F5F5;
+    padding-bottom: 5%;
+  }
+  #TrangChu #Blogs .title {
+    font-size: 200%;
+  }
+  #TrangChu #Blogs hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #Blogs .meta {
+    margin-bottom: 5%;
+    font-size: 100%;
+    padding: 0 5%;
+  }
+  #TrangChu #Blogs .blog {
+    display: block;
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #TrangChu #Blogs .blog .overlay {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  #TrangChu #Blogs .blog .overlay img {
+    transition: all 0.2s linear;
+    height: 100%;
+    width: 100%;
+  }
+  #TrangChu #Blogs .blog .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 10%;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Blogs .blog .overlay .mask .title {
+    color: white;
+  }
+  #TrangChu #Blogs .blog .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    margin-right: 2%;
+  }
+  #TrangChu #Blogs .blog .overlay .tag {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #TrangChu #Blogs .blog .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Blogs .blog .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #TrangChu #Blogs .blog .caption {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 200px;
+  }
+  #TrangChu #Blogs .blog .caption .title {
+    font-size: 200%;
+    padding: 0 3%;
+  }
+  #TrangChu #Blogs .blog .caption hr {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+  }
+  #TrangChu #Blogs .blog .caption .meta {
+    font-size: 100%;
+  }
+  #TrangChu #Blogs .last-item {
+    display: none;
+  }
+  #TrangChu #Mission {
+    padding: 2% 0;
+    background: url('../img/news-2.jpg') no-repeat;
+    background-size: 200%;
+    position: relative;
+    height: 300px;
+  }
+  #TrangChu #Mission .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #03A9F4;
+    opacity: 0.7;
+    color: white;
+    padding-top: 1%;
+  }
+  #TrangChu #Mission .overlay .title {
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #TrangChu #Mission .overlay .meta {
+    font-size: 120%;
+    margin-bottom: 5%;
+    padding: 0 5%;
+    z-index: 10;
+  }
+  #TrangChu #Invent {
+    padding: 4% 0;
+  }
+  #TrangChu #Invent .title {
+    font-size: 250%;
+    margin-bottom: 2%;
+  }
+  #TrangChu #Invent hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+    margin-bottom: 10%;
+  }
+  #TrangChu #Invent label {
+    font-size: 200%;
+    font-weight: initial;
+    margin-right: 2%;
+    margin-bottom: 10%;
+  }
+  #TrangChu #Invent label:hover {
+    color: gray;
+  }
+  #FAQs #Path {
+    background-color: #2196F3;
+    color: white;
+    padding: 3%;
+  }
+  #FAQs #Content .breadcrumb {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #FAQs #MainContent {
+    margin-top: 3%;
+  }
+  #FAQs #Sidebar #FeaturedPosts {
+    margin-bottom: 10%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .title {
+    color: black;
+    font-size: 120%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .title:hover {
+    color: #2196F3;
+  }
+  #Testimonials #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 3%;
+  }
+  #Testimonials #Content .breadcrumb {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #Testimonials #Content #MainContent {
+    margin-top: 3%;
+  }
+  #Testimonials #Content #MainContent .testi {
+    padding: 5%;
+  }
+  #Testimonials #Content #MainContent .testi footer {
+    text-align: right;
+    margin-top: 3%;
+    font-style: italic;
+    color: #2196F3;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post img {
+    width: 50%;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 100%;
+    color: black;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #ListBlogs #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 3%;
+  }
+  #ListBlogs #Content .breadcrumb {
+    margin: 0 2% 5%;
+  }
+  #ListBlogs #Content #MainContent {
+    margin-top: 0%;
+  }
+  #ListBlogs #Content #MainContent .blog {
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 10%;
+  }
+  #ListBlogs #Content #MainContent .blog img {
+    margin-bottom: 2%;
+  }
+  #ListBlogs #Content #MainContent .blog .title {
+    margin: 0;
+    margin-bottom: 1%;
+    color: black;
+  }
+  #ListBlogs #Content #MainContent .blog .title:hover {
+    color: #2196F3;
+  }
+  #ListBlogs #Content #MainContent .blog .meta {
+    line-height: 170%;
+    overflow: hidden;
+    height: 90px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    margin-bottom: 2%;
+  }
+  #ListBlogs #Content #MainContent .blog .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #ListBlogs #Content #MainContent .blog .btn:hover {
+    background-color: #FF9800;
+    border: 1px solid #FF9800;
+  }
+  #ListBlogs #Content #Sidebar {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  #ListBlogs #Content #Sidebar .title {
+    margin-top: 0;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 15%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post img {
+    margin-bottom: 5%;
+    width: 50%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 120%;
+    color: black;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #Gallery {
+    padding-bottom: 5%;
+    background-color: #E0E0E0;
+  }
+  #Gallery #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 2%;
+  }
+  #Gallery .breadcrumb {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #Gallery #FilterGroup {
+    margin-bottom: 2%;
+  }
+  #Gallery #FilterGroup button {
+    margin-bottom: 2%;
+  }
+  #Gallery .element-item {
+    margin-bottom: 7%;
+  }
+  #Gallery .post {
+    position: relative;
+  }
+  #Gallery .post img {
+    width: 100%;
+  }
+  #Gallery .post .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.2s linear;
+    text-align: center;
+    padding-top: 10%;
+  }
+  #Gallery .post .caption .title {
+    color: white;
+    font-weight: bold;
+    transform: translateY(10%);
+    font-size: 150%;
+  }
+  #Gallery .post .caption .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-right: 2%;
+    transform: translateY(10%);
+    font-size: 80%;
+  }
+  #Gallery .post .caption:hover {
+    opacity: 0.7;
+  }
+  #Blog_Detail #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 2%;
+  }
+  #Blog_Detail .breadcrumb {
+    margin: 2% 0;
+  }
+  #Blog_Detail #Content {
+    padding: 0;
+  }
+  #Blog_Detail #Content #MainContent {
+    padding: 0;
+  }
+  #Blog_Detail #Content #MainContent .title {
+    font-size: 150%;
+    margin: 0;
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+  #Blog_Detail #Content #MainContent img {
+    margin-bottom: 5%;
+    padding: 3%;
+  }
+  #Blog_Detail #Content #MainContent .meta {
+    line-height: 150%;
+    text-align: justify;
+  }
+  #Blog_Detail #Content #Sidebar {
+    padding-top: 0;
+  }
+  #Blog_Detail #Content #Sidebar #Category {
+    margin-bottom: 20%;
+  }
+  #Blog_Detail #Content #Sidebar #Category .title {
+    margin-top: 0;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 15%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post img {
+    width: 40%;
+    margin-right: 5%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 80%;
+    font-weight: bold;
+    color: black;
+    line-height: 140%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn {
+    padding: 2% 5%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    color: white;
+    background-color: #2196F3;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+  }
+}
+@media (min-width: 1024px) {
+  a:hover {
+    text-decoration: none;
+  }
+  #Login {
+    background-color: #2F2E3C;
+    padding: 0.5% 0;
+    border-bottom: 1px solid #424242;
+  }
+  #Login .log {
+    display: block;
+    color: #757575;
+    padding-right: 0;
+    font-size: 100%;
+  }
+  #Nav.navbar {
+    background-color: #2F2E3C;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0;
+  }
+  #Nav.navbar .navbar-toggle {
+    border: 1px solid white;
+  }
+  #Nav.navbar .navbar-toggle .icon-bar {
+    border: 1px solid white;
+  }
+  #Nav.navbar #menu ul.navbar-nav li a {
+    color: #F5F5F5;
+    font-size: 120%;
+  }
+  #Nav.navbar #menu ul.navbar-nav li a:hover {
+    background-color: transparent;
+  }
+  #Nav.navbar #menu ul.navbar-nav li a:focus {
+    background-color: transparent;
+  }
+  #Nav.navbar #menu ul.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    padding: 0;
+  }
+  #Nav.navbar #menu ul.dropdown-menu li a {
+    color: black;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    transition: all 0.2s linear;
+  }
+  #Nav.navbar #menu ul.dropdown-menu li a:hover {
+    background-color: #2196F3;
+    color: white;
+  }
+  #footer {
+    background-color: #212121;
+    color: #F5F5F5;
+    padding: 2% 0;
+  }
+  #footer .title {
+    font-size: 160%;
+  }
+  #footer #about {
+    margin-bottom: 10%;
+  }
+  #footer #about .social a {
+    margin-right: 5%;
+    color: #616161;
+  }
+  #footer #about .social a .fa {
+    font-size: 200%;
+  }
+  #footer #instagram {
+    margin-bottom: 10%;
+  }
+  #footer #instagram img {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    width: 22%;
+  }
+  #footer #recent {
+    padding-bottom: 5%;
+  }
+  #TrangChu #Activities {
+    background-color: #EEEEEE;
+    padding: 2% 0;
+  }
+  #TrangChu #Activities .act {
+    width: 33.33%;
+    padding: 0;
+  }
+  #TrangChu #Activities .act > div {
+    overflow: hidden;
+  }
+  #TrangChu #Activities .act a img {
+    width: 25%;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Activities .act a img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Activities .act .caption {
+    padding: 2%;
+  }
+  #TrangChu #Activities .act .caption .title {
+    font-weight: bold;
+  }
+  #TrangChu #Activities .act .caption .meta {
+    line-height: 200%;
+    padding-right: 20%;
+  }
+  #TrangChu #Activities .act .caption .btn {
+    font-style: italic;
+    padding-left: 0;
+    text-decoration: underline;
+  }
+  #TrangChu #Activities .act .caption .btn:hover {
+    color: #BDBDBD;
+  }
+  #TrangChu #News {
+    background-color: #E0E0E0;
+    padding: 4% 0;
+  }
+  #TrangChu #News .title {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 300%;
+  }
+  #TrangChu #News hr {
+    width: 10%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #News .meta {
+    margin-bottom: 5%;
+  }
+  #TrangChu #News .news {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 0;
+  }
+  #TrangChu #News .news .overlay {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    height: 200px;
+  }
+  #TrangChu #News .news .overlay img {
+    transition: all 0.2s linear;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+  }
+  #TrangChu #News .news .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 7%;
+    opacity: 0;
+    transition: all 0.2s linear;
+    z-index: 10;
+  }
+  #TrangChu #News .news .overlay .mask .title {
+    color: white;
+    padding: 0 7%;
+    font-size: 130%;
+    margin-bottom: 5%;
+  }
+  #TrangChu #News .news .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    margin-right: 1%;
+    border: 3px solid white;
+    z-index: 10;
+    padding: 3%;
+  }
+  #TrangChu #News .news .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #News .news .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #TrangChu #News .news .tag {
+    position: relative;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    padding: 2% 8%;
+    top: -20px;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+  #TrangChu #News .news .caption {
+    text-align: center;
+    padding-top: 0;
+  }
+  #TrangChu #News .news .caption .title {
+    color: black;
+    margin: 0;
+    font-weight: normal;
+    font-size: 150%;
+  }
+  #TrangChu #News .news .caption .title:hover {
+    color: deepskyblue;
+  }
+  #TrangChu #News .news .caption hr {
+    width: 80%;
+  }
+  #TrangChu #News .news .caption .meta {
+    line-height: 180%;
+    padding: 0 5%;
+    overflow: hidden;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  #TrangChu #News .last-item .overlay .mask {
+    padding: 5% 15%;
+  }
+  #TrangChu #News .last-item .overlay .mask .btn {
+    padding: 2%;
+  }
+  #TrangChu #Numbers {
+    padding: 2% 0;
+    background: url('../img/bg-pallarax.jpg') no-repeat;
+    background-size: 400%;
+    color: white;
+  }
+  #TrangChu #Numbers .title {
+    font-size: 300%;
+  }
+  #TrangChu #Numbers hr {
+    width: 10%;
+  }
+  #TrangChu #Numbers .number {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: white;
+    position: relative;
+    height: 300%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+  #TrangChu #Numbers .number .fa {
+    position: absolute;
+    top: -10%;
+    color: white;
+    left: 40%;
+    font-size: 200%;
+    background-color: #2196F3;
+    padding: 5% 6%;
+  }
+  #TrangChu #Numbers .number .num {
+    color: #2196F3;
+    padding-top: 20%;
+    font-weight: bold;
+    font-size: 500%;
+  }
+  #TrangChu #Numbers .number .title {
+    color: black;
+    margin-bottom: 20%;
+  }
+  #TrangChu #Numbers ul.nav {
+    display: none;
+  }
+  #TrangChu #Campus {
+    background-color: #F5F5F5;
+    padding: 4% 0;
+  }
+  #TrangChu #Campus .title {
+    font-weight: bold;
+    font-size: 300%;
+  }
+  #TrangChu #Campus hr {
+    width: 25%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #Campus .meta {
+    margin-bottom: 2%;
+    font-size: 100%;
+    padding: 0 2%;
+  }
+  #TrangChu #Campus .campus {
+    border: 1px solid red;
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #TrangChu #Campus .campus img {
+    transition: all 0.2s linear;
+    height: 250%;
+    width: 100%;
+  }
+  #TrangChu #Campus .campus .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    padding-top: 12%;
+  }
+  #TrangChu #Campus .campus .caption .title {
+    color: white;
+    z-index: 10;
+  }
+  #TrangChu #Campus .campus .caption .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+  }
+  #TrangChu #Campus .campus:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Campus .campus:hover .caption {
+    opacity: 0.7;
+  }
+  #TrangChu #Blogs {
+    background-color: #F5F5F5;
+    padding-bottom: 5%;
+  }
+  #TrangChu #Blogs .title {
+    font-size: 300%;
+  }
+  #TrangChu #Blogs hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+  }
+  #TrangChu #Blogs .meta {
+    margin-bottom: 5%;
+    font-size: 100%;
+    padding: 0 5%;
+  }
+  #TrangChu #Blogs .blog {
+    display: block;
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #TrangChu #Blogs .blog .overlay {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  #TrangChu #Blogs .blog .overlay img {
+    transition: all 0.2s linear;
+    height: 100%;
+    width: 100%;
+  }
+  #TrangChu #Blogs .blog .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 10%;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  #TrangChu #Blogs .blog .overlay .mask .title {
+    color: white;
+  }
+  #TrangChu #Blogs .blog .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    margin-right: 2%;
+  }
+  #TrangChu #Blogs .blog .overlay .tag {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #TrangChu #Blogs .blog .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #TrangChu #Blogs .blog .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #TrangChu #Blogs .blog .caption {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 200px;
+  }
+  #TrangChu #Blogs .blog .caption .title {
+    font-size: 200%;
+    padding: 0 3%;
+  }
+  #TrangChu #Blogs .blog .caption hr {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+  }
+  #TrangChu #Blogs .blog .caption .meta {
+    font-size: 100%;
+  }
+  #TrangChu #Mission {
+    padding: 15% 0;
+    background: url('../img/news-2.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+  }
+  #TrangChu #Mission .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #03A9F4;
+    opacity: 0.7;
+    color: white;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #TrangChu #Mission .overlay .title {
+    font-size: 300%;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  #TrangChu #Mission .overlay .meta {
+    font-size: 200%;
+    margin-bottom: 2%;
+    padding: 0 5%;
+    z-index: 10;
+  }
+  #TrangChu #Invent {
+    padding: 0;
+    padding-top: 4%;
+  }
+  #TrangChu #Invent .title {
+    font-size: 300%;
+    margin-bottom: 2%;
+  }
+  #TrangChu #Invent hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+    margin-bottom: 5%;
+  }
+  #TrangChu #Invent label {
+    font-size: 250%;
+    font-weight: initial;
+    margin-right: 7%;
+  }
+  #TrangChu #Invent label:hover {
+    color: gray;
+  }
+  #FAQs #Path {
+    background-color: #2196F3;
+    color: white;
+    padding: 3% 4%;
+  }
+  #FAQs #Content .breadcrumb {
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #FAQs #MainContent {
+    margin-top: 3%;
+  }
+  #FAQs #Sidebar #FeaturedPosts {
+    margin-bottom: 10%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #FAQs #Sidebar #FeaturedPosts .title {
+    color: black;
+  }
+  #FAQs #Sidebar #FeaturedPosts .title:hover {
+    color: #2196F3;
+  }
+  #Testimonials #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 1%;
+  }
+  #Testimonials #Content .breadcrumb {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #Testimonials #Content #MainContent {
+    margin-top: 3%;
+  }
+  #Testimonials #Content #MainContent .testi {
+    padding: 5%;
+  }
+  #Testimonials #Content #MainContent .testi footer {
+    text-align: right;
+    margin-top: 3%;
+    font-style: italic;
+    color: #2196F3;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post img {
+    width: 50%;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 100%;
+    color: black;
+  }
+  #Testimonials #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #ListBlogs #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 3%;
+  }
+  #ListBlogs #Content .breadcrumb {
+    margin: 0 2% 5%;
+  }
+  #ListBlogs #Content #MainContent {
+    margin-top: 0%;
+  }
+  #ListBlogs #Content #MainContent .blog {
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 10%;
+  }
+  #ListBlogs #Content #MainContent .blog img {
+    margin-bottom: 2%;
+  }
+  #ListBlogs #Content #MainContent .blog .title {
+    margin: 0;
+    margin-bottom: 1%;
+    color: black;
+  }
+  #ListBlogs #Content #MainContent .blog .title:hover {
+    color: #2196F3;
+  }
+  #ListBlogs #Content #MainContent .blog .meta {
+    line-height: 170%;
+    overflow: hidden;
+    height: 90px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    margin-bottom: 2%;
+  }
+  #ListBlogs #Content #MainContent .blog .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #ListBlogs #Content #MainContent .blog .btn:hover {
+    background-color: #FF9800;
+    border: 1px solid #FF9800;
+  }
+  #ListBlogs #Content #Sidebar .title {
+    margin-top: 0;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 15%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post img {
+    margin-bottom: 5%;
+    width: 50%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 120%;
+    color: black;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #Gallery {
+    padding-bottom: 5%;
+    background-color: #E0E0E0;
+  }
+  #Gallery #Path {
+    background-color: #2196F3;
+    color: white;
+    padding-bottom: 2%;
+  }
+  #Gallery .breadcrumb {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #Gallery #FilterGroup {
+    margin-bottom: 2%;
+  }
+  #Gallery #FilterGroup button {
+    margin-bottom: 2%;
+  }
+  #Gallery .element-item {
+    margin-bottom: 3%;
+  }
+  #Gallery .post {
+    position: relative;
+  }
+  #Gallery .post img {
+    width: 100%;
+  }
+  #Gallery .post .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.2s linear;
+    text-align: center;
+    padding-top: 10%;
+  }
+  #Gallery .post .caption .title {
+    color: white;
+    font-weight: bold;
+    transform: translateY(10%);
+    font-size: 150%;
+  }
+  #Gallery .post .caption .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-right: 2%;
+    transform: translateY(10%);
+    font-size: 80%;
+  }
+  #Gallery .post .caption:hover {
+    opacity: 0.7;
+  }
+  #Blog_Detail #Path {
+    background-color: chocolate;
+    color: white;
+    padding-bottom: 1%;
+  }
+  #Blog_Detail .breadcrumb {
+    margin: 2% 0;
+  }
+  #Blog_Detail #Content {
+    padding: 0;
+  }
+  #Blog_Detail #Content #MainContent {
+    padding: 0;
+  }
+  #Blog_Detail #Content #MainContent .title {
+    font-size: 150%;
+    margin: 0;
+    margin-bottom: 2%;
+    font-weight: bold;
+  }
+  #Blog_Detail #Content #MainContent img {
+    margin-bottom: 2%;
+    padding: 3%;
+  }
+  #Blog_Detail #Content #MainContent .meta {
+    line-height: 200%;
+    text-align: justify;
+  }
+  #Blog_Detail #Content #Sidebar {
+    padding-top: 0;
+  }
+  #Blog_Detail #Content #Sidebar #Category {
+    margin-bottom: 10%;
+  }
+  #Blog_Detail #Content #Sidebar #Category .title {
+    margin-top: 0;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 10%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post img {
+    width: 40%;
+    margin-right: 3%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .title {
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+    line-height: 140%;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .title:hover {
+    color: #2196F3;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn {
+    padding: 2% 5%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    color: white;
+    background-color: #2196F3;
+  }
+  #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+  }
+}
