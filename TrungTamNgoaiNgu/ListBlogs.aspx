@@ -25,7 +25,7 @@
                                 <h3 class="title">Tiêu đề bài 1</h3>
                             </a>
                             <p class="meta">Vụ thử nghiệm diễn ra một cách an toàn và hoàn hảo, đồng thời không tác động xấu tới môi trường sinh thái. Vụ thử là giai đoạn phát triển cao hơn của lực lượng hạt nhân của Cộng hòa Dân chủ Nhân dân Triều Tiên (DPRK). Bằng việc thử nghiệm thành công bom H theo cách hoàn hảo nhất được ghi nhận trong lịch sử, Triều Tiên tự hào gia nhập hàng ngũ các nước tiên tiến sở hữu bom H và người dân Triều Tiên đã chứng minh tinh thần của dân tộc", tuyên bố chính thức của Triều Tiên viết.</p>
-                            <a href="#" class="btn btn-info">Read More</a>
+                            <a href="Blog_Detail.aspx" class="btn btn-info">Read More</a>
                         </div>
                     </div>
                     <div class="thumbnail blog">
@@ -36,7 +36,7 @@
                                 <h3 class="title">Tiêu đề bài 4</h3>
                             </a>
                             <p class="meta">Vụ thử nghiệm diễn ra một cách an toàn và hoàn hảo, đồng thời không tác động xấu tới môi trường sinh thái. Vụ thử là giai đoạn phát triển cao hơn của lực lượng hạt nhân của Cộng hòa Dân chủ Nhân dân Triều Tiên (DPRK). Bằng việc thử nghiệm thành công bom H theo cách hoàn hảo nhất được ghi nhận trong lịch sử, Triều Tiên tự hào gia nhập hàng ngũ các nước tiên tiến sở hữu bom H và người dân Triều Tiên đã chứng minh tinh thần của dân tộc", tuyên bố chính thức của Triều Tiên viết.</p>
-                            <a href="#" class="btn btn-info">Read More</a>
+                            <a href="Blog_Detail.aspx" class="btn btn-info">Read More</a>
                         </div>
                     </div>
                     <div class="thumbnail blog">
@@ -47,7 +47,7 @@
                                 <h3 class="title">Tiêu đề bài 2</h3>
                             </a>
                             <p class="meta">Vụ thử nghiệm diễn ra một cách an toàn và hoàn hảo, đồng thời không tác động xấu tới môi trường sinh thái. Vụ thử là giai đoạn phát triển cao hơn của lực lượng hạt nhân của Cộng hòa Dân chủ Nhân dân Triều Tiên (DPRK). Bằng việc thử nghiệm thành công bom H theo cách hoàn hảo nhất được ghi nhận trong lịch sử, Triều Tiên tự hào gia nhập hàng ngũ các nước tiên tiến sở hữu bom H và người dân Triều Tiên đã chứng minh tinh thần của dân tộc", tuyên bố chính thức của Triều Tiên viết.</p>
-                            <a href="#" class="btn btn-info">Read More</a>
+                            <a href="Blog_Detail.aspx" class="btn btn-info">Read More</a>
                         </div>
                     </div>
                     <div class="thumbnail blog">
@@ -58,7 +58,7 @@
                                 <h3 class="title">Tiêu đề bài 3</h3>
                             </a>
                             <p class="meta">Vụ thử nghiệm diễn ra một cách an toàn và hoàn hảo, đồng thời không tác động xấu tới môi trường sinh thái. Vụ thử là giai đoạn phát triển cao hơn của lực lượng hạt nhân của Cộng hòa Dân chủ Nhân dân Triều Tiên (DPRK). Bằng việc thử nghiệm thành công bom H theo cách hoàn hảo nhất được ghi nhận trong lịch sử, Triều Tiên tự hào gia nhập hàng ngũ các nước tiên tiến sở hữu bom H và người dân Triều Tiên đã chứng minh tinh thần của dân tộc", tuyên bố chính thức của Triều Tiên viết.</p>
-                            <a href="#" class="btn btn-info">Read More</a>
+                            <a href="Blog_Detail.aspx" class="btn btn-info">Read More</a>
                         </div>
                     </div>
                     <%-- Pagination --%>
