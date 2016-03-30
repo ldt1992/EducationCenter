@@ -194,109 +194,35 @@
         <%-- Numbers --%>
         <div id="Numbers">
             <div class="container text-center">
-                <h1 class="title">The <strong>Numbers</strong> Say it All</h1>
+                <h1 class="title">CẢM NHẬN TỪ KHÁCH HÀNG</h1>
                 <hr />
                 <div id="Owl-carousel-number" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="row item active">
-                            <div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn">
-                                <div class="number first">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">410+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
+                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
+                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn">
-                                <div class="number">
-                                    <i class="fa fa-navicon img-circle"></i>
-                                    <h1 class="num">420+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn">
-                                <div class="number">
-                                    <i class="fa fa-tablet img-circle"></i>
-                                    <h1 class="num">430+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <%--<div class="row item">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">440+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">450+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">460+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
+                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
+                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
                             </div>
                         </div>
                         <div class="row item">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">470+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
+                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
+                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">480+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">490+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
+                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
+                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
                             </div>
                         </div>
-                        <div class="row item">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">500+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">510+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="number">
-                                    <i class="fa fa-user img-circle"></i>
-                                    <h1 class="num">520+</h1>
-                                    <h2 class="title">Students</h2>
-                                </div>
-                            </div>
-                        </div>--%>
                     </div>
                     <%-- Indicators --%>
                     <ul class="nav nav-tabs">
                         <li data-target="#Owl-carousel-number" data-slide-to="0" class="active"><a href="#"><span class="icon-bar"></span></a></li>
                         <li data-target="#Owl-carousel-number" data-slide-to="1"><a href="#"><span class="icon-bar"></span></a></li>
-                        <li data-target="#Owl-carousel-number" data-slide-to="2"><a href="#"><span class="icon-bar"></span></a></li>
-                        <li data-target="#Owl-carousel-number" data-slide-to="3"><a href="#"><span class="icon-bar"></span></a></li>
                     </ul>
                 </div>
             </div>
