@@ -120,13 +120,15 @@
                 </div>
             </div>--%>
         </div>
-        <%-- News --%>
+        <%-- TIN TỨC MỚI NHẤT --%>
         <div id="News">
             <div class="container text-center">
                 <h1 class="title">TIN TỨC MỚI NHẤT</h1>
                 <hr />
-                <div class="row" id="MoiNhat" runat="server">
-                    <%--<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                <div class="carousel slide" data-ride="carousel" id="TinMoiNhat">
+                    <div class="carousel-inner">
+                        <div class="row active" id="MoiNhat" runat="server">
+                            <%--<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
                         <div class="thumbnail news">
                             <div class="overlay">
                                 <img src="img/news-1.jpg" class="img-responsive" />
@@ -188,6 +190,17 @@
                             </div>
                         </div>
                     </div>--%>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#TinMoiNhat" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#TinMoiNhat" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -197,34 +210,44 @@
                 <h1 class="title">CẢM NHẬN TỪ KHÁCH HÀNG</h1>
                 <hr />
                 <div id="Owl-carousel-number" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <div class="row item active">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
-                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
-                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
-                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
-                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
-                            </div>
+                        <div class="item active">
+                            <p>
+                                <img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" />
+                            </p>
+                            <h3 class="author">Lê Hoàng Kim Ngân</h3>
+                            <p class="position">Du Học úc</p>
+                            <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
                         </div>
-                        <div class="row item">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
-                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
-                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeIn text-center">
-                                <p><img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" /></p>
-                                <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
-                            </div>
+                        <div class="item">
+                            <p>
+                                <img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" />
+                            </p>
+                            <h3 class="author">Lê Hoàng Kim Ngân</h3>
+                            <p class="position">Du Học úc</p>
+                            <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
+                        </div>
+                        <div class="item">
+                            <p>
+                                <img src="img/footer_image1.jpg" class="img-circle img-thumbnail" alt="" />
+                            </p>
+                            <h3 class="author">Lê Hoàng Kim Ngân</h3>
+                            <p class="position">Du Học úc</p>
+                            <p class="content">Sau khi đến công ty, tôi cảm thấy rất hài lòng về dịch vụ và chất lượng làm việc của công ty</p>
                         </div>
                     </div>
-                    <%-- Indicators --%>
-                    <ul class="nav nav-tabs">
-                        <li data-target="#Owl-carousel-number" data-slide-to="0" class="active"><a href="#"><span class="icon-bar"></span></a></li>
-                        <li data-target="#Owl-carousel-number" data-slide-to="1"><a href="#"><span class="icon-bar"></span></a></li>
-                    </ul>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#Owl-carousel-number" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#Owl-carousel-number" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+                <a href="#" class="btn btn-info btn-lg">Xem thêm</a>
             </div>
         </div>
         <%-- Campus --%>
@@ -343,7 +366,7 @@
             </div>
         </div>
         <%-- Invent --%>
-        <div id="Invent">
+        <%--<div id="Invent">
             <div class="container text-center wow fadeIn">
                 <h1 class="title">BRAND</h1>
                 <hr />
@@ -354,6 +377,6 @@
                 <label>TOMS</label>
                 <label>TOMS</label>
             </div>
-        </div>
+        </div>--%>
     </div>
 </asp:Content>

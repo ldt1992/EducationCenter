@@ -9,6 +9,33 @@
 a:hover {
   text-decoration: none;
 }
+#Backtop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  background-color: gray;
+  color: white;
+  padding: 10px 13px 11px;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
 @media (min-width: 1024px) {
   a:hover {
     text-decoration: none;
@@ -38,7 +65,7 @@ a:hover {
   }
   #Nav.navbar #menu ul.navbar-nav li a {
     color: #F5F5F5;
-    font-size: 120%;
+    font-size: 200%;
   }
   #Nav.navbar #menu ul.navbar-nav li a:hover {
     background-color: transparent;
@@ -61,6 +88,10 @@ a:hover {
   #Nav.navbar #menu ul.dropdown-menu li a:hover {
     background-color: #2196F3;
     color: white;
+  }
+  #Nav.navbar .navbar-brand img {
+    width: 100px;
+    height: 130%;
   }
   #footer {
     background-color: #212121;
@@ -91,40 +122,43 @@ a:hover {
   #footer #recent {
     padding-bottom: 5%;
   }
-  #TrangChu #Activities {
+  #TrangChu .activities {
     background-color: #EEEEEE;
-    padding: 2% 0;
+    padding: 0.5% 0;
   }
-  #TrangChu #Activities .act {
-    width: 33.33%;
-    padding: 0;
+  #TrangChu .activities .act {
+    width: 33%;
   }
-  #TrangChu #Activities .act > div {
+  #TrangChu .activities .act > div {
     overflow: hidden;
   }
-  #TrangChu #Activities .act a img {
-    width: 25%;
+  #TrangChu .activities .act a img {
+    width: 100%;
     transition: all 0.2s linear;
   }
-  #TrangChu #Activities .act a img:hover {
+  #TrangChu .activities .act a img:hover {
     transform: scale(1.1, 1.1);
   }
-  #TrangChu #Activities .act .caption {
+  #TrangChu .activities .act .title {
+    text-align: center;
+    font-size: 250%;
+    color: forestgreen;
+    font-weight: bolder;
+    margin-bottom: 4%;
+  }
+  #TrangChu .activities .act .caption {
     padding: 2%;
   }
-  #TrangChu #Activities .act .caption .title {
-    font-weight: bold;
-  }
-  #TrangChu #Activities .act .caption .meta {
+  #TrangChu .activities .act .caption .meta {
     line-height: 200%;
     padding-right: 20%;
   }
-  #TrangChu #Activities .act .caption .btn {
+  #TrangChu .activities .act .caption .btn {
     font-style: italic;
     padding-left: 0;
     text-decoration: underline;
   }
-  #TrangChu #Activities .act .caption .btn:hover {
+  #TrangChu .activities .act .caption .btn:hover {
     color: #BDBDBD;
   }
   #TrangChu #News {
@@ -248,39 +282,25 @@ a:hover {
   }
   #TrangChu #Numbers hr {
     width: 10%;
-  }
-  #TrangChu #Numbers .number {
-    display: block;
-    margin-top: 10%;
     margin-bottom: 5%;
-    background-color: white;
-    position: relative;
-    height: 300%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
   }
-  #TrangChu #Numbers .number .fa {
-    position: absolute;
-    top: -10%;
-    color: white;
-    left: 40%;
+  #TrangChu #Numbers .item {
+    margin-bottom: 5%;
+  }
+  #TrangChu #Numbers .item img {
+    width: 15%;
+  }
+  #TrangChu #Numbers .item .position {
+    font-size: 180%;
+    margin-bottom: 3%;
+    font-weight: lighter;
+  }
+  #TrangChu #Numbers .item .author {
+    font-size: 250%;
+  }
+  #TrangChu #Numbers .item .content {
     font-size: 200%;
-    background-color: #2196F3;
-    padding: 5% 6%;
-  }
-  #TrangChu #Numbers .number .num {
-    color: #2196F3;
-    padding-top: 20%;
-    font-weight: bold;
-    font-size: 500%;
-  }
-  #TrangChu #Numbers .number .title {
-    color: black;
-    margin-bottom: 20%;
-  }
-  #TrangChu #Numbers ul.nav {
-    display: none;
+    padding: 0 20%;
   }
   #TrangChu #Campus {
     background-color: #F5F5F5;
@@ -344,6 +364,9 @@ a:hover {
   }
   #TrangChu #Campus .campus:hover .caption {
     opacity: 0.7;
+  }
+  #TrangChu #Campus .HinhAnh {
+    margin-bottom: 2%;
   }
   #TrangChu #Blogs {
     background-color: #F5F5F5;
@@ -608,35 +631,45 @@ a:hover {
   #ListBlogs #Content #Sidebar #FeaturedPosts .post .title:hover {
     color: #2196F3;
   }
-  #Gallery {
+  #Gallery,
+  #Album {
     padding-bottom: 5%;
-    background-color: #E0E0E0;
+    /*background-color: #E0E0E0;*/
+    background: white;
   }
-  #Gallery #Path {
+  #Gallery #Path,
+  #Album #Path {
     background-color: #2196F3;
     color: white;
     padding-bottom: 2%;
   }
-  #Gallery .breadcrumb {
-    margin-top: 3%;
-    margin-bottom: 3%;
-  }
-  #Gallery #FilterGroup {
+  #Gallery .breadcrumb,
+  #Album .breadcrumb {
+    margin-top: 1%;
     margin-bottom: 2%;
   }
-  #Gallery #FilterGroup button {
+  #Gallery #FilterGroup,
+  #Album #FilterGroup {
     margin-bottom: 2%;
   }
-  #Gallery .element-item {
+  #Gallery #FilterGroup button,
+  #Album #FilterGroup button {
+    margin-bottom: 2%;
+  }
+  #Gallery .element-item,
+  #Album .element-item {
     margin-bottom: 3%;
   }
-  #Gallery .post {
+  #Gallery .post,
+  #Album .post {
     position: relative;
   }
-  #Gallery .post img {
+  #Gallery .post img,
+  #Album .post img {
     width: 100%;
   }
-  #Gallery .post .caption {
+  #Gallery .post .caption,
+  #Album .post .caption {
     position: absolute;
     top: 0;
     left: 0;
@@ -648,13 +681,15 @@ a:hover {
     text-align: center;
     padding-top: 10%;
   }
-  #Gallery .post .caption .title {
+  #Gallery .post .caption .title,
+  #Album .post .caption .title {
     color: white;
     font-weight: bold;
     transform: translateY(10%);
     font-size: 150%;
   }
-  #Gallery .post .caption .btn {
+  #Gallery .post .caption .btn,
+  #Album .post .caption .btn {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -666,7 +701,8 @@ a:hover {
     transform: translateY(10%);
     font-size: 80%;
   }
-  #Gallery .post .caption:hover {
+  #Gallery .post .caption:hover,
+  #Album .post .caption:hover {
     opacity: 0.7;
   }
   #Blog_Detail #Path {
@@ -733,5 +769,43 @@ a:hover {
   #Blog_Detail #Content #Sidebar #FeaturedPosts .post .btn:hover {
     background-color: orangered;
     border: 1px solid orangered;
+  }
+  #LienHe #Map {
+    height: 500px;
+  }
+  #LienHe #Map .ggmap iframe {
+    height: 500px;
+  }
+  #LienHe #LH {
+    background-color: #EEEEEE;
+    padding: 3% 0;
+  }
+  #LienHe #LH hr {
+    border: 2px solid #2196F3;
+    width: 15%;
+  }
+  #LienHe #LH .title {
+    font-size: 250%;
+    font-weight: bolder;
+  }
+  #LienHe #LH .meta {
+    padding: 0 20%;
+    font-size: 150%;
+  }
+  #LienHe #Bg {
+    background: url('../img/bg-contact2.jpg') no-repeat;
+    background-size: 100%;
+    padding: 5% 0;
+    background-attachment: fixed;
+  }
+  #LienHe #Bg .bg {
+    color: white;
+    font-size: 150%;
+  }
+  #LienHe #Bg .bg .title {
+    font-size: 180%;
+  }
+  #LienHe #Form {
+    padding: 2% 0;
   }
 }
