@@ -808,4 +808,26 @@ a:hover {
   #LienHe #Form {
     padding: 2% 0;
   }
+  #CamNhan #Title {
+    background-color: #03A9F4;
+    color: white;
+    padding: 0.5% 0 1%;
+  }
+  #CamNhan #MainContent .jumbotron img {
+    width: 22%;
+    margin-right: 3%;
+  }
+  #CamNhan #Sidebar .title {
+    margin-top: 0;
+  }
+  #CamNhan #Sidebar .post {
+    margin-bottom: 10%;
+  }
+  #CamNhan #Sidebar .post .meta {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 80px;
+  }
 }

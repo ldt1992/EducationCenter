@@ -247,7 +247,7 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <a href="#" class="btn btn-info btn-lg">Xem thêm</a>
+                <a href="CamNhan.aspx" class="btn btn-info btn-lg">Xem thêm</a>
             </div>
         </div>
         <%-- Campus --%>

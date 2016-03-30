@@ -30,24 +30,24 @@ a:hover {
 }
 
 .carousel-control.left {
-        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-        background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-        background-repeat: repeat-x;
-    }
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
 
-    .carousel-control.right {
-        right: 0;
-        left: auto;
-        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-        background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-        background-repeat: repeat-x;
-    }
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
 
 //Desktop 1024px ~ 4096px
 @media (min-width:1024px) {
@@ -123,9 +123,9 @@ a:hover {
             }
         }
 
-        .navbar-brand img{
-            width:100px;
-            height:130%;
+        .navbar-brand img {
+            width: 100px;
+            height: 130%;
         }
     }
     //Footer
@@ -171,12 +171,12 @@ a:hover {
     #TrangChu {
 
         .activities {
-            background-color:#EEEEEE;
+            background-color: #EEEEEE;
             padding: 0.5% 0;
 
             .act {
                 width: 33%;
-                
+
                 > div {
                     overflow: hidden;
                 }
@@ -193,11 +193,11 @@ a:hover {
                 }
 
                 .title {
-                    text-align:center;
-                    font-size:250%;
-                    color:forestgreen;
-                    font-weight:bolder;
-                    margin-bottom:4%;
+                    text-align: center;
+                    font-size: 250%;
+                    color: forestgreen;
+                    font-weight: bolder;
+                    margin-bottom: 4%;
                 }
 
                 .caption {
@@ -366,25 +366,29 @@ a:hover {
 
             hr {
                 width: 10%;
-                margin-bottom:5%;
+                margin-bottom: 5%;
             }
-            
-            .item{
-                margin-bottom:5%;
-                img{
-                    width:15%;
+
+            .item {
+                margin-bottom: 5%;
+
+                img {
+                    width: 15%;
                 }
-                .position{
-                    font-size:180%;
-                    margin-bottom:3%;
-                    font-weight:lighter;
+
+                .position {
+                    font-size: 180%;
+                    margin-bottom: 3%;
+                    font-weight: lighter;
                 }
-                .author{
-                    font-size:250%;
+
+                .author {
+                    font-size: 250%;
                 }
-                .content{
-                    font-size:200%;
-                    padding:0 20%;
+
+                .content {
+                    font-size: 200%;
+                    padding: 0 20%;
                 }
             }
         }
@@ -460,8 +464,8 @@ a:hover {
                 }
             }
 
-            .HinhAnh{
-                margin-bottom:2%;
+            .HinhAnh {
+                margin-bottom: 2%;
             }
         }
 
@@ -804,7 +808,7 @@ a:hover {
     #Gallery, #Album {
         padding-bottom: 5%;
         /*background-color: #E0E0E0;*/
-        background:white;
+        background: white;
 
         #Path {
             background-color: #2196F3;
@@ -956,52 +960,93 @@ a:hover {
         }
     }
     //Liên Hệ
-    #LienHe{
-        #Map{
-            height:500px;
-            .ggmap{
-                iframe{
-                    height:500px;
-                }    
-            }
-        }
+    #LienHe {
+        #Map {
+            height: 500px;
 
-        #LH{
-            background-color:#EEEEEE;
-            padding:3% 0;
-            hr{
-                border:2px solid #2196F3;
-                width:15%;
-            }
-            .title{
-                font-size:250%;
-                font-weight:bolder;
-            }
-            .meta{
-                padding:0 20%;
-                font-size:150%;
-            }
-        }
-
-        #Bg{
-            background:url('../img/bg-contact2.jpg') no-repeat;
-            background-size:100%;
-            padding:5% 0;
-            background-attachment:fixed;
-            
-            .bg{
-                color:white;
-                font-size:150%;
-                .title{
-                    font-size:180%;
+            .ggmap {
+                iframe {
+                    height: 500px;
                 }
             }
-            
         }
 
-        #Form{
-            padding:2% 0;
+        #LH {
+            background-color: #EEEEEE;
+            padding: 3% 0;
+
+            hr {
+                border: 2px solid #2196F3;
+                width: 15%;
+            }
+
+            .title {
+                font-size: 250%;
+                font-weight: bolder;
+            }
+
+            .meta {
+                padding: 0 20%;
+                font-size: 150%;
+            }
+        }
+
+        #Bg {
+            background: url('../img/bg-contact2.jpg') no-repeat;
+            background-size: 100%;
+            padding: 5% 0;
+            background-attachment: fixed;
+
+            .bg {
+                color: white;
+                font-size: 150%;
+
+                .title {
+                    font-size: 180%;
+                }
+            }
+        }
+
+        #Form {
+            padding: 2% 0;
         }
     }
+    //CamNhan
+    #CamNhan {
+        #Title {
+            background-color: #03A9F4;
+            color: white;
+            padding: 0.5% 0 1%;
+        }
 
+        #MainContent {
+            .jumbotron {
+                img {
+                    width: 22%;
+                    margin-right:3%;
+                }
+            }
+        }
+
+        #Sidebar {
+            .title {
+                margin-top: 0;
+            }
+
+            .post {
+                margin-bottom: 10%;
+
+                .media-heading {
+                }
+
+                .meta {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    height: 80px;
+                }
+            }
+        }
+    }
 }
