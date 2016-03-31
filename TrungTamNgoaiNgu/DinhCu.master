@@ -228,6 +228,17 @@
             });
 
             $('[rel=prettyPhoto]').prettyPhoto();
+
+            //Countdown
+            $('#timer').countdown('2016/04/28', function (event) {
+                $(this).html(event.strftime(
+                    //'%D days %H hours %M minutes %S seconds'
+                    '<span class="day">%D</span> : '
+                    + '<span class="hour">%H</span> : '
+                    + '<span class="min">%M</span> : '
+                    + '<span class="sec">%S</span> '
+                    ));
+            });
         });
     </script>
 </body>

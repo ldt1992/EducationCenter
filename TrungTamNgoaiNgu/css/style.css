@@ -507,6 +507,40 @@ a:hover {
   #TrangChu #Invent label:hover {
     color: gray;
   }
+  #TrangChu #Countdown {
+    padding: 3% 0;
+    background-color: #E64A19;
+    color: white;
+  }
+  #TrangChu #Countdown .form {
+    background-color: white;
+    padding: 5% 15%;
+  }
+  #TrangChu #Countdown .form .title {
+    color: black;
+  }
+  #TrangChu #Countdown #countdown {
+    text-align: center;
+  }
+  #TrangChu #Countdown #countdown hr {
+    width: 10%;
+    border: 2px solid white;
+  }
+  #TrangChu #Countdown #countdown .meta {
+    font-size: 180%;
+  }
+  #TrangChu #Countdown #countdown #timer span {
+    padding: 1% 2%;
+    color: white;
+    background-color: #424242;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 300%;
+  }
+  #TrangChu #Countdown #formSignup {
+    text-align: center;
+  }
   #FAQs #Path {
     background-color: #2196F3;
     color: white;

@@ -204,7 +204,7 @@
                 </div>
             </div>
         </div>
-        <%-- Numbers --%>
+        <%-- CẢM NHẬN TỪ KHÁCH HÀNG --%>
         <div id="Numbers">
             <div class="container text-center">
                 <h1 class="title">CẢM NHẬN TỪ KHÁCH HÀNG</h1>
@@ -350,6 +350,34 @@
                                 <hr />
                                 <p class="meta">Efficiently generate cross-unit channels rather than competitive quality vectors. Dramatically</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ĐẾM NGƯỢC-->
+        <div id="Countdown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12" id="countdown">
+                        <h2 class="title">QUÀ TẶNG HẤP DẪN</h2>
+                        <hr class="hr_title" />
+                        <p class="meta">Số Lượng Có Hạn. Tham Gia Ngay</p>
+                        <div id="timer"></div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="formSignup">
+                        <div class="form">
+                            <h2 class="title">Đăng Ký</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your name..." />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your email..." />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone..." />
+                            </div>
+                            <p><a href="#" class="btn btn-primary">GET IT</a></p>
                         </div>
                     </div>
                 </div>
