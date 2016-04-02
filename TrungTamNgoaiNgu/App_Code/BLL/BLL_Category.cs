@@ -31,7 +31,8 @@ public class BLL_Category
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from Category order by CategoryID asc";
+        //string query = "select * from Category order by CategoryID asc";
+        string query = "select * from Category ct full outer join Images img on ct.CateogryImage=img.ImagesID where ct.CategoryID is not null order by CategoryID asc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
