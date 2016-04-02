@@ -1,4 +1,10 @@
-﻿.border-radius(@radius) {
+﻿.transition(@property, @duration, @type) {
+    transition: @property @duration @type;
+    -webkit-transition: @property @duration @type;
+    -moz-transition: @property @duration @type;
+}
+
+.border-radius(@radius) {
     border-radius: @radius;
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
@@ -84,11 +90,11 @@ a:hover {
         }
 
         #menu {
-            ul.navbar-nav {
+            ul.main-menu {
                 li {
                     a {
                         color: #F5F5F5;
-                        font-size: 200%;
+                        font-size: 150%;
 
                         &:hover {
                             background-color: transparent;
@@ -176,6 +182,7 @@ a:hover {
 
             .act {
                 width: 33%;
+                margin-bottom: 2%;
 
                 > div {
                     overflow: hidden;
@@ -184,7 +191,8 @@ a:hover {
                 a {
                     img {
                         width: 100%;
-                        transition: all 0.2s linear;
+                        height: 200px;
+                        .transition(all, 0.2s, linear);
 
                         &:hover {
                             transform: scale(1.1,1.1);
@@ -466,6 +474,14 @@ a:hover {
 
             .HinhAnh {
                 margin-bottom: 2%;
+
+                .campus{
+                    margin-bottom:0;
+                }
+
+                img {
+                    height: 250px;
+                }
             }
         }
 
@@ -569,7 +585,7 @@ a:hover {
         }
 
         #Mission {
-            padding: 15% 0;
+            padding: 15% 0 5%;
             background: url('../img/news-2.jpg') no-repeat;
             background-size: 100%;
             background-attachment: fixed;
@@ -591,13 +607,13 @@ a:hover {
                 .title {
                     font-size: 300%;
                     font-weight: bold;
-                    margin-top: 5%;
-                    margin-bottom: 3%;
+                    margin-top: 0%;
+                    margin-bottom: 2%;
                 }
 
                 .meta {
                     font-size: 200%;
-                    margin-bottom: 2%;
+                    margin-bottom: 1%;
                     padding: 0 5%;
                     z-index: 10;
                 }
@@ -852,14 +868,13 @@ a:hover {
         /*background-color: #E0E0E0;*/
         background: white;
 
-        #Path {
+        #Title {
             background-color: #2196F3;
             color: white;
-            padding-bottom: 2%;
+            padding-bottom: 1%;
         }
 
         .breadcrumb {
-            margin-top: 1%;
             margin-bottom: 2%;
         }
 
@@ -880,6 +895,7 @@ a:hover {
 
             img {
                 width: 100%;
+                height: 300px;
             }
 
             .caption {
@@ -1087,6 +1103,45 @@ a:hover {
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 3;
                     height: 80px;
+                }
+            }
+        }
+    }
+    //Visa
+    #Visa {
+        #Title {
+            background-color: #03A9F4;
+            color: white;
+            padding: 0.5% 0 1%;
+            margin-bottom: 2%;
+        }
+
+        #MainContent {
+            .visa {
+                margin-bottom: 3%;
+            }
+        }
+    }
+    //Du Học
+    #DuHoc {
+        #Title {
+            background-color: #03A9F4;
+            color: white;
+            padding: 0.5% 0 1%;
+        }
+
+        #MainContent {
+            .country {
+                position: relative;
+                margin-bottom: 3%;
+
+                .text {
+                    position: absolute;
+                    color: greenyellow;
+                    font-weight: bolder;
+                    font-size: 200%;
+                    top: 40%;
+                    left: 40%;
                 }
             }
         }

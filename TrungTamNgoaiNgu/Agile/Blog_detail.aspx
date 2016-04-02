@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Blog Detail" Language="C#" MasterPageFile="~/Agile.master" AutoEventWireup="true" CodeFile="Blog_detail.aspx.cs" Inherits="Blogs" %>
+﻿<%@ Page Title="Blog Detail" Language="C#" MasterPageFile="Agile.master" AutoEventWireup="true" CodeFile="Blog_detail.aspx.cs" Inherits="Blogs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="Blog_Detail">

@@ -63,14 +63,14 @@ a:hover {
   #Nav.navbar .navbar-toggle .icon-bar {
     border: 1px solid white;
   }
-  #Nav.navbar #menu ul.navbar-nav li a {
+  #Nav.navbar #menu ul.main-menu li a {
     color: #F5F5F5;
-    font-size: 200%;
+    font-size: 150%;
   }
-  #Nav.navbar #menu ul.navbar-nav li a:hover {
+  #Nav.navbar #menu ul.main-menu li a:hover {
     background-color: transparent;
   }
-  #Nav.navbar #menu ul.navbar-nav li a:focus {
+  #Nav.navbar #menu ul.main-menu li a:focus {
     background-color: transparent;
   }
   #Nav.navbar #menu ul.dropdown-menu {
@@ -128,13 +128,17 @@ a:hover {
   }
   #TrangChu .activities .act {
     width: 33%;
+    margin-bottom: 2%;
   }
   #TrangChu .activities .act > div {
     overflow: hidden;
   }
   #TrangChu .activities .act a img {
     width: 100%;
+    height: 200px;
     transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
   }
   #TrangChu .activities .act a img:hover {
     transform: scale(1.1, 1.1);
@@ -368,6 +372,12 @@ a:hover {
   #TrangChu #Campus .HinhAnh {
     margin-bottom: 2%;
   }
+  #TrangChu #Campus .HinhAnh .campus {
+    margin-bottom: 0;
+  }
+  #TrangChu #Campus .HinhAnh img {
+    height: 250px;
+  }
   #TrangChu #Blogs {
     background-color: #F5F5F5;
     padding-bottom: 5%;
@@ -455,7 +465,7 @@ a:hover {
     font-size: 100%;
   }
   #TrangChu #Mission {
-    padding: 15% 0;
+    padding: 15% 0 5%;
     background: url('../img/news-2.jpg') no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -477,12 +487,12 @@ a:hover {
   #TrangChu #Mission .overlay .title {
     font-size: 300%;
     font-weight: bold;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 0%;
+    margin-bottom: 2%;
   }
   #TrangChu #Mission .overlay .meta {
     font-size: 200%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     padding: 0 5%;
     z-index: 10;
   }
@@ -671,15 +681,14 @@ a:hover {
     /*background-color: #E0E0E0;*/
     background: white;
   }
-  #Gallery #Path,
-  #Album #Path {
+  #Gallery #Title,
+  #Album #Title {
     background-color: #2196F3;
     color: white;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
   }
   #Gallery .breadcrumb,
   #Album .breadcrumb {
-    margin-top: 1%;
     margin-bottom: 2%;
   }
   #Gallery #FilterGroup,
@@ -701,6 +710,7 @@ a:hover {
   #Gallery .post img,
   #Album .post img {
     width: 100%;
+    height: 300px;
   }
   #Gallery .post .caption,
   #Album .post .caption {
@@ -863,5 +873,31 @@ a:hover {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     height: 80px;
+  }
+  #Visa #Title {
+    background-color: #03A9F4;
+    color: white;
+    padding: 0.5% 0 1%;
+    margin-bottom: 2%;
+  }
+  #Visa #MainContent .visa {
+    margin-bottom: 3%;
+  }
+  #DuHoc #Title {
+    background-color: #03A9F4;
+    color: white;
+    padding: 0.5% 0 1%;
+  }
+  #DuHoc #MainContent .country {
+    position: relative;
+    margin-bottom: 3%;
+  }
+  #DuHoc #MainContent .country .text {
+    position: absolute;
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 200%;
+    top: 40%;
+    left: 40%;
   }
 }

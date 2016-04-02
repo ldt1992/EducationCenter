@@ -30,7 +30,7 @@ public class BLL_Post
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from POST order by DateOfCreate desc";
+        string query = "select top 3 * from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

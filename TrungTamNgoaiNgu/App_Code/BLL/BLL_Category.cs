@@ -26,13 +26,28 @@ public class BLL_Category
         this._connect.CloseConnect();
     }
 
+    //Lấy danh mục lớn
     public DataTable LayDanhMuc()
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
         //string query = "select * from Category order by CategoryID asc";
-        string query = "select * from Category ct full outer join Images img on ct.CateogryImage=img.ImagesID where ct.CategoryID is not null order by CategoryID asc";
+        string query = "select top 3 * from Category ct full outer join Images img on ct.CateogryImage=img.ImagesID where ct.CategoryID is not null order by CategoryID asc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lấy danh mục con
+    public DataTable LayDanhMucDuHoc()
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        //string query = "select * from Category order by CategoryID asc";
+        string query = "select * from Category where Parent = 9";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

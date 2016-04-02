@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <%-- Links --%>
-                            <ul class="nav navbar-nav navbar-right" id="MainMenu" runat="server">
+                            <ul class="nav navbar-nav navbar-right main-menu" id="MainMenu" runat="server">
                                 <%--<li class="active"><a href="Default.aspx">Trang Chủ</a></li>
                                 <li><a href="#">Giới Thiệu</a></li>
                                 <li><a href="#">Tin Tức</a></li>
@@ -89,18 +89,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="about">
-                            <h1 class="title">ABOUT</h1>
+                            <h1 class="title">VỀ CHÚNG TÔI</h1>
                             <hr />
-                            <p class="meta">Invent WordPress Theme is crafted by @live_mesh (LiveMesh). If you need help on your projects you can email us: log@mysite.com.</p>
+                            <p class="meta">Hơn 10 năm qua, Đỉnh Cao Châu Mỹ luôn đóng một vai trò quan trọng trong lĩnh vực du học, định cư và du lịch. Chúng tôi rất tự hào đã đưa trên 3000 học sinh, sinh viên ra nước ngoài du học và rất nhiều du học sinh đã ra trường ở lại làm việc và định cư tại các nước phát triển.  Một số du học sinh đã về nước và làm ở những vị trí quan trọng trong tập đoàn lớn</p>
                             <h1 class="title">FIND US ONLINE</h1>
                             <hr />
                             <div class="social">
-                                <a href="#" data-toggle="tooltip" title="facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" title="twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" title="youtube" data-placement="top"><i class="fa fa-youtube"></i></a>
-                                <a href="#" data-toggle="tooltip" title="facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" title="twitter" data-placement="top"><i class="fa fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" title="youtube" data-placement="top"><i class="fa fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/AnhVanHoiAnhMy/?fref=ts" target="_blank" data-toggle="tooltip" title="facebook" data-placement="top"><i class="fa fa-facebook"></i></a>
+                                <a href="#" target="_blank" data-toggle="tooltip" title="google plus" data-placement="top"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" target="_blank" data-toggle="tooltip" title="youtube" data-placement="top"><i class="fa fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="instagram">
@@ -124,25 +121,10 @@
                                 <img src="img/footer_image8.jpg" class="img-responsive pull-left" /></a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="recent">
-                            <h1 class="title">RECENT TWEETS</h1>
+                            <h1 class="title">ĐỊA CHỈ</h1>
                             <hr />
-                            <div class="meta">
-                                <p>If you not done so already, do check out the elegant tiles based Wired Portfolio WordPress theme on ThemeForest - https://t.co/yZZyZz6X37 </p>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>&nbsp;&nbsp;68 days ago
-                                </a>
-                            </div>
-                            <div class="meta">
-                                <p>If you not done so already, do check out the elegant tiles based Wired Portfolio WordPress theme on ThemeForest - https://t.co/yZZyZz6X37 </p>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>&nbsp;&nbsp;68 days ago
-                                </a>
-                            </div>
-                            <div class="meta">
-                                <p>If you not done so already, do check out the elegant tiles based Wired Portfolio WordPress theme on ThemeForest - https://t.co/yZZyZz6X37 </p>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>&nbsp;&nbsp;68 days ago
-                                </a>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.420816546499!2d106.62155911535629!3d10.779046462091472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c1c70833da3%3A0x2545f9230af3828d!2zMjUzQiBUaOG6oWNoIExhbSwgUGjDuiBUaOG6oW5oLCBUw6JuIFBow7osIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1459570919630" frameborder="0" style="border: 0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -151,7 +133,7 @@
         </div>
     </form>
     <!-- Start Subiz Chat-->
-    <script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",38851]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+    <script type='text/javascript'>window._sbzq || function (e) { e._sbzq = []; var t = e._sbzq; t.push(["_setAccount", 38851]); var n = e.location.protocol == "https:" ? "https:" : "http:"; var r = document.createElement("script"); r.type = "text/javascript"; r.async = true; r.src = n + "//static.subiz.com/public/js/loader.js"; var i = document.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) }(window);</script>
     <!-- End Subiz Chat-->
     <a href="#" id="Backtop"><i class="fa fa-chevron-up"></i></a>
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -205,6 +187,7 @@
             }
 
             $('[rel="prettyPhoto[gallery1]"]').prettyPhoto();
+            $('[rel="prettyPhoto[gallery2]"]').prettyPhoto();
 
             $("#Owl-carousel-number").carousel({
                 interval: false
@@ -215,7 +198,7 @@
             });
 
             //Isotope Filter
-            var container = $(".isotope").isotope({
+            var container = $(".album").isotope({
                 itemSelector: '.element-item',
                 layoutMode: 'fitRows'
             });

@@ -125,10 +125,8 @@
             <div class="container text-center">
                 <h1 class="title">TIN TỨC MỚI NHẤT</h1>
                 <hr />
-                <div class="carousel slide" data-ride="carousel" id="TinMoiNhat">
-                    <div class="carousel-inner">
-                        <div class="row active" id="MoiNhat" runat="server">
-                            <%--<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                <div class="row" id="MoiNhat" runat="server">
+                    <%--<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
                         <div class="thumbnail news">
                             <div class="overlay">
                                 <img src="img/news-1.jpg" class="img-responsive" />
@@ -190,17 +188,6 @@
                             </div>
                         </div>
                     </div>--%>
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#TinMoiNhat" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#TinMoiNhat" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </div>
