@@ -465,9 +465,9 @@ a:hover {
     font-size: 100%;
   }
   #TrangChu #Mission {
-    padding: 15% 0 5%;
+    padding: 15% 0 8%;
     background: url('../img/news-2.jpg') no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
     position: relative;
   }
@@ -889,15 +889,14 @@ a:hover {
     padding: 0.5% 0 1%;
   }
   #DuHoc #MainContent .country {
-    position: relative;
     margin-bottom: 3%;
   }
   #DuHoc #MainContent .country .text {
-    position: absolute;
-    color: greenyellow;
-    font-weight: bolder;
-    font-size: 200%;
-    top: 40%;
-    left: 40%;
+    font-size: 180%;
+    color: black;
+    font-weight: bold;
+  }
+  #DuHoc #MainContent .country img {
+    height: 170px;
   }
 }
