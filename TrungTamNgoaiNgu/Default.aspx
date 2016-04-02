@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="DinhCu.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="ThemeDinhCu_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <h1>DASGHDGASDJAS</h1>
     <div id="TrangChu">
         <!-- Slider -->
         <div id="Slider">
