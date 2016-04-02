@@ -27,7 +27,7 @@ public partial class ThemeDinhCu_DinhCu : System.Web.UI.MasterPage
         string str = "";
         foreach (DataRow item in tb.Rows)
         {
-            str += "<li><a href='" + item[2].ToString() +"'>" + item[1].ToString() + "</a></li>";
+            str += "<li><a href='" + item[2].ToString() +"'>" + item[1].ToString().ToUpper() + "</a></li>";
         }
         MainMenu.InnerHtml = str;
     }
