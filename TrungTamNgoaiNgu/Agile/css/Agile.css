@@ -1,0 +1,484 @@
+body {
+  position: relative;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.carousel-caption {
+  position: unset;
+  color: black;
+  text-shadow: none;
+  text-align: left;
+}
+a:hover {
+  text-decoration: none;
+}
+#BackTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  padding: 0.7%;
+  background-color: gray;
+  color: white;
+  display: none;
+}
+.highlight {
+  color: #fe5000;
+}
+.btn-highlight {
+  transition: all 0.2s linear;
+}
+.btn-highlight:hover {
+  color: white;
+  background-color: #fe5000;
+  border-color: #fe5000;
+}
+.btn-more {
+  transition: all 0.2s linear;
+  background-color: #fe5000;
+  color: white;
+}
+.btn-more:hover {
+  background-color: gray;
+  color: white;
+}
+@media (min-width: 1024px) {
+  #header {
+    padding: 1% 0 1.5% 0;
+    margin-bottom: 0;
+  }
+  #header #menu {
+    padding-top: 0.5%;
+  }
+  #header #menu li a {
+    font-size: 22px;
+    color: black;
+    font-style: italic;
+    border-bottom: 2px solid transparent;
+  }
+  #header #menu li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid orange;
+  }
+  #header #menu li.active a {
+    border-bottom: 2px solid orange;
+  }
+  #header.navbar-fixed-top {
+    background-color: white;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  #header.navbar-fixed-top #menu li a {
+    font-size: 22px;
+    color: black;
+    font-style: italic;
+    border-bottom: 2px solid transparent;
+  }
+  #header.navbar-fixed-top #menu li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid orange;
+  }
+  #header.navbar-fixed-top #menu li.active a {
+    border-bottom: 2px solid orange;
+  }
+  #HomePage #Title {
+    font-size: 600%;
+    padding: 5% 0;
+    font-weight: lighter;
+  }
+  #HomePage #Features {
+    background-color: #EEEEEE;
+    padding: 3% 0;
+  }
+  #HomePage #Features .title {
+    font-size: 400%;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  #HomePage #Features .meta {
+    font-size: 150%;
+    margin-bottom: 4%;
+  }
+  #HomePage #Features .service .title {
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 3%;
+  }
+  #HomePage #Features .service .meta {
+    font-weight: lighter;
+    font-size: 120%;
+  }
+  #HomePage #Portfolio {
+    padding: 3% 0;
+  }
+  #HomePage #Portfolio .title {
+    font-weight: bold;
+    font-size: 400%;
+    margin-bottom: 15%;
+  }
+  #HomePage #Portfolio #BtnFilter {
+    padding: 13% 0 0 0;
+  }
+  #HomePage #Portfolio #BtnFilter .btn-highlight {
+    margin-right: 1%;
+    font-style: italic;
+  }
+  #HomePage #Portfolio .element-item {
+    margin-bottom: 3%;
+  }
+  #HomePage #Portfolio .btn-more {
+    padding: 1.5% 8%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  #HomePage #Info {
+    padding: 3% 0;
+  }
+  #HomePage #Info .info {
+    padding: 0;
+  }
+  #HomePage #Info .info .preview {
+    height: 400px;
+  }
+  #HomePage #Info .info .preview .video {
+    height: 400px;
+  }
+  #HomePage #Info .info .preview img {
+    width: 100%;
+    height: 400px;
+  }
+  #HomePage #Info .info .title {
+    padding-left: 3%;
+    font-weight: bold;
+    font-size: 200%;
+  }
+  #HomePage #Info .info .meta {
+    padding: 0 3%;
+    font-size: 120%;
+  }
+  #HomePage #Info .info .btn {
+    margin-left: 1%;
+    font-size: 120%;
+    color: #fe5000;
+    font-style: italic;
+    transition: all 0.2s linear;
+  }
+  #HomePage #Info .info .btn:hover {
+    color: gray;
+  }
+  #HomePage #Team {
+    padding: 3% 0;
+    background-color: #EEEEEE;
+  }
+  #HomePage #Team .title {
+    font-weight: bold;
+    font-size: 300%;
+    margin-bottom: 2%;
+  }
+  #HomePage #Team #myTabSlider .nav-tabs {
+    border-bottom-color: #fe5000;
+    margin-bottom: 5%;
+  }
+  #HomePage #Team #myTabSlider .nav-tabs li {
+    margin-right: 2%;
+  }
+  #HomePage #Team #myTabSlider .nav-tabs li a {
+    color: black;
+    font-size: 150%;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    border-bottom: 5px solid transparent;
+    transition: all 0.2s linear;
+  }
+  #HomePage #Team #myTabSlider .nav-tabs li a:hover {
+    background-color: transparent;
+    color: #fe5000;
+  }
+  #HomePage #Team #myTabSlider .nav-tabs li.active a {
+    background-color: transparent;
+    border-bottom: 5px solid #fe5000;
+  }
+  #HomePage #Team #myTabSlider .item img {
+    margin-left: 10%;
+  }
+  #HomePage #Team #myTabSlider .item hr {
+    border-color: black;
+  }
+  #HomePage #Team #myTabSlider .item .title {
+    font-weight: bold;
+  }
+  #HomePage #Team #myTabSlider .item .meta {
+    line-height: 180%;
+    font-size: 120%;
+  }
+  #HomePage #Team #myTabSlider .item .conn {
+    font-size: 150%;
+  }
+  #HomePage #Team #myTabSlider .item .conn a {
+    margin-left: 3%;
+  }
+  #HomePage #Team #myTabSlider .item .conn a .fa {
+    color: gray;
+    font-size: 120%;
+  }
+  #HomePage #Percent {
+    padding: 5% 0;
+    background: url('../img/parallax-bg10.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  #HomePage #Percent img {
+    margin-left: 15%;
+    width: 70%;
+  }
+  #HomePage #Percent .title {
+    color: white;
+  }
+  #HomePage #Percent .progress {
+    margin-bottom: 5%;
+  }
+  #HomePage #Percent .progress-bar {
+    transition: all 2s linear;
+  }
+  #HomePage #Percent .name,
+  #HomePage #Percent .role {
+    color: white;
+  }
+  #HomePage #Team2 {
+    padding: 5% 0;
+  }
+  #HomePage #Team2 .name {
+    margin-bottom: 3%;
+  }
+  #HomePage #Team2 .name .fa {
+    color: #fe5000;
+    font-size: 120%;
+  }
+  #HomePage #Team2 .meta {
+    font-size: 180%;
+    line-height: 180%;
+    font-style: italic;
+  }
+  #HomePage #Team2 .carousel-indicators {
+    bottom: -30%;
+    width: 60%;
+  }
+  #HomePage #Team2 .carousel-indicators li {
+    background-color: #E0E0E0;
+    width: 20px;
+    height: 20px;
+  }
+  #HomePage #Team2 .carousel-indicators .active {
+    background-color: #fe5000;
+  }
+  #HomePage #ParallaxScroll {
+    padding: 10% 0;
+    background: url('../img/parallax-bg5.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+  }
+  #HomePage #ParallaxScroll h1,
+  #HomePage #ParallaxScroll h2 {
+    font-size: 370%;
+  }
+  #HomePage #ParallaxScroll h2 {
+    color: #fe5000;
+  }
+  #HomePage #Client {
+    padding: 5% 0;
+  }
+  #HomePage #Client .title {
+    font-size: 400%;
+  }
+  #HomePage #Client .meta {
+    padding: 0 20%;
+    font-size: 150%;
+  }
+  #HomePage #Client img {
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+  }
+  #HomePage #Contact1 {
+    padding: 1% 0;
+  }
+  #HomePage #Contact1 .title {
+    font-size: 400%;
+    font-weight: bold;
+  }
+  #HomePage #Contact1 .meta {
+    margin-bottom: 5%;
+  }
+  #HomePage #Contact1 .parallaxScroll {
+    background: url('../img/parallax-bg9.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 5% 0;
+  }
+  #HomePage #Contact1 .parallaxScroll .title,
+  #HomePage #Contact1 .parallaxScroll address {
+    color: white;
+  }
+  #HomePage #Contact1 .parallaxScroll .title {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+  #HomePage #Contact1 .parallaxScroll address {
+    font-size: 120%;
+  }
+  #HomePage #Contact2 {
+    padding: 1% 0 5% 0;
+  }
+  footer {
+    background-color: #424242;
+  }
+  footer .ft1 {
+    padding: 2% 0;
+  }
+  footer .ft1 .title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-size: 350%;
+  }
+  footer .ft1 a {
+    color: #9E9E9E;
+    margin-right: 3%;
+  }
+  footer .ft1 a:hover {
+    color: #E0E0E0;
+  }
+  footer hr {
+    border-color: #616161;
+  }
+  footer .ft2 .info1 {
+    margin-bottom: 2%;
+  }
+  footer .ft2 .info1 a {
+    color: #BDBDBD;
+    padding: 0 1%;
+    font-size: 160%;
+    border-right: 1px solid #BDBDBD;
+  }
+  footer .ft2 .info1 a:hover {
+    color: #E0E0E0;
+  }
+  footer .ft2 .info2 {
+    color: #BDBDBD;
+    font-size: 140%;
+    margin-bottom: 2%;
+  }
+  #Blogs #Title {
+    background: url('../img/bg-title-header.jpg') no-repeat;
+    background-size: 100%;
+    height: 300px;
+    padding-top: 3%;
+  }
+  #Blogs #Title .title {
+    color: white;
+    font-weight: bold;
+    font-size: 400%;
+  }
+  #Blogs #Title .meta {
+    color: white;
+    font-size: 200%;
+  }
+  #Blogs #Path ol.breadcrumb {
+    background-color: transparent;
+  }
+  #Blogs #MainContent .blog {
+    border: none;
+  }
+  #Blogs #MainContent .blog .title {
+    color: black;
+    transition: all 0.2s linear;
+    font-weight: bold;
+  }
+  #Blogs #MainContent .blog .title:hover {
+    color: #fe5000;
+  }
+  #Blogs #MainContent .blog .preview {
+    overflow: hidden;
+  }
+  #Blogs #MainContent .blog .preview img {
+    transition: all 0.2s linear;
+    overflow: hidden;
+  }
+  #Blogs #MainContent .blog .preview img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  #Blogs #MainContent .blog .caption {
+    padding-left: 0;
+  }
+  #Blogs #MainContent .blog .caption .meta {
+    font-size: 150%;
+    line-height: 180%;
+  }
+  #Blogs #Sidebar #Photos,
+  #Blogs #Sidebar #Video,
+  #Blogs #Sidebar #PopularPost {
+    margin-bottom: 15%;
+  }
+  #Blogs #Sidebar #Photos .title,
+  #Blogs #Sidebar #Video .title,
+  #Blogs #Sidebar #PopularPost .title {
+    font-size: 200%;
+    font-weight: bold;
+  }
+  #Blogs #Sidebar #PopularPost .post .title {
+    color: black;
+    transition: all 0.2s linear;
+  }
+  #Blogs #Sidebar #PopularPost .post .title:hover {
+    color: #fe5000;
+  }
+  #Blogs #Sidebar #PopularPost .post .meta {
+    line-height: 180%;
+  }
+  #Blog_Detail #Title {
+    background-color: #fe5000;
+    color: white;
+    padding: 2% 0;
+    margin-bottom: 0.5%;
+  }
+  #Blog_Detail #Title .title {
+    font-weight: bold;
+    font-size: 300%;
+  }
+  #Blog_Detail #Path ol.breadcrumb {
+    background-color: transparent;
+  }
+  #Blog_Detail #MainContent .blog_detail .page-header {
+    margin-top: 1%;
+  }
+  #Blog_Detail #MainContent .blog_detail .meta {
+    line-height: 180%;
+    margin: 2% 0;
+    font-size: 120%;
+  }
+  #Blog_Detail #Sidebar #Photos,
+  #Blog_Detail #Sidebar #Video,
+  #Blog_Detail #Sidebar #PopularPost {
+    margin-bottom: 15%;
+  }
+  #Blog_Detail #Sidebar #Photos .title,
+  #Blog_Detail #Sidebar #Video .title,
+  #Blog_Detail #Sidebar #PopularPost .title {
+    font-size: 200%;
+    font-weight: bold;
+  }
+  #Blog_Detail #Sidebar #PopularPost .post .title {
+    color: black;
+    transition: all 0.2s linear;
+  }
+  #Blog_Detail #Sidebar #PopularPost .post .title:hover {
+    color: #fe5000;
+  }
+  #Blog_Detail #Sidebar #PopularPost .post .meta {
+    line-height: 180%;
+    font-size: 120%;
+  }
+}

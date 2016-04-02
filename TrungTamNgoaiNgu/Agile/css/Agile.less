@@ -1,0 +1,652 @@
+﻿body {
+    position: relative;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel-caption {
+    position: unset;
+    color: black;
+    text-shadow: none;
+    text-align: left;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#BackTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 0.7%;
+    background-color: gray;
+    color: white;
+    display: none;
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+.highlight {
+    color: #fe5000;
+}
+
+.btn-highlight {
+    transition: all 0.2s linear;
+
+    &:hover {
+        color: white;
+        background-color: #fe5000;
+        border-color: #fe5000;
+    }
+}
+
+.btn-more {
+    transition: all 0.2s linear;
+    background-color: #fe5000;
+    color: white;
+
+    &:hover {
+        background-color: gray;
+        color: white;
+    }
+}
+
+@media (min-width: 1024px) {
+    //Header
+    #header {
+        padding: 1% 0 1.5% 0;
+        margin-bottom: 0;
+
+        #menu {
+            padding-top: 0.5%;
+
+            li {
+                a {
+                    font-size: 22px;
+                    color: black;
+                    font-style: italic;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        background-color: transparent;
+                        border-bottom: 2px solid orange;
+                    }
+                }
+            }
+
+            li.active {
+                a {
+                    border-bottom: 2px solid orange;
+                }
+            }
+        }
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        height: 130%;
+    }
+
+    #header.navbar-fixed-top {
+        background-color: white;
+        padding: 0;
+        margin-bottom: 0;
+
+        #menu {
+            li {
+                a {
+                    font-size: 22px;
+                    color: black;
+                    font-style: italic;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        background-color: transparent;
+                        border-bottom: 2px solid orange;
+                    }
+                }
+            }
+
+            li.active {
+                a {
+                    border-bottom: 2px solid orange;
+                }
+            }
+        }
+    }
+    //1. HomePgae
+    #HomePage {
+        //Title
+        #Title {
+            font-size: 600%;
+            padding: 5% 0;
+            font-weight: lighter;
+        }
+        //Features
+        #Features {
+            background-color: #EEEEEE;
+            padding: 3% 0;
+
+            .title {
+                font-size: 400%;
+                font-weight: bold;
+                margin-bottom: 2%;
+            }
+
+            .meta {
+                font-size: 150%;
+                margin-bottom: 4%;
+            }
+
+            .service {
+                .title {
+                    font-weight: bold;
+                    font-size: 200%;
+                    margin-bottom: 3%;
+                }
+
+                .meta {
+                    font-weight: lighter;
+                    font-size: 120%;
+                }
+            }
+        }
+        //Portfolio
+        #Portfolio {
+            padding: 3% 0;
+
+            .title {
+                font-weight: bold;
+                font-size: 400%;
+                margin-bottom: 15%;
+            }
+
+            #BtnFilter {
+                padding: 13% 0 0 0;
+
+                .btn-highlight {
+                    margin-right: 1%;
+                    font-style: italic;
+                }
+            }
+
+            .element-item {
+                margin-bottom: 3%;
+            }
+
+            .btn-more {
+                padding: 1.5% 8%;
+                .border-radius(0);
+            }
+        }
+        //Info
+        #Info {
+            padding: 3% 0;
+
+            .info {
+                padding: 0;
+
+                .preview {
+                    height: 400px;
+
+                    .video {
+                        height: 400px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+
+                .title {
+                    padding-left: 3%;
+                    font-weight: bold;
+                    font-size: 200%;
+                }
+
+                .meta {
+                    padding: 0 3%;
+                    font-size: 120%;
+                }
+
+                .btn {
+                    margin-left: 1%;
+                    font-size: 120%;
+                    color: #fe5000;
+                    font-style: italic;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        color: gray;
+                    }
+                }
+            }
+        }
+        //Team
+        #Team {
+            padding: 3% 0;
+            background-color: #EEEEEE;
+
+            .title {
+                font-weight: bold;
+                font-size: 300%;
+                margin-bottom: 2%;
+            }
+
+            #myTabSlider {
+                .nav-tabs {
+                    border-bottom-color: #fe5000;
+                    margin-bottom: 5%;
+
+                    li {
+                        margin-right: 2%;
+
+                        a {
+                            color: black;
+                            font-size: 150%;
+                            padding-left: 0;
+                            padding-right: 0;
+                            border: 0;
+                            border-bottom: 5px solid transparent;
+                            transition: all 0.2s linear;
+
+                            &:hover {
+                                background-color: transparent;
+                                color: #fe5000;
+                            }
+                        }
+                    }
+
+                    li.active {
+                        a {
+                            background-color: transparent;
+                            border-bottom: 5px solid #fe5000;
+                        }
+                    }
+                }
+
+                .item {
+                    img {
+                        margin-left: 10%;
+                    }
+
+                    hr {
+                        border-color: black;
+                    }
+
+                    .title {
+                        font-weight: bold;
+                    }
+
+                    .meta {
+                        line-height: 180%;
+                        font-size: 120%;
+                    }
+
+                    .conn {
+                        font-size: 150%;
+
+                        a {
+                            margin-left: 3%;
+
+                            .fa {
+                                color: gray;
+                                font-size: 120%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //Percent
+        #Percent {
+            padding: 5% 0;
+            background: url('/../../img/parallax-bg10.jpg') no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+
+            img {
+                margin-left: 15%;
+                width: 70%;
+            }
+
+            .title {
+                color: white;
+            }
+
+            .progress {
+                margin-bottom: 5%;
+            }
+
+            .progress-bar {
+                transition: all 2s linear;
+            }
+
+            .name, .role {
+                color: white;
+            }
+        }
+        //Team2
+        #Team2 {
+            padding: 5% 0;
+
+            .name {
+                margin-bottom: 3%;
+
+                .fa {
+                    color: #fe5000;
+                    font-size: 120%;
+                }
+            }
+
+            .meta {
+                font-size: 180%;
+                line-height: 180%;
+                font-style: italic;
+            }
+
+            .carousel-indicators {
+                bottom: -30%;
+                width: 60%;
+            }
+
+            .carousel-indicators li {
+                background-color: #E0E0E0;
+                width: 20px;
+                height: 20px;
+            }
+
+            .carousel-indicators .active {
+                background-color: #fe5000;
+            }
+        }
+        //ParallaxScroll
+        #ParallaxScroll {
+            padding: 10% 0;
+            background: url('/../../img/parallax-bg5.jpg') no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            color: white;
+
+            h1, h2 {
+                font-size: 370%;
+            }
+
+            h2 {
+                color: #fe5000;
+            }
+        }
+        //Client
+        #Client {
+            padding: 5% 0;
+
+            .title {
+                font-size: 400%;
+            }
+
+            .meta {
+                padding: 0 20%;
+                font-size: 150%;
+            }
+
+            img {
+                border: 1px solid #F5F5F5;
+                box-sizing: border-box;
+            }
+        }
+        //Contact1
+        #Contact1 {
+            padding: 1% 0;
+
+            .title {
+                font-size: 400%;
+                font-weight: bold;
+            }
+
+            .meta {
+                margin-bottom: 5%;
+            }
+
+            .parallaxScroll {
+                background: url('/../../img/parallax-bg9.jpg') no-repeat;
+                background-size: 100%;
+                background-attachment: fixed;
+                padding: 5% 0;
+
+                .title, address {
+                    color: white;
+                }
+
+                .title {
+                    font-size: 200%;
+                    margin-bottom: 5%;
+                }
+
+                address {
+                    font-size: 120%;
+                }
+            }
+        }
+        //Contact2
+        #Contact2 {
+            padding: 1% 0 5% 0;
+        }
+    }
+    //Footer
+    footer {
+        background-color: #424242;
+
+        .ft1 {
+            padding: 2% 0;
+
+            .title {
+                color: white;
+                font-weight: bold;
+                margin-bottom: 2%;
+                font-size: 350%;
+            }
+
+            a {
+                color: #9E9E9E;
+                margin-right: 3%;
+
+                &:hover {
+                    color: #E0E0E0;
+                }
+            }
+        }
+
+        hr {
+            border-color: #616161;
+        }
+
+        .ft2 {
+            .info1 {
+                margin-bottom: 2%;
+
+                a {
+                    color: #BDBDBD;
+                    padding: 0 1%;
+                    font-size: 160%;
+                    border-right: 1px solid #BDBDBD;
+
+                    &:hover {
+                        color: #E0E0E0;
+                    }
+                }
+            }
+
+            .info2 {
+                color: #BDBDBD;
+                font-size: 140%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+    //2. Blogs
+    #Blogs {
+        #Title {
+            background: url('/../../img/bg-title-header.jpg') no-repeat;
+            background-size: 100%;
+            height: 300px;
+            padding-top: 3%;
+
+            .title {
+                color: white;
+                font-weight: bold;
+                font-size: 400%;
+            }
+
+            .meta {
+                color: white;
+                font-size: 200%;
+            }
+        }
+
+        #Path {
+            ol.breadcrumb {
+                background-color: transparent;
+            }
+        }
+
+        #MainContent {
+            .blog {
+                border: none;
+
+                .title {
+                    color: black;
+                    transition: all 0.2s linear;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #fe5000;
+                    }
+                }
+
+                .preview {
+                    overflow: hidden;
+
+                    img {
+                        transition: all 0.2s linear;
+                        overflow: hidden;
+
+                        &:hover {
+                            transform: scale(1.1, 1.1);
+                        }
+                    }
+                }
+
+                .caption {
+                    padding-left: 0;
+
+                    .meta {
+                        font-size: 150%;
+                        line-height: 180%;
+                    }
+                }
+            }
+        }
+
+        #Sidebar {
+            #Photos, #Video, #PopularPost {
+                margin-bottom: 15%;
+
+                .title {
+                    font-size: 200%;
+                    font-weight: bold;
+                }
+            }
+
+            #PopularPost {
+                .post {
+                    .title {
+                        color: black;
+                        transition: all 0.2s linear;
+
+                        &:hover {
+                            color: #fe5000;
+                        }
+                    }
+
+                    .meta {
+                        line-height: 180%;
+                    }
+                }
+            }
+        }
+    }
+    //3. Blog_Detail
+    #Blog_Detail {
+        #Title {
+            background-color: #fe5000;
+            color: white;
+            padding: 2% 0;
+            margin-bottom: 0.5%;
+
+            .title {
+                font-weight: bold;
+                font-size: 300%;
+            }
+        }
+
+        #Path {
+            ol.breadcrumb {
+                background-color: transparent;
+            }
+        }
+
+        #MainContent {
+            .blog_detail {
+                .page-header {
+                    margin-top: 1%;
+                }
+
+                .meta {
+                    line-height: 180%;
+                    margin: 2% 0;
+                    font-size: 120%;
+                }
+            }
+        }
+
+        #Sidebar {
+            #Photos, #Video, #PopularPost {
+                margin-bottom: 15%;
+
+                .title {
+                    font-size: 200%;
+                    font-weight: bold;
+                }
+            }
+
+            #PopularPost {
+                .post {
+                    .title {
+                        color: black;
+                        transition: all 0.2s linear;
+
+                        &:hover {
+                            color: #fe5000;
+                        }
+                    }
+
+                    .meta {
+                        line-height: 180%;
+                        font-size: 120%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -33,7 +33,7 @@
                             <a href="Default.aspx" class="navbar-brand">
                                 <img src="img/logo.png" class="img-responsive" alt="logo" />
                             </a>
-                            <a href="Default.aspx" class="navbar-brand">
+                            <a href="Agile/HomePage.aspx" class="navbar-brand">
                                 <img src="img/logo-2.png" class="img-responsive" alt="logo" />
                             </a>
                         </div>

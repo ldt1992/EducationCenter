@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="TrangChu">
-        <%-- Slider --%>
+        <!-- Slider -->
         <div id="Slider">
             <!-- Start WOWSlider.com BODY section -->
             <div id="wowslider-container1">
@@ -38,7 +38,7 @@
             </div>
             <!-- End WOWSlider.com BODY section -->
         </div>
-        <%-- Welcome --%>
+        <!-- Welcome -->
         <%--<div id="Welcome">
             <div class="container">
                 <h1 class="title">WELCOME TO INVENT</h1>
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>--%>
-        <%-- Activities --%>
+        <!-- Activities -->
         <div id="Activities" class="row activities" runat="server">
             <%--<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn">
                 <div>
@@ -120,7 +120,7 @@
                 </div>
             </div>--%>
         </div>
-        <%-- TIN TỨC MỚI NHẤT --%>
+        <!-- TIN TỨC MỚI NHẤT -->
         <div id="News">
             <div class="container text-center">
                 <h1 class="title">TIN TỨC MỚI NHẤT</h1>
@@ -204,7 +204,7 @@
                 </div>
             </div>
         </div>
-        <%-- CẢM NHẬN TỪ KHÁCH HÀNG --%>
+        <!-- CẢM NHẬN TỪ KHÁCH HÀNG -->
         <div id="Numbers">
             <div class="container text-center">
                 <h1 class="title">CẢM NHẬN TỪ KHÁCH HÀNG</h1>
@@ -250,7 +250,7 @@
                 <a href="CamNhan.aspx" class="btn btn-info btn-lg">Xem thêm</a>
             </div>
         </div>
-        <%-- Campus --%>
+        <!-- Campus -->
         <div id="Campus" class="text-center">
             <h1 class="title text-center">HÌNH ẢNH HOẠT ĐỘNG</h1>
             <hr />
@@ -291,7 +291,7 @@
                 </div>
             </div>
         </div>
-        <%-- Blogs --%>
+        <!-- Blogs -->
         <div id="Blogs">
             <div class="container">
                 <h1 class="title text-center">OUR BLOG</h1>
@@ -355,7 +355,7 @@
                 </div>
             </div>
         </div>
-        <!-- ĐẾM NGƯỢC-->
+        <!-- ĐẾM NGƯỢC -->
         <div id="Countdown">
             <div class="container">
                 <div class="row">
@@ -383,7 +383,7 @@
                 </div>
             </div>
         </div>
-        <%-- Missions --%>
+        <!-- Missions -->
         <div id="Mission">
             <div class="container text-center">
                 <div class="overlay">
@@ -393,7 +393,7 @@
                 </div>
             </div>
         </div>
-        <%-- Invent --%>
+        <!-- Invent -->
         <%--<div id="Invent">
             <div class="container text-center wow fadeIn">
                 <h1 class="title">BRAND</h1>
