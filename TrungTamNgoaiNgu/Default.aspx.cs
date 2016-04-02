@@ -35,7 +35,7 @@ public partial class ThemeDinhCu_Default : System.Web.UI.Page
         {
             str += "<div class='col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn'>";
             str += "<h2 class='title'>" + r[1].ToString().ToUpper() + "</h2>";
-            str += "<div><a href='#'><img src='img/activity_1.jpg' /></a></div><div class='caption'><p class='meta'>Fully residential and strikingly beautiful, Invent’s 160-acre campus boasts 80 buildings, hiking trails, woods and multiple scenic lakes.</p><a href='#' class='btn btn-link'>Play Video</a></div>";
+            str += "<div><a href='#'><img src='http://192.168.10.3:8686/" + r[8].ToString()+"' /></a></div><div class='caption'><p class='meta'>"+r[2].ToString()+"</p><a href='#' class='btn btn-link'>Play Video</a></div>";
             str += "</div>";
         }
         str += "</div>";
