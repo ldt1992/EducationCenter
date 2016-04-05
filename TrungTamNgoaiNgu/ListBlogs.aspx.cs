@@ -21,34 +21,22 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
             ListPost();
             TinTucMoiNhat();
             TieuDeBaiViet();
-            //PhanTrang();
         }
     }
 
     private void ListPost()
     {
         string id = Request.QueryString["id"];
-        //DataTable dt = this._Post.DanhSachBaiViet(id);
-        //string str = "";
-        //string homeurl = "http://192.168.10.3:8686/";
-        //foreach (DataRow item in dt.Rows)
-        //{
-        //    str += "<div class='thumbnail blog'>";
-        //    str += "<a href='#' class='pull-left'>";
-        //    str += "<img src='" + homeurl + item[23].ToString() + "' alt='' class='img-responsive img-thumbnail' /></a>";
 
-        //    str += "<div class='caption'>";
-        //    str += "<a href='#' title='" + item[1].ToString() + "'>";
-        //    str += "<h3 class='title'>" + item[1].ToString() + "</h3></a>";
-        //    str += "<p class='meta'>" + item[3].ToString() + "</p>";
-        //    str += "<p class='btnXem'><a href='Blog_Detail.aspx' class='btn btn-info'>Xem thêm</a></p>";
-        //    str += "</div></div>";
-        //    str += "<div class='clearfix'></div>";
-        //}
-        //MainContent.InnerHtml = str;
+        //Using ListView & DataPager
+        //dlBaiViet.DataSource = this._Post.DanhSachBaiViet(id);
+        //dlBaiViet.DataBind();
 
-        dlBaiViet.DataSource = this._Post.DanhSachBaiViet(id);
-        dlBaiViet.DataBind();
+        //Using DataList & CollectionPager
+        pager.PageSize = 5;
+        pager.DataSource = this._Post.DanhSachBaiViet(id).DefaultView;
+        pager.BindToControl = dlBaiViet;
+        dlBaiViet.DataSource = pager.DataSourcePaged;
     }
 
     private void TinTucMoiNhat()
@@ -102,12 +90,5 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
         TieuDe.InnerText = "CÁC TRƯỜNG " + str1 + " " + str2 + " " + str3;
         idParent = country;
 
-    }
-
-    private void PhanTrang()
-    {
-        string id = Request.QueryString["id"];
-        pager.DataSource = this._Post.DanhSachBaiViet(id).DefaultView;
-        //pager.BindToControl = MainContent;
     }
 }

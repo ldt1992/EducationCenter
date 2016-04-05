@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="List Blogs" Language="C#" MasterPageFile="DinhCu.master" AutoEventWireup="true" CodeFile="ListBlogs.aspx.cs" Inherits="ThemeDinhCu_ListBlogs" %>
-
 <%@ Register TagPrefix="cc1" Namespace="SiteUtils" Assembly="CollectionPager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -26,39 +25,39 @@
                     <%--<div id="MainContent" runat="server"></div>--%>
                     <asp:DataList ID="dlBaiViet" runat="server">
                         <ItemTemplate>
-                            <%--<div class="thumbnail blog">
-                                <a href="#" class="pull-left">
-                                    <img src='<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>' alt='<%#Eval("ImagesUrl") %>' class="img-responsive img-thumbnail" />
-                                </a>
-                                <div class="caption">
-                                    <h3 class="title"><a href="#">kqjwehgqwkeqeqweqwe</a></h3>
-                                    <p class="meta">qweqweqweqwe</p>
-                                    <p class="btnXem"><a href="Blog_Detail.aspx" class="btn btn-info">Xem thêm</a></p>
-                                </div>
-                            </div>
                             <div class="thumbnail blog">
                                 <a href="#" class="pull-left">
-                                    <img src="<%# "http:192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="img-responsive" />
+                                    <img src='<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>' alt='<%# Eval("ImagesUrl") %>' class="img-responsive img-thumbnail" />
                                 </a>
                                 <div class="caption">
-                                    <h3 class="title"><a href="#">Tieu de</a></h3>
-                                    <p class="meta">Mô tả</p>
-                                    <p class="btnXem"><a href="#" class="btn btn-info">Xem thêm</a></p>
+                                    <h3 class="title"><a href="#"><%# Eval("PostTitle") %></a></h3>
+                                    <p class="meta"><%# Eval("MetaDescription") %></p>
+                                    <p class="btnXem"><a href="Blog_Detail.aspx" class="btn btn-info">Xem thêm</a></p>
                                 </div>
                             </div>
                         </ItemTemplate>
                     </asp:DataList>
                     <!-- Phân trang -->
-                    <%--<nav>
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
-                    </nav>--%>
+                    <%--<asp:DataPager ID="DataPager1" runat="server" QueryStringField="page" PageSize="5" PagedControlID="dlBaiViet">
+                        <Fields>
+                            <asp:NumericPagerField ButtonType="Link" />
+                            <asp:NextPreviousPagerField ButtonType="Link" ButtonCssClass="btn btn-link" RenderNonBreakingSpacesBetweenControls="true" FirstPageText="Trang đầu" LastPageText="Trang cuối" 
+                                NextPageText="Tiếp theo" PreviousPageText="Quay lại" ShowPreviousPageButton="true" ShowFirstPageButton="true" ShowLastPageButton="true" ShowNextPageButton="true" />
+                        </Fields>
+                    </asp:DataPager>--%>
+                    <cc1:CollectionPager ID="pager"
+                        FirstText="First"
+                        BackText="«"
+                        LabelText=""
+                        LastText="Last"
+                        NextText="»"
+                        ShowFirstLast="True"
+                        SliderSize="5" PagingMode="QueryString"
+                        runat="server" BackNextLinkSeparator="" BackNextLocation="Split"
+                        PageNumbersDisplay="Numbers" ResultsLocation="None"
+                        BackNextDisplay="Buttons" QueryStringKey="page" ControlCssClass="phantrang">
+                    </cc1:CollectionPager>
 
-                    <cc1:CollectionPager ID="pager" runat="server" PageSize="5"></cc1:CollectionPager>
                 </div>
 
                 <!-- Sidebar -->

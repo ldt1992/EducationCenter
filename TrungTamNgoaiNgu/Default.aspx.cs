@@ -29,39 +29,44 @@ public partial class ThemeDinhCu_Default : System.Web.UI.Page
 
     private void DanhMuc()
     {
-        DataTable dt = this._Category.LayDanhMuc();
-        string str = "";
-        str += "<div class='container'>";
-        foreach (DataRow r in dt.Rows)
-        {
-            str += "<div class='col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn'>";
-            //Lấy id để truy xuất danh mục con, xài xong sẽ xóa
-            str += "<h2 class='title'>" + r[0].ToString().ToUpper() + "</h2>";
-            str += "<h2 class='title'>" + r[1].ToString().ToUpper() + "</h2>";
-            str += "<div><a href='" + r[3].ToString() + "?id=" + r[0] + " '><img src='http://192.168.10.3:8686/" + r[8].ToString() + "' /></a></div>";
-            str += "</div>";
+        //DataTable dt = this._Category.LayDanhMuc();
+        //string str = "";
+        //str += "<div class='container'>";
+        //foreach (DataRow r in dt.Rows)
+        //{
+        //    str += "<div class='col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn'>";
+        //    //Lấy id để truy xuất danh mục con, xài xong sẽ xóa
+        //    str += "<h2 class='title'>" + r[0].ToString().ToUpper() + "</h2>";
+        //    str += "<h2 class='title'>" + r[1].ToString().ToUpper() + "</h2>";
+        //    str += "<div><a href='" + r[3].ToString() + "?id=" + r[0] + " '><img src='http://192.168.10.3:8686/" + r[8].ToString() + "' /></a></div>";
+        //    str += "</div>";
 
-        }
-        str += "</div>";
-        Activities.InnerHtml = str;
+        //}
+        //str += "</div>";
+        //Activities.InnerHtml = str;
+        dlDanhMuc.DataSource = this._Category.LayDanhMuc();
+        dlDanhMuc.DataBind();
     }
 
     private void TinMoiNhat()
     {
-        DataTable dt = this._Post.TinMoiNhat(3);
-        string str = "";
-        foreach (DataRow r in dt.Rows)
-        {
-            str += "<div class='col-md-4 col-sm-6 col-xs-12 wow fadeIn'>";
-            str += "<div class='thumbnail news'><div class='overlay'>";
-            str += "<img src='http://192.168.10.3:8686/" + r[15].ToString() + "' class='img-responsive' />";
-            str += "<div class='mask text-center'><h4 class='title'>" + r[1].ToString() + "</h4><a href='http://192.168.10.3:8686/" + r[15].ToString() + "' class='btn btn-default' rel='prettyPhoto[gallery1]'>EXPAND</a><a href='#' class='btn btn-default'>DETAILS</a></div>";
-            str += "</div>";
-            str += "<a href='#' class='tag btn btn-warning'>School</a>";
-            str += "<div class='caption'><a href = '#' ><h4 class='title'>" + r[1].ToString() + "</h4></a><hr /><p class='meta'>" + r[4].ToString() + "</p></div>";
-            str += "</div></div>";
-        }
-        MoiNhat.InnerHtml = str;
+        //DataTable dt = this._Post.TinMoiNhat(3);
+        //string str = "";
+        //foreach (DataRow r in dt.Rows)
+        //{
+        //    str += "<div class='col-md-4 col-sm-6 col-xs-12 wow fadeIn'>";
+        //    str += "<div class='thumbnail news'><div class='overlay'>";
+        //    str += "<img src='http://192.168.10.3:8686/" + r[15].ToString() + "' class='img-responsive' />";
+        //    str += "<div class='mask text-center'><h4 class='title'>" + r[1].ToString() + "</h4><a href='http://192.168.10.3:8686/" + r[15].ToString() + "' class='btn btn-default' rel='prettyPhoto[gallery1]'>EXPAND</a><a href='#' class='btn btn-default'>DETAILS</a></div>";
+        //    str += "</div>";
+        //    str += "<a href='#' class='tag btn btn-warning'>School</a>";
+        //    str += "<div class='caption'><a href = '#' ><h4 class='title'>" + r[1].ToString() + "</h4></a><hr /><p class='meta'>" + r[4].ToString() + "</p></div>";
+        //    str += "</div></div>";
+        //}
+        //MoiNhat.InnerHtml = str;
+
+        repTinMoiNhat.DataSource = this._Post.TinMoiNhat(3);
+        repTinMoiNhat.DataBind();
     }
 
     private void HinhAnhHoatDong()

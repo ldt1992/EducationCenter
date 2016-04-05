@@ -23,12 +23,15 @@ public partial class ThemeDinhCu_DinhCu : System.Web.UI.MasterPage
 
     private void ShowMenu()
     {
-        DataTable tb = this._MainMenu.GetMainMenu();
-        string str = "";
-        foreach (DataRow item in tb.Rows)
-        {
-            str += "<li><a href='" + item[2].ToString() +"'>" + item[1].ToString().ToUpper() + "</a></li>";
-        }
-        MainMenu.InnerHtml = str;
+        //DataTable tb = this._MainMenu.GetMainMenu();
+        //string str = "";
+        //foreach (DataRow item in tb.Rows)
+        //{
+        //    str += "<li><a href='" + item[2].ToString() + "'>" + item[1].ToString().ToUpper() + "</a></li>";
+        //}
+        //MainMenu.InnerHtml = str;
+
+        repMainMenu.DataSource = this._MainMenu.GetMainMenu();
+        repMainMenu.DataBind();
     }
 }

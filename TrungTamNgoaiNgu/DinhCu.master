@@ -48,34 +48,12 @@
                                 </div>
                             </div>
                             <%-- Links --%>
-                            <ul class="nav navbar-nav navbar-right main-menu" id="MainMenu" runat="server">
-                                <%--<li class="active"><a href="Default.aspx">Trang Chủ</a></li>
-                                <li><a href="#">Giới Thiệu</a></li>
-                                <li><a href="#">Tin Tức</a></li>
-                                <li><a href="#">Bài Viết</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">Định Cư</a>
-                                    <ul class="dropdown-menu dropdown-menu-left">
-                                        <li><a href="#">Bài viết 1</a></li>
-                                        <li><a href="#">Bài viết 2</a></li>
-                                        <li><a href="#">Bài viết 1</a></li>
-                                        <li><a href="#">Bài viết 2</a></li>
-                                        <li><a href="#">Bài viết 1</a></li>
-                                        <li><a href="#">Bài viết 2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">Chuyên Mục</a>
-                                    <ul class="dropdown-menu dropdown-menu-left">
-                                        <li><a href="FAQs.aspx">FAQs</a></li>
-                                        <li><a href="Testimonials.aspx">Testimonials</a></li>
-                                        <li><a href="#">Teachers</a></li>
-                                        <li><a href="ListBlogs.aspx">Blogs</a></li>
-                                        <li><a href="#">Event</a></li>
-                                        <li><a href="Gallery.aspx">Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Liên Hệ</a></li>--%>
+                            <ul class="nav navbar-nav navbar-right" id="MainMenu">
+                                <asp:Repeater ID="repMainMenu" runat="server">
+                                    <ItemTemplate>
+                                        <li><a href="<%# Eval("Permalink") %>"><%# Eval("ItemName") %></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
                             </ul>
                         </div>
                     </div>

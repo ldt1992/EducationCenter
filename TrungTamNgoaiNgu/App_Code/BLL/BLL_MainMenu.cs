@@ -31,7 +31,7 @@ public class BLL_MainMenu
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from MainMenu order by ItemIndex asc ";
+        string query = "select * from MainMenu order by ItemIndex asc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
