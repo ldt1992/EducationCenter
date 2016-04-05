@@ -36,6 +36,18 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
+.btn {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+}
+.btn:hover {
+  background-color: #FF9800;
+  border-color: #FF9800;
+}
 @media (min-width: 1024px) {
   a:hover {
     text-decoration: none;
@@ -611,69 +623,102 @@ a:hover {
   #Testimonials #Content #Sidebar #FeaturedPosts .post .title:hover {
     color: #2196F3;
   }
-  #ListBlogs #Path {
+  #ListBlogs #Title {
     background-color: #2196F3;
     color: white;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
   }
   #ListBlogs #Content .breadcrumb {
     margin: 0 2% 5%;
   }
-  #ListBlogs #Content #MainContent {
-    margin-top: 0%;
-  }
-  #ListBlogs #Content #MainContent .blog {
+  #ListBlogs #Content .maincontent .blog {
+    border: none;
+    height: 200px;
+    margin-bottom: 5%;
     padding: 0;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
-    margin-bottom: 10%;
   }
-  #ListBlogs #Content #MainContent .blog img {
+  #ListBlogs #Content .maincontent .blog > a {
+    margin-right: 2%;
+  }
+  #ListBlogs #Content .maincontent .blog > a img {
     margin-bottom: 2%;
+    width: 300px;
+    height: 200px;
   }
-  #ListBlogs #Content #MainContent .blog .title {
-    margin: 0;
-    margin-bottom: 1%;
+  #ListBlogs #Content .maincontent .blog .caption {
+    padding: 0;
+  }
+  #ListBlogs #Content .maincontent .blog .caption .title {
+    margin: 0 0 1px 0;
     color: black;
+    height: 50px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
-  #ListBlogs #Content #MainContent .blog .title:hover {
+  #ListBlogs #Content .maincontent .blog .caption .title:hover {
     color: #2196F3;
   }
-  #ListBlogs #Content #MainContent .blog .meta {
+  #ListBlogs #Content .maincontent .blog .caption .meta {
     line-height: 170%;
     overflow: hidden;
-    height: 90px;
+    height: 100px;
+    margin: 0 0 10px 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    margin-bottom: 2%;
+    font-size: 110%;
+    padding: 0 1% 1% 0;
+    text-align: justify;
   }
-  #ListBlogs #Content #MainContent .blog .btn {
+  #ListBlogs #Content .maincontent .blog .caption p.btnXem .btn {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
   }
-  #ListBlogs #Content #MainContent .blog .btn:hover {
+  #ListBlogs #Content .maincontent .blog .caption p.btnXem .btn:hover {
     background-color: #FF9800;
     border: 1px solid #FF9800;
   }
   #ListBlogs #Content #Sidebar .title {
     margin-top: 0;
   }
-  #ListBlogs #Content #Sidebar #FeaturedPosts .post {
-    margin-bottom: 15%;
+  #ListBlogs #Content #Sidebar #FeaturedPosts h3.title {
+    font-weight: bold;
+    font-size: 180%;
   }
-  #ListBlogs #Content #Sidebar #FeaturedPosts .post img {
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post {
+    margin-bottom: 5%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post > a img {
     margin-bottom: 5%;
     width: 50%;
+    height: 120px;
   }
-  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title {
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .media-body {
+    margin-left: 10%;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .media-body .title {
     font-size: 120%;
     color: black;
+    height: 80px;
+    padding-left: 5%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: 150%;
+    font-weight: bold;
   }
-  #ListBlogs #Content #Sidebar #FeaturedPosts .post .title:hover {
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .media-body .title:hover {
     color: #2196F3;
+  }
+  #ListBlogs #Content #Sidebar #FeaturedPosts .post .media-body p.btnXem {
+    padding-left: 5%;
   }
   #Gallery,
   #Album {
@@ -898,5 +943,11 @@ a:hover {
   }
   #DuHoc #MainContent .country img {
     height: 170px;
+  }
+  #Type #Title {
+    background-color: #03A9F4;
+    color: white;
+    padding: 0.5% 0 1%;
+    margin-bottom: 2%;
   }
 }

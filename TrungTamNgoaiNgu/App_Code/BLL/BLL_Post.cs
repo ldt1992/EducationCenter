@@ -25,12 +25,25 @@ public class BLL_Post
         this._connect.CloseConnect();
     }
 
-    public DataTable TinMoiNhat()
+    //
+    public DataTable TinMoiNhat(int top)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select top 3 * from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
+        string query = "select top " + top + " * from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    public DataTable DanhSachBaiViet(string id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from POST p join Post_Category_relationships p_ct on p.PostID=p_ct.PostID join Category ct on p_ct.CategoryID=ct.CategoryID join Images img on p.PostImage=img.ImagesID where ct.CategoryID = " + id;
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

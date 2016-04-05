@@ -40,8 +40,8 @@ public class BLL_Category
         return result;
     }
 
-    //Lấy danh mục con
-    public DataTable LayDanhMucDuHoc(string id)
+    //Lấy danh sách các nước 
+    public DataTable LayListCountry(string id)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
@@ -54,4 +54,44 @@ public class BLL_Category
         this.CloseConnect();
         return result;
     }
+
+    //Lấy các loại hình đào tạo theo từng nước
+    public DataTable LayLoaiHinhDaoTao(string id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from Category ct join Images img on ct.CateogryImage=img.ImagesID where Parent =  " + id;
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lấy loại danh mục theo id
+    public DataTable LayDanhMucTheoID(string id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from Category where CategoryID = " + id;
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lấy danh mục cha
+    public DataTable LayDanhMucCha(string id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from Category where CategoryID = (select Parent from Category where CategoryID = " + id + ")";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
 }

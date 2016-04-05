@@ -31,10 +31,23 @@ public class BLL_Image
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from Images";
+        string query = "select top 8 * from Images where ImagesTypeID = 7";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
         return result;
     }
+
+    public DataTable HinhAnhTheoLoai(int id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select top 12 * from Images where ImagesTypeID = " + id + " order by NEWID()";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
 }

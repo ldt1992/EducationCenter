@@ -38,157 +38,14 @@
             </div>
             <!-- End WOWSlider.com BODY section -->
         </div>
-        <!-- Welcome -->
-        <%--<div id="Welcome">
-            <div class="container">
-                <h1 class="title">WELCOME TO INVENT</h1>
-                <!-- Tab Slider -->
-                <div id="myWelcome" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ul class="nav nav-pills">
-                        <li data-target="#myWelcome" data-slide-to="0" class="active"><a href="#">01 About</a></li>
-                        <li data-target="#myWelcome" data-slide-to="1"><a href="#">02 Academics</a></li>
-                        <li data-target="#myWelcome" data-slide-to="2"><a href="#">03 Admissions & Aid</a></li>
-                        <li data-target="#myWelcome" data-slide-to="3"><a href="#">04 After Invent</a></li>
-                    </ul>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="img/welcome-1.jpg" class="img-responsive wow fadeIn" />
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 carousel-caption content wow fadeIn">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="img/welcome-2.jpg" class="img-responsive" />
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 carousel-caption content">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="img/welcome-3.jpg" class="img-responsive" />
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 carousel-caption content">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="img/welcome-4.jpg" class="img-responsive" />
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 carousel-caption content">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>--%>
         <!-- Activities -->
-        <div id="Activities" class="row activities" runat="server">
-            <%--<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn">
-                <div>
-                    <a href="#">
-                        <img src="img/activity_1.jpg" /></a>
-                </div>
-                <div class="caption">
-                    <h2 class="title">Take A Virtual Tour</h2>
-                    <p class="meta">Fully residential and strikingly beautiful, Invent’s 160-acre campus boasts 80 buildings, hiking trails, woods and multiple scenic lakes.</p>
-                    <a href="#" class="btn btn-link">Play Video</a>
-                </div>
-            </div>--%>
-        </div>
+        <div id="Activities" class="row activities" runat="server"></div>
         <!-- TIN TỨC MỚI NHẤT -->
         <div id="News">
             <div class="container text-center">
                 <h1 class="title">TIN TỨC MỚI NHẤT</h1>
                 <hr />
-                <div class="row" id="MoiNhat" runat="server">
-                    <%--<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
-                        <div class="thumbnail news">
-                            <div class="overlay">
-                                <img src="img/news-1.jpg" class="img-responsive" />
-                                <div class="mask text-center">
-                                    <h4 class="title">Sport meet sees enthusiastic participation from all</h4>
-                                    <a href="img/news-1.jpg" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
-                                    <a href="#" class="btn btn-default">DETAILS</a>
-                                </div>
-                            </div>
-                            <a href="#" class="tag btn btn-warning">School</a>
-                            <div class="caption">
-                                <a href="#">
-                                    <h4 class="title">Sport meet sees enthusiastic participation from all</h4>
-                                </a>
-                                <hr />
-                                <p class="meta">Quo dui, occaecat dolores potenti proin minim nonummy orci, cillum arcu aliquidQuo dui, occaecat dolores potenti proin minim nonummy orci, cillum arcu aliquid</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
-                        <div class="thumbnail news">
-                            <div class="overlay">
-                                <img src="img/news-2.jpg" class="img-responsive" />
-                                <div class="mask text-center">
-                                    <h4 class="title">Sport meet sees enthusiastic participation from all</h4>
-                                    <a href="img/news-2.jpg" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
-                                    <a href="#" class="btn btn-default">DETAILS</a>
-                                </div>
-                            </div>
-                            <a href="#" class="tag btn btn-success">Facilities</a>
-                            <div class="caption">
-
-                                <a href="#">
-                                    <h4 class="title">Sport meet sees enthusiastic participation from all</h4>
-                                </a>
-                                <hr />
-                                <p class="meta">Quo dui, occaecat dolores potenti proin minim nonummy orci, cillum arcu aliquidQuo dui, occaecat dolores potenti proin minim nonummy orci, cillum arcu aliquid</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 wow fadeIn">
-                        <div class="thumbnail news last-item">
-                            <div class="overlay">
-                                <img src="img/news-3.jpg" class="img-responsive" />
-                                <div class="mask text-center">
-                                    <h4 class="title">Sport meet sees enthusiastic participation from all</h4>
-                                    <a href="img/news-3.jpg" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
-                                    <a href="#" class="btn btn-default">DETAILS</a>
-                                </div>
-                            </div>
-                            <a href="#" class="tag btn btn-info">Facilities</a>
-                            <div class="caption">
-
-                                <a href="#">
-                                    <h4 class="title">Sport meet sees enthusiastic participation from all</h4>
-                                </a>
-                                <hr />
-                                <p class="meta">Quo dui, occaecat dolores potenti proin minim nonummy orci, cillum arcu aliquidQuo dui, occaecat dolores potenti proin minim nonummy orci, cillum arcu aliquid</p>
-                            </div>
-                        </div>
-                    </div>--%>
-                </div>
+                <div class="row" id="MoiNhat" runat="server"></div>
             </div>
         </div>
         <!-- CẢM NHẬN TỪ KHÁCH HÀNG -->
@@ -242,36 +99,7 @@
             <h1 class="title text-center">HÌNH ẢNH HOẠT ĐỘNG</h1>
             <hr />
             <h3 class="text-center">Các hoạt động của công ty</h3>
-            <div class="row HinhAnh" id="HinhAnh" runat="server">
-                <%--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumbnail campus first wow fadeIn">
-                    <img src="img/activity_1.jpg" class="img-responsive" />
-                    <div class="caption">
-                        <h3 class="title">Soccer</h3>
-                        <a href="img/activity_1.jpg" rel="prettyPhoto[gallery1]" class="btn btn-default">EXPAND</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumbnail campus first wow fadeIn">
-                    <img src="img/activity_2.jpg" class="img-responsive" />
-                    <div class="caption">
-                        <h3 class="title">Soccer</h3>
-                        <a href="img/activity_1.jpg" rel="prettyPhoto[gallery1]" class="btn btn-default">EXPAND</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumbnail campus first wow fadeIn">
-                    <img src="img/activity_3.jpg" class="img-responsive" />
-                    <div class="caption">
-                        <h3 class="title">Soccer</h3>
-                        <a href="img/activity_1.jpg" rel="prettyPhoto[gallery1]" class="btn btn-default">EXPAND</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumbnail campus first wow fadeIn">
-                    <img src="img/activity_4.jpg" class="img-responsive" />
-                    <div class="caption">
-                        <h3 class="title">Soccer</h3>
-                        <a href="img/activity_1.jpg" rel="prettyPhoto[gallery1]" class="btn btn-default">EXPAND</a>
-                    </div>
-                </div>--%>
-            </div>
+            <div class="row HinhAnh" id="HinhAnh" runat="server"></div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                     <a href="Album.aspx" class="btn btn-info btn-lg">Xem Album</a>
@@ -380,18 +208,5 @@
                 </div>
             </div>
         </div>
-        <!-- Invent -->
-        <%--<div id="Invent">
-            <div class="container text-center wow fadeIn">
-                <h1 class="title">BRAND</h1>
-                <hr />
-                <label>TOMS</label>
-                <label>TOMS</label>
-                <label>TOMS</label>
-                <label>TOMS</label>
-                <label>TOMS</label>
-                <label>TOMS</label>
-            </div>
-        </div>--%>
     </div>
 </asp:Content>

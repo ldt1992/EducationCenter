@@ -2,7 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="Album">
-        <div id="Path">
+        <!-- Title-->
+        <div id="Title">
             <div class="container">
                 <h1 class="title">Album</h1>
             </div>
@@ -25,8 +26,8 @@
                 </div>
 
                 <%-- Isotope --%>
-                <div class="row isotope">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item duhoc">
+                <div class="row album" id="HinhAnh" runat="server">
+                    <%--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item duhoc">
                         <div class="post">
                             <img src="img/featured-post-1.jpg" class="img-responsive img-thumbnail" alt="" />
                             <div class="caption">
@@ -105,8 +106,19 @@
                                 <a href="#" class="btn btn-default">DETAILS</a>
                             </div>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
+
+                <nav>
+                <ul class="pagination">
+                    <li><a href="#" aria-label="Previous">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#" aria-label="Next">&raquo;</a></li>
+                </ul>
+            </nav>
+
             </div>
         </div>
     </div>

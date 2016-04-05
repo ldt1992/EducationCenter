@@ -48,7 +48,7 @@ public partial class ThemeDinhCu_Default : System.Web.UI.Page
 
     private void TinMoiNhat()
     {
-        DataTable dt = this._Post.TinMoiNhat();
+        DataTable dt = this._Post.TinMoiNhat(3);
         string str = "";
         foreach (DataRow r in dt.Rows)
         {

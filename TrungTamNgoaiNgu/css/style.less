@@ -1,4 +1,8 @@
-﻿.transition(@property, @duration, @type) {
+﻿* {
+    .border-radius(0);
+}
+
+.transition(@property, @duration, @type) {
     transition: @property @duration @type;
     -webkit-transition: @property @duration @type;
     -moz-transition: @property @duration @type;
@@ -53,6 +57,16 @@ a:hover {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x;
+}
+
+.btn {
+    .border-radius(0px);
+    .transition(all, 0.2s, linear);
+
+    &:hover {
+        background-color: #FF9800;
+        border-color: #FF9800;
+    }
 }
 
 //Desktop 1024px ~ 4096px
@@ -475,8 +489,8 @@ a:hover {
             .HinhAnh {
                 margin-bottom: 2%;
 
-                .campus{
-                    margin-bottom:0;
+                .campus {
+                    margin-bottom: 0;
                 }
 
                 img {
@@ -781,10 +795,11 @@ a:hover {
     }
     //4. List Blogs
     #ListBlogs {
-        #Path {
+
+        #Title {
             background-color: #2196F3;
             color: white;
-            padding-bottom: 3%;
+            padding-bottom: 1%;
         }
 
         #Content {
@@ -792,44 +807,64 @@ a:hover {
                 margin: 0 2% 5%;
             }
 
-            #MainContent {
-                margin-top: 0%;
+            .maincontent {
 
                 .blog {
+                    border: none;
+                    height: 200px;
+                    margin-bottom: 5%;
                     padding: 0;
                     .border-radius(0px);
-                    margin-bottom: 10%;
 
-                    img {
-                        margin-bottom: 2%;
-                    }
+                    > a {
+                        margin-right: 2%;
 
-                    .title {
-                        margin: 0;
-                        margin-bottom: 1%;
-                        color: black;
-
-                        &:hover {
-                            color: #2196F3;
+                        img {
+                            margin-bottom: 2%;
+                            width: 300px;
+                            height: 200px;
                         }
                     }
 
-                    .meta {
-                        line-height: 170%;
-                        overflow: hidden;
-                        height: 90px;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 4;
-                        margin-bottom: 2%;
-                    }
+                    .caption {
+                        padding: 0;
 
-                    .btn {
-                        .border-radius(0px);
+                        .title {
+                            margin: 0 0 1px 0;
+                            color: black;
+                            height: 50px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
 
-                        &:hover {
-                            background-color: #FF9800;
-                            border: 1px solid #FF9800;
+                            &:hover {
+                                color: #2196F3;
+                            }
+                        }
+
+                        .meta {
+                            line-height: 170%;
+                            overflow: hidden;
+                            height: 100px;
+                            margin: 0 0 10px 0;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4;
+                            font-size: 110%;
+                            padding: 0 1% 1% 0;
+                            text-align: justify;
+                        }
+
+                        p.btnXem {
+                            .btn {
+                                .border-radius(0px);
+
+                                &:hover {
+                                    background-color: #FF9800;
+                                    border: 1px solid #FF9800;
+                                }
+                            }
                         }
                     }
                 }
@@ -841,20 +876,44 @@ a:hover {
                 }
 
                 #FeaturedPosts {
-                    .post {
-                        margin-bottom: 15%;
+                    h3.title {
+                        font-weight: bold;
+                        font-size: 180%;
+                    }
 
-                        img {
-                            margin-bottom: 5%;
-                            width: 50%;
+                    .post {
+                        margin-bottom: 5%;
+
+                        > a {
+                            img {
+                                margin-bottom: 5%;
+                                width: 50%;
+                                height: 120px;
+                            }
                         }
 
-                        .title {
-                            font-size: 120%;
-                            color: black;
+                        .media-body {
+                            margin-left: 10%;
 
-                            &:hover {
-                                color: #2196F3;
+                            .title {
+                                font-size: 120%;
+                                color: black;
+                                height: 80px;
+                                padding-left: 5%;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 4;
+                                line-height: 150%;
+                                font-weight: bold;
+
+                                &:hover {
+                                    color: #2196F3;
+                                }
+                            }
+
+                            p.btnXem {
+                                padding-left: 5%;
                             }
                         }
                     }
@@ -1135,14 +1194,30 @@ a:hover {
                 //position: relative;
                 margin-bottom: 3%;
 
-                .text{
-                    font-size:180%;
-                    color:black;
-                    font-weight:bold;
+                .text {
+                    font-size: 180%;
+                    color: black;
+                    font-weight: bold;
                 }
 
-                img{
-                    height:170px;
+                img {
+                    height: 170px;
+                }
+            }
+        }
+    }
+    //Loai
+    #Type {
+        #Title {
+            background-color: #03A9F4;
+            color: white;
+            padding: 0.5% 0 1%;
+            margin-bottom: 2%;
+        }
+
+        .maincontent {
+            .post {
+                > a {
                 }
             }
         }
