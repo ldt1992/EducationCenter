@@ -18,53 +18,37 @@
                 </ul>
 
                 <div class="row">
-                    <%-- MainContent --%>
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="MainContent">
-                        <h2 class="title">Netflix đến Việt Nam, giá từ 180.000 đồng/tháng</h2>
-                        <img src="img/news-1.jpg" alt="" class="img-responsive img-thumbnail" />
-                        <p class="meta">Tại Việt Nam, sau khi đăng ký thuê bao Netflix, người dùng có thể xem thông qua ứng dụng trên máy tính (Windows, Mac), ứng dụng trên di động (Android/iOS), hoặc thông qua Apple TV, Google TV, Google Chromecast. Các máy chơi game thế hệ mới như Play Station 3/4, Wii, Xbox 360, Xbox One cũng đều có ứng dụng giúp người dùng xem được Netflix.</p>
-                        <p class="meta">Tại Việt Nam, sau khi đăng ký thuê bao Netflix, người dùng có thể xem thông qua ứng dụng trên máy tính (Windows, Mac), ứng dụng trên di động (Android/iOS), hoặc thông qua Apple TV, Google TV, Google Chromecast. Các máy chơi game thế hệ mới như Play Station 3/4, Wii, Xbox 360, Xbox One cũng đều có ứng dụng giúp người dùng xem được Netflix.</p>
-                        <img src="img/news-2.jpg" alt="" class="img-responsive img-thumbnail" />
-                    </div>
-                    <%-- Sidebar --%>
+                    <!-- MainContent -->
+                    <asp:Repeater ID="repChiTiet" runat="server">
+                        <ItemTemplate>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="MainContent">
+                                <h2 class="title"><%# Eval("PostTitle") %></h2>
+                                <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail" />
+                                <div class="meta"><%# Eval("PostContentVN") %></div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
+                    <!-- Sidebar -->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="Sidebar">
-                        <%-- Category --%>
-                        <div id="Category">
-                            <h2 class="title">Categories</h2>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="Testimonials.aspx">Testimonials</a></li>
-                                <li class="list-group-item"><a href="Gallery.aspx">Gallery</a></li>
-                                <li class="list-group-item"><a href="FAQs.aspx">FAQs</a></li>
-                                <li class="list-group-item"><a href="ListBlogs.aspx">Blogs</a></li>
-                            </ul>
-                        </div>
-                        <%-- Featured Posts --%>
+                        <!-- BÀI VIẾT LIÊN QUAN -->
                         <div id="FeaturedPosts">
-                            <h2 class="title">Featured Posts</h2>
-                            <div class="media post">
-                                <a href="#">
-                                    <img src="img/featured-post-1.jpg" class="img-responsive pull-left img-thumbnail" alt="" /></a>
-                                <div class="media-body">
-                                    <a href="Blog_Detail.aspx"><h3 class="title media-heading">Nhiều người Việt tại Australia bị lừa vé máy bay Tết</h3></a>
-                                    <a href="Blog_Detail.aspx" class="btn btn-default">Read More</a>
-                                </div>
-                            </div>
-                            <div class="media post">
-                                <a href="#">
-                                    <img src="img/featured-post-1.jpg" class="img-responsive pull-left img-thumbnail" alt="" /></a>
-                                <div class="media-body">
-                                    <a href="Blog_Detail.aspx"><h3 class="title media-heading">Nhiều người Việt tại Australia bị lừa vé máy bay Tết</h3></a>
-                                    <a href="Blog_Detail.aspx" class="btn btn-default">Read More</a>
-                                </div>
-                            </div>
-                            <div class="media post">
-                                <a href="#">
-                                    <img src="img/featured-post-1.jpg" class="img-responsive pull-left img-thumbnail" alt="" /></a>
-                                <div class="media-body">
-                                    <a href="Blog_Detail.aspx"><h3 class="title media-heading">Nhiều người Việt tại Australia bị lừa vé máy bay Tết</h3></a>
-                                    <a href="Blog_Detail.aspx" class="btn btn-default">Read More</a>
-                                </div>
-                            </div>
+                            <h2 class="title">BÀI VIẾT CÙNG CHỦ ĐỀ</h2>
+                            <asp:Repeater ID="repPostLienQuan" runat="server">
+                                <ItemTemplate>
+                                    <div class="media post">
+                                        <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                            <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="img-responsive pull-left img-thumbnail" alt="<%# Eval("ImagesName") %>" /></a>
+                                        <div class="media-body">
+                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                                <h3 class="title media-heading"><%# Eval("PostTitle") %></h3>
+                                            </a>
+                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-default">Read More</a>
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
                         </div>
                     </div>
                 </div>

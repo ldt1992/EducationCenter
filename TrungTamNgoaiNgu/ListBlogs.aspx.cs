@@ -41,20 +41,22 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
 
     private void TinTucMoiNhat()
     {
-        DataTable dt = this._Post.TinMoiNhat(6);
-        string str = "";
-        string homeurl = "http://192.168.10.3:8686/";
-        foreach (DataRow item in dt.Rows)
-        {
-            str += "<div class='media post'>";
-            str += "<a href='#'>";
-            str += "<img src='" + homeurl + item[15].ToString() + "' alt='' class='img-responsive img-thumbnail pull-left' /></a>";
-            str += "<div class='media-body'>";
-            str += "<a href='#'><h4 class='title media-heading'>" + item[1].ToString() + "</h3></a>";
-            str += "<p class='btnXem'><a href='#' class='btn btn-info'>Xem Thêm</a></p>";
-            str += "</div></div>";
-        }
-        TinMoiNhat.InnerHtml = str;
+        //DataTable dt = this._Post.TinMoiNhat(6);
+        //string str = "";
+        //string homeurl = "http://192.168.10.3:8686/";
+        //foreach (DataRow item in dt.Rows)
+        //{
+        //    str += "<div class='media post'>";
+        //    str += "<a href='#'>";
+        //    str += "<img src='" + homeurl + item[15].ToString() + "' alt='' class='img-responsive img-thumbnail pull-left' /></a>";
+        //    str += "<div class='media-body'>";
+        //    str += "<a href='#'><h4 class='title media-heading'>" + item[1].ToString() + "</h3></a>";
+        //    str += "<p class='btnXem'><a href='#' class='btn btn-info'>Xem Thêm</a></p>";
+        //    str += "</div></div>";
+        //}
+        //TinMoiNhat.InnerHtml = str;
+        repTinMoiNhat.DataSource = this._Post.ListTinMoiNhat(6);
+        repTinMoiNhat.DataBind();
     }
 
     private void TieuDeBaiViet()

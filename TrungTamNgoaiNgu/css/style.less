@@ -415,7 +415,7 @@ a:hover {
             }
         }
 
-        #Campus {
+        #HoatDong {
             background-color: #F5F5F5;
             padding: 4% 0;
 
@@ -435,67 +435,57 @@ a:hover {
                 padding: 0 2%;
             }
 
-            .campus {
-                border: 1px solid red;
-                display: block;
-                padding: 0;
-                margin-bottom: 0;
-                position: relative;
-                overflow: hidden;
-                border: none;
-                .border-radius(0px);
+            #HinhAnh {
+                .campus {
+                    border: 1px solid red;
+                    display: block;
+                    padding: 0;
+                    margin-bottom: 0;
+                    position: relative;
+                    overflow: hidden;
+                    border: none;
+                    .border-radius(0px);
 
-                img {
-                    transition: all 0.2s linear;
-                    height: 250%;
-                    width: 100%;
-                }
-
-                .caption {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: black;
-                    opacity: 0;
-                    transition: opacity 0.2s linear;
-                    padding-top: 12%;
-
-                    .title {
-                        color: white;
-                        z-index: 10;
-                    }
-
-                    .btn {
-                        .border-radius(0px);
-                        background-color: transparent;
-                        color: white;
-                        border: 3px solid white;
-                    }
-                }
-
-                &:hover {
                     img {
-                        transform: scale(1.1,1.1);
+                        transition: all 0.2s linear;
+                        height: 250px;
                     }
 
                     .caption {
-                        opacity: 0.7;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: black;
+                        opacity: 0;
+                        transition: opacity 0.2s linear;
+                        padding-top: 12%;
+
+                        .title {
+                            color: white;
+                            z-index: 10;
+                        }
+
+                        .btn {
+                            .border-radius(0px);
+                            background-color: transparent;
+                            color: white;
+                            border: 3px solid white;
+                        }
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1,1.1);
+                        }
+
+                        .caption {
+                            opacity: 0.7;
+                        }
                     }
                 }
-            }
-
-            .HinhAnh {
-                margin-bottom: 2%;
-
-                .campus {
-                    margin-bottom: 0;
-                }
-
-                img {
-                    height: 250px;
-                }
+                margin-bottom:2%;
             }
         }
 

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="List Blogs" Language="C#" MasterPageFile="DinhCu.master" AutoEventWireup="true" CodeFile="ListBlogs.aspx.cs" Inherits="ThemeDinhCu_ListBlogs" %>
+
 <%@ Register TagPrefix="cc1" Namespace="SiteUtils" Assembly="CollectionPager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -26,13 +27,13 @@
                     <asp:DataList ID="dlBaiViet" runat="server">
                         <ItemTemplate>
                             <div class="thumbnail blog">
-                                <a href="#" class="pull-left">
-                                    <img src='<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>' alt='<%# Eval("ImagesUrl") %>' class="img-responsive img-thumbnail" />
+                                <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="pull-left">
+                                    <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesUrl") %>" class="img-responsive img-thumbnail" />
                                 </a>
                                 <div class="caption">
-                                    <h3 class="title"><a href="#"><%# Eval("PostTitle") %></a></h3>
+                                    <h3 class="title"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
                                     <p class="meta"><%# Eval("MetaDescription") %></p>
-                                    <p class="btnXem"><a href="Blog_Detail.aspx" class="btn btn-info">Xem thêm</a></p>
+                                    <p class="btnXem"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem thêm</a></p>
                                 </div>
                             </div>
                         </ItemTemplate>
@@ -64,7 +65,20 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="Sidebar">
                     <div id="FeaturedPosts">
                         <h3 class="title">TIN MỚI NHẤT</h3>
-                        <div id="TinMoiNhat" runat="server"></div>
+                        <%--<div id="TinMoiNhat" runat="server"></div>--%>
+                        <asp:Repeater ID="repTinMoiNhat" runat="server">
+                            <ItemTemplate>
+                                <div class="media post">
+                                    <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                        <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail pull-left" />
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="title media-heading"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
+                                            <p class="btnXem"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem Thêm</a></p>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </div>
                 </div>
             </div>

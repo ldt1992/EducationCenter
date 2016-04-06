@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="TrangChu">
-        <!-- Slider -->
+        <!-- SLIDER -->
         <div id="Slider">
             <!-- Start WOWSlider.com BODY section -->
             <div id="wowslider-container1">
@@ -38,16 +38,16 @@
             </div>
             <!-- End WOWSlider.com BODY section -->
         </div>
-        <!-- Danh Mục -->
+        <!-- DANH MỤC -->
         <div id="DanhMuc">
             <div class="container">
                 <div class="row">
                     <asp:Repeater ID="dlDanhMuc" runat="server">
                         <ItemTemplate>
                             <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn">
-                                <h2 class="title text-center"><a href="<%# Eval("Permalink") %>"><%# Eval("CategoryName") %></a></h2>
+                                <h2 class="title text-center"><a href="<%# Eval("Permalink") + "?id=" + Eval("CategoryID") %>"><%# Eval("CategoryName") %></a></h2>
                                 <div>
-                                    <a href="<%# Eval("Permalink") %>">
+                                    <a href="<%# Eval("Permalink") + "?id=" + Eval("CategoryID") %>">
                                         <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" /></a>
                                 </div>
                             </div>
@@ -131,19 +131,31 @@
                 <a href="CamNhan.aspx" class="btn btn-info btn-lg">Xem thêm</a>
             </div>
         </div>
-        <!-- Campus -->
-        <div id="Campus" class="text-center">
+        <!-- HÌNH ẢNH HOẠT ĐỘNG CỦA CÔNG TY -->
+        <div id="HoatDong" class="text-center">
             <h1 class="title text-center">HÌNH ẢNH HOẠT ĐỘNG</h1>
             <hr />
             <h3 class="text-center">Các hoạt động của công ty</h3>
-            <div class="row HinhAnh" id="HinhAnh" runat="server"></div>
+            <div class="row" id="HinhAnh">
+                <asp:Repeater ID="repHoatDong" runat="server">
+                    <ItemTemplate>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 thumbnail campus wow fadeIn">
+                            <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="img-responsive" alt="<%# Eval("ImagesName") %>" />
+                            <div class="caption">
+                                <h3 class="title">Soccer</h3>
+                                <a href="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" rel="prettyPhoto[gallery1]" class="btn btn-default">EXPAND</a>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                     <a href="Album.aspx" class="btn btn-info btn-lg">Xem Album</a>
                 </div>
             </div>
         </div>
-        <!-- Blogs -->
+        <!-- BLOGS -->
         <div id="Blogs">
             <div class="container">
                 <h1 class="title text-center">OUR BLOG</h1>
@@ -235,7 +247,7 @@
                 </div>
             </div>
         </div>
-        <!-- Missions -->
+        <!-- SỨ MỆNH -->
         <div id="Mission">
             <div class="container text-center">
                 <div class="overlay">

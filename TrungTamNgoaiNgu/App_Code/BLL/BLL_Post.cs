@@ -25,25 +25,52 @@ public class BLL_Post
         this._connect.CloseConnect();
     }
 
-    //
-    public DataTable TinMoiNhat(int top)
+    //Danh sách tin tức mới nhất
+    public DataTable ListTinMoiNhat(int top)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select top " + top + " * from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
+        string query = "select top " + top + " p.PostID, p.PostTitle, img.ImagesUrl, img.ImagesName from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
         return result;
     }
 
+    //Danh sách bài viết
     public DataTable DanhSachBaiViet(string id)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
         string query = "select * from POST p join Post_Category_relationships p_ct on p.PostID=p_ct.PostID join Category ct on p_ct.CategoryID=ct.CategoryID join Images img on p.PostImage=img.ImagesID where ct.CategoryID = " + id;
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Thông tin chi tiết bài viết theo id
+    public DataTable ChiTiet(string id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from POST p join Images img on p.PostImage = img.ImagesID join ImagesType typeimg on img.ImagesTypeID = typeimg.ImagesTypeID where PostID =" + id;
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //List post cùng chủ đề với current post
+    public DataTable PostCungChuDe(string idPost)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID where p.PostID =" + idPost;
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
