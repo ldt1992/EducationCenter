@@ -31,7 +31,7 @@ public class BLL_Post
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select top " + top + " p.PostID, p.PostTitle, img.ImagesUrl, img.ImagesName from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
+        string query = "select top " + top + " p.PostID, p.PostTitle, p.PostContentVN, img.ImagesUrl, img.ImagesName from POST p join Images img on p.PostImage = img.ImagesID order by DateOfCreate desc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
@@ -70,8 +70,24 @@ public class BLL_Post
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID where p.PostID =" + idPost;
+        string query = "select * from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID join Images img on p.PostImage = img.ImagesID where p_ct.CategoryID = ( select p_ct.CategoryID from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID where p.PostID = " + idPost + " ) and p.PostID != " + idPost;
         DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Tăng lượt xem
+    public int TangView(string post_id)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "update POST set ViewCount = (ViewCount + 1) where PostID = @post_id";
+        List<SqlParameter> listParams = new List<SqlParameter>();
+        listParams.Add(new SqlParameter("@post_id", post_id));
+
+        int result = this._connect.ExecQuery(query, listParams);
 
         this.CloseConnect();
         return result;

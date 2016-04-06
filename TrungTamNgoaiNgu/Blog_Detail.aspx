@@ -23,6 +23,7 @@
                         <ItemTemplate>
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="MainContent">
                                 <h2 class="title"><%# Eval("PostTitle") %></h2>
+                                <h3 class="view">Lượt xem: <%# Eval("ViewCount") %></h3>
                                 <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail" />
                                 <div class="meta"><%# Eval("PostContentVN") %></div>
                             </div>
@@ -40,15 +41,14 @@
                                         <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
                                             <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="img-responsive pull-left img-thumbnail" alt="<%# Eval("ImagesName") %>" /></a>
                                         <div class="media-body">
-                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
-                                                <h3 class="title media-heading"><%# Eval("PostTitle") %></h3>
-                                            </a>
+                                            <h3 class="title media-heading">
+                                                <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a>
+                                            </h3>
                                             <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-default">Read More</a>
                                         </div>
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-
                         </div>
                     </div>
                 </div>
