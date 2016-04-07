@@ -92,4 +92,17 @@ public class BLL_Post
         this.CloseConnect();
         return result;
     }
+
+    //List post xem nhiều
+    public DataTable PostXemNhieu(int top)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select top " + top + " p.PostID, p.PostTitle, img.ImagesUrl, img.ImagesName, p.ViewCount from POST p join Images img on p.PostImage=img.ImagesID order by p.ViewCount desc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
 }

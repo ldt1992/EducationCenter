@@ -17,6 +17,7 @@ public partial class ThemeDinhCu_Blog_Detail : System.Web.UI.Page
         {
             ChiTiet();
             CungChuDe();
+            XemNhieu();
         }
     }
 
@@ -35,5 +36,11 @@ public partial class ThemeDinhCu_Blog_Detail : System.Web.UI.Page
 
         repPostLienQuan.DataSource = this._Post.PostCungChuDe(id);
         repPostLienQuan.DataBind();
+    }
+
+    private void XemNhieu()
+    {
+        repXemNhieu.DataSource = this._Post.PostXemNhieu(5);
+        repXemNhieu.DataBind();
     }
 }

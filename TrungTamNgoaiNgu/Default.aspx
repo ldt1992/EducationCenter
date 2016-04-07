@@ -69,13 +69,13 @@
                                     <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="img-responsive" />
                                     <div class="mask text-center">
                                         <h4 class="title"><%# Eval("PostTitle") %></h4>
-                                        <a href="#" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
-                                        <a href="#" class="btn btn-default">DETAILS</a>
+                                        <a href="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
+                                        <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-default">DETAILS</a>
                                     </div>
                                 </div>
                                 <a href="#" class="tag btn btn-warning">School</a>
                                 <div class="caption">
-                                    <h4 class="title"><a href="#"><%# Eval("PostTitle") %></a></h4>
+                                    <h4 class="title"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h4>
                                     <hr />
                                     <p class="meta"><%# Eval("PostContentVN") %></p>
                                 </div>

@@ -44,7 +44,27 @@
                                             <h3 class="title media-heading">
                                                 <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a>
                                             </h3>
-                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-default">Read More</a>
+                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-default">Xem tiếp</a>
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <!-- BÀI VIẾT XEM NHIỀU-->
+                        <div id="XemNhieu">
+                            <h2>BÀI VIẾT XEM NHIỀU</h2>
+                            <asp:Repeater ID="repXemNhieu" runat="server">
+                                <ItemTemplate>
+                                    <div class="media post">
+                                        <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                            <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h3 class="title media-heading">
+                                                <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a>
+                                            </h3>
+                                            <p class="view">Views: <%# Eval("ViewCount") %></p>
+                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem tiếp</a>
                                         </div>
                                     </div>
                                 </ItemTemplate>
