@@ -105,4 +105,17 @@ public class BLL_Post
         this.CloseConnect();
         return result;
     }
+
+    //Tìm kiếm Full Text Search
+    public DataTable TimKiemFTS(int top)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
 }

@@ -12,9 +12,10 @@
             <div class="container">
                 <ul class="breadcrumb">
                     <li><a href="Default.aspx">Trang Chủ</a></li>
-                    <li><a href="#">Chuyên Mục</a></li>
-                    <li><a href="ListBlogs.aspx">Blogs</a></li>
-                    <li class="active">Blog Detail</li>
+                    <li><a href="DanhMuc.aspx?id=<%=id_parent3 %>"><%=name_parent3 %></a></li>
+                    <li><a href="Loai.aspx?id=<%=id_parent2 %>"><%=name_parent2 %></a></li>
+                    <li><a href="ListBlogs.aspx?id=<%=id_parent1 %>"><%=name_parent1 %></a></li>
+                    <li class="active">Bài Viết</li>
                 </ul>
 
                 <div class="row">

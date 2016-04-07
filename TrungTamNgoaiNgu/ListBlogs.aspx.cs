@@ -11,8 +11,10 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
     private BLL_Post _Post = new BLL_Post();
     private BLL_Category _Category = new BLL_Category();
 
-    public string idParent = "";
-    public string idGrand = "";
+    public string id_parent1 = "";
+    public string name_parent1 = "";
+    public string id_parent2 = "";
+    public string name_parent2 = "";
     public string ActivedPage = "";
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -20,7 +22,7 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
         {
             ListPost();
             TinTucMoiNhat();
-            TieuDeBaiViet();
+            Permalink();
         }
     }
 
@@ -59,7 +61,7 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
         repTinMoiNhat.DataBind();
     }
 
-    private void TieuDeBaiViet()
+    private void Permalink()
     {
         string id = Request.QueryString["id"];
         DataTable dt1 = this._Category.LayDanhMucTheoID(id);
@@ -74,7 +76,7 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
             ActivedPage = r1[1].ToString();
         }
 
-        DataTable dt3 = this._Category.LayDanhMucCha(id);
+        DataTable dt3 = this._Category.LayDanhMucChaByCateID(id);
         string country = "";
         foreach (DataRow r3 in dt3.Rows)
         {
@@ -82,15 +84,17 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
             country = r3[0].ToString().ToUpper();
         }
 
-        DataTable dt2 = this._Category.LayDanhMucCha(country);
+        DataTable dt2 = this._Category.LayDanhMucChaByCateID(country);
         foreach (DataRow r2 in dt2.Rows)
         {
             str2 = r2[1].ToString().ToUpper();
-            idGrand = r2[0].ToString();
+            id_parent2 = r2[0].ToString();
         }
 
         TieuDe.InnerText = "CÁC TRƯỜNG " + str1 + " " + str2 + " " + str3;
-        idParent = country;
+        id_parent1 = country;
+        name_parent1 = str3;
+        name_parent2 = str2;
 
     }
 }

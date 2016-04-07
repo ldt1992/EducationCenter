@@ -15,7 +15,7 @@
             <!-- Path -->
             <ul class="breadcrumb">
                 <li><a href="Default.aspx">Trang Chủ</a></li>
-                <li><a href="DanhMuc.aspx?id=<%=idParent %>">Nước <%=NameParent %></a></li>
+                <li><a href="DanhMuc.aspx?id=<%=idParent %>"><%=NameParent %></a></li>
                 <li class="active">Loại</li>
             </ul>
 

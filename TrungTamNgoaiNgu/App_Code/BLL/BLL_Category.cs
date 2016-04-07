@@ -81,13 +81,26 @@ public class BLL_Category
         return result;
     }
 
-    //Lấy danh mục cha
-    public DataTable LayDanhMucCha(string id)
+    //Lấy danh mục cha theo id category con
+    public DataTable LayDanhMucChaByCateID(string idSubCategory)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from Category where CategoryID = (select Parent from Category where CategoryID = " + id + ")";
+        string query = "select * from Category where CategoryID = (select Parent from Category where CategoryID = " + idSubCategory + ")";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lấy danh mục cha theo post id
+    public DataTable LayDanhMucChaByPostID(string id_post)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from Category where CategoryID = (select p_ct.CategoryID from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID where p.PostID = " + id_post + ")";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

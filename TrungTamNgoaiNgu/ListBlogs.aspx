@@ -15,8 +15,8 @@
         <div id="Content" class="container">
             <ul class="breadcrumb">
                 <li><a href="Default.aspx">Trang Chủ</a></li>
-                <li><a href="DanhMuc.aspx?id=<%=idGrand %>">Nước Du Học</a></li>
-                <li><a href="Loai.aspx?id=<%=idParent %>">Loại</a></li>
+                <li><a href="DanhMuc.aspx?id=<%=id_parent2 %>"><%=name_parent2 %></a></li>
+                <li><a href="Loai.aspx?id=<%=id_parent1 %>"><%=name_parent1 %></a></li>
                 <li class="active"><%=ActivedPage %></li>
             </ul>
 
