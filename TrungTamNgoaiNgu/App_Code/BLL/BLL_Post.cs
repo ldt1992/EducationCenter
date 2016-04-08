@@ -107,12 +107,13 @@ public class BLL_Post
     }
 
     //Tìm kiếm Full Text Search
-    public DataTable TimKiemFTS(int top)
+    public DataTable TimKiemFTS(string keyword)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "";
+        string query = "select * from POST where FREETEXT((PostContentVN , PostTitle), '" + keyword + "')";
+        //string query = "select * from POST where PostContentVN like N'%" + keyword + "%'";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

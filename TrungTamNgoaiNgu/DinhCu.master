@@ -41,9 +41,10 @@
                             <%-- Search --%>
                             <div class="navbar-form navbar-right search">
                                 <div class="input-group">
-                                    <input type="search" placeholder="Search..." class="form-control" />
+                                    <asp:TextBox ID="txtTimKiem" runat="server" CssClass="form-control"></asp:TextBox>
                                     <span class="input-group-btn">
-                                        <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                                        <%--<button class="btn btn-default"><i class="fa fa-search"></i></button>--%>
+                                        <asp:Button ID="btnTimKiem" runat="server" Text="Tìm kiếm" CssClass="btn btn-default" OnClick="btnTimKiem_Click" />
                                     </span>
                                 </div>
                             </div>

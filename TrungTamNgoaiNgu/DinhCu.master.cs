@@ -34,4 +34,14 @@ public partial class ThemeDinhCu_DinhCu : System.Web.UI.MasterPage
         repMainMenu.DataSource = this._MainMenu.GetMainMenu();
         repMainMenu.DataBind();
     }
+
+    protected void btnTimKiem_Click(object sender, EventArgs e)
+    {
+        string keyword = txtTimKiem.Text;
+
+        if (keyword == "")
+            Response.Redirect("Default.aspx");
+        else
+            Response.Redirect("KetQuaTimKiem.aspx?keyword= " + keyword);
+    }
 }
