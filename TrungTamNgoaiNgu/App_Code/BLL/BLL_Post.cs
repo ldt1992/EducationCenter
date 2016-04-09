@@ -112,7 +112,7 @@ public class BLL_Post
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from POST where FREETEXT((PostContentVN , PostTitle), '" + keyword + "')";
+        string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where FREETEXT((PostContentVN , PostTitle), '" + keyword + "')";
         //string query = "select * from POST where PostContentVN like N'%" + keyword + "%'";
         DataTable result = this._connect.GetDataTable(query);
 

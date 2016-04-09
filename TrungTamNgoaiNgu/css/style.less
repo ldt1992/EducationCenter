@@ -191,7 +191,7 @@ a:hover {
     #TrangChu {
 
         #DanhMuc {
-            background-color: #EEEEEE;
+            background: #E0E0E0;
             padding: 0.5% 0;
 
             .act {
@@ -485,7 +485,8 @@ a:hover {
                         }
                     }
                 }
-                margin-bottom:2%;
+
+                margin-bottom: 2%;
             }
         }
 
@@ -1171,15 +1172,23 @@ a:hover {
             }
         }
     }
-    //Du Học
-    #DuHoc {
+    //Trang Danh Mục
+    #DanhMuc {
         #Title {
-            background-color: #03A9F4;
-            color: white;
+            background:white;
+            color: orange;
             padding: 0.5% 0 1%;
+            .title{
+                font-size:300%;
+                font-weight:bold;
+            }
         }
 
         #MainContent {
+            background: url('../img/bg-duhoc.jpg') no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
             .country {
                 //position: relative;
                 margin-bottom: 3%;
@@ -1188,6 +1197,9 @@ a:hover {
                     font-size: 180%;
                     color: black;
                     font-weight: bold;
+                    border:1px solid white;
+                    background:white;
+                    margin-top:2%;
                 }
 
                 img {
@@ -1199,13 +1211,23 @@ a:hover {
     //Loai
     #Type {
         #Title {
-            background-color: #03A9F4;
-            color: white;
+            background-color: white;
+            color: orange;
             padding: 0.5% 0 1%;
-            margin-bottom: 2%;
+            .title{
+                font-size:300%;
+                font-weight:bold;
+            }
         }
 
-        .maincontent {
+        #Content{
+            background:url('../img/bg-duhoc-2.jpg') no-repeat;
+            background-size:100% 100%;
+            background-attachment:fixed;
+        }
+
+        #MainContent {
+            
             .post {
                 > a {
                 }

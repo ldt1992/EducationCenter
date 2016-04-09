@@ -73,6 +73,8 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="fb-comments" data-href="http://www.kus.edu.vn" data-numposts="5"></div>
             </div>
         </div>
     </div>

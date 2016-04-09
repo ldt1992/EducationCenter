@@ -17,8 +17,10 @@ public partial class KetQuaTimKiem : System.Web.UI.Page
     private void KQTK()
     {
         string kw = Request.QueryString["keyword"];
-        Response.Write("<script>alert('" + kw + "')</script>");
-        repKetQuaTimKiem.DataSource = this._Post.TimKiemFTS(kw);
-        repKetQuaTimKiem.DataBind();
+
+        pager.PageSize = 10;
+        pager.DataSource = this._Post.TimKiemFTS(kw).DefaultView;
+        pager.BindToControl = repKetQuaTimKiem;
+        repKetQuaTimKiem.DataSource = pager.DataSourcePaged;
     }
 }

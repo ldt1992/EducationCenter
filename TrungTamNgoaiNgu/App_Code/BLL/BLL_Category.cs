@@ -26,7 +26,7 @@ public class BLL_Category
         this._connect.CloseConnect();
     }
 
-    //Lấy danh mục lớn
+    //Lấy danh mục lớn DU HỌC - DU LỊCH - ĐỊNH CƯ
     public DataTable LayDanhMuc()
     {
         if (!this.OpenConnect())
@@ -56,7 +56,7 @@ public class BLL_Category
     }
 
     //Lấy các loại hình đào tạo theo từng nước
-    public DataTable LayLoaiHinhDaoTao(string id)
+    public DataTable LayItemLoai(string id)
     {
         if (!this.OpenConnect())
             this.OpenConnect();

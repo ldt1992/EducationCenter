@@ -1,3 +1,8 @@
+* {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -36,18 +41,15 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
-.btn {
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-}
-.btn:hover {
-  background-color: #FF9800;
-  border-color: #FF9800;
-}
+/*.btn-info {
+    .border-radius(0px);
+    .transition(all, 0.2s, linear);
+
+    &:hover {
+        background-color: #FF9800;
+        border-color: #FF9800;
+    }
+}*/
 @media (min-width: 1024px) {
   a:hover {
     text-decoration: none;
@@ -75,14 +77,14 @@ a:hover {
   #Nav.navbar .navbar-toggle .icon-bar {
     border: 1px solid white;
   }
-  #Nav.navbar #menu ul.main-menu li a {
+  #Nav.navbar #menu #MainMenu li a {
     color: #F5F5F5;
     font-size: 150%;
   }
-  #Nav.navbar #menu ul.main-menu li a:hover {
+  #Nav.navbar #menu #MainMenu li a:hover {
     background-color: transparent;
   }
-  #Nav.navbar #menu ul.main-menu li a:focus {
+  #Nav.navbar #menu #MainMenu li a:focus {
     background-color: transparent;
   }
   #Nav.navbar #menu ul.dropdown-menu {
@@ -134,47 +136,47 @@ a:hover {
   #footer #recent {
     padding-bottom: 5%;
   }
-  #TrangChu .activities {
-    background-color: #EEEEEE;
+  #TrangChu #DanhMuc {
+    background: #E0E0E0;
     padding: 0.5% 0;
   }
-  #TrangChu .activities .act {
+  #TrangChu #DanhMuc .act {
     width: 33%;
     margin-bottom: 2%;
   }
-  #TrangChu .activities .act > div {
+  #TrangChu #DanhMuc .act > div {
     overflow: hidden;
   }
-  #TrangChu .activities .act a img {
+  #TrangChu #DanhMuc .act a img {
     width: 100%;
     height: 200px;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
   }
-  #TrangChu .activities .act a img:hover {
+  #TrangChu #DanhMuc .act a img:hover {
     transform: scale(1.1, 1.1);
   }
-  #TrangChu .activities .act .title {
+  #TrangChu #DanhMuc .act .title {
     text-align: center;
     font-size: 250%;
     color: forestgreen;
     font-weight: bolder;
     margin-bottom: 4%;
   }
-  #TrangChu .activities .act .caption {
+  #TrangChu #DanhMuc .act .caption {
     padding: 2%;
   }
-  #TrangChu .activities .act .caption .meta {
+  #TrangChu #DanhMuc .act .caption .meta {
     line-height: 200%;
     padding-right: 20%;
   }
-  #TrangChu .activities .act .caption .btn {
+  #TrangChu #DanhMuc .act .caption .btn {
     font-style: italic;
     padding-left: 0;
     text-decoration: underline;
   }
-  #TrangChu .activities .act .caption .btn:hover {
+  #TrangChu #DanhMuc .act .caption .btn:hover {
     color: #BDBDBD;
   }
   #TrangChu #News {
@@ -318,24 +320,27 @@ a:hover {
     font-size: 200%;
     padding: 0 20%;
   }
-  #TrangChu #Campus {
+  #TrangChu #HoatDong {
     background-color: #F5F5F5;
     padding: 4% 0;
   }
-  #TrangChu #Campus .title {
+  #TrangChu #HoatDong .title {
     font-weight: bold;
     font-size: 300%;
   }
-  #TrangChu #Campus hr {
+  #TrangChu #HoatDong hr {
     width: 25%;
     border: 1px solid #2196F3;
   }
-  #TrangChu #Campus .meta {
+  #TrangChu #HoatDong .meta {
     margin-bottom: 2%;
     font-size: 100%;
     padding: 0 2%;
   }
-  #TrangChu #Campus .campus {
+  #TrangChu #HoatDong #HinhAnh {
+    margin-bottom: 2%;
+  }
+  #TrangChu #HoatDong #HinhAnh .campus {
     border: 1px solid red;
     display: block;
     padding: 0;
@@ -347,12 +352,11 @@ a:hover {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
   }
-  #TrangChu #Campus .campus img {
+  #TrangChu #HoatDong #HinhAnh .campus img {
     transition: all 0.2s linear;
-    height: 250%;
-    width: 100%;
+    height: 250px;
   }
-  #TrangChu #Campus .campus .caption {
+  #TrangChu #HoatDong #HinhAnh .campus .caption {
     position: absolute;
     top: 0;
     left: 0;
@@ -363,11 +367,11 @@ a:hover {
     transition: opacity 0.2s linear;
     padding-top: 12%;
   }
-  #TrangChu #Campus .campus .caption .title {
+  #TrangChu #HoatDong #HinhAnh .campus .caption .title {
     color: white;
     z-index: 10;
   }
-  #TrangChu #Campus .campus .caption .btn {
+  #TrangChu #HoatDong #HinhAnh .campus .caption .btn {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -375,20 +379,11 @@ a:hover {
     color: white;
     border: 3px solid white;
   }
-  #TrangChu #Campus .campus:hover img {
+  #TrangChu #HoatDong #HinhAnh .campus:hover img {
     transform: scale(1.1, 1.1);
   }
-  #TrangChu #Campus .campus:hover .caption {
+  #TrangChu #HoatDong #HinhAnh .campus:hover .caption {
     opacity: 0.7;
-  }
-  #TrangChu #Campus .HinhAnh {
-    margin-bottom: 2%;
-  }
-  #TrangChu #Campus .HinhAnh .campus {
-    margin-bottom: 0;
-  }
-  #TrangChu #Campus .HinhAnh img {
-    height: 250px;
   }
   #TrangChu #Blogs {
     background-color: #F5F5F5;
@@ -928,26 +923,46 @@ a:hover {
   #Visa #MainContent .visa {
     margin-bottom: 3%;
   }
-  #DuHoc #Title {
-    background-color: #03A9F4;
-    color: white;
+  #DanhMuc #Title {
+    background: white;
+    color: orange;
     padding: 0.5% 0 1%;
   }
-  #DuHoc #MainContent .country {
+  #DanhMuc #Title .title {
+    font-size: 300%;
+    font-weight: bold;
+  }
+  #DanhMuc #MainContent {
+    background: url('../img/bg-duhoc.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  #DanhMuc #MainContent .country {
     margin-bottom: 3%;
   }
-  #DuHoc #MainContent .country .text {
+  #DanhMuc #MainContent .country .text {
     font-size: 180%;
     color: black;
     font-weight: bold;
+    border: 1px solid white;
+    background: white;
+    margin-top: 2%;
   }
-  #DuHoc #MainContent .country img {
+  #DanhMuc #MainContent .country img {
     height: 170px;
   }
   #Type #Title {
-    background-color: #03A9F4;
-    color: white;
+    background-color: white;
+    color: orange;
     padding: 0.5% 0 1%;
-    margin-bottom: 2%;
+  }
+  #Type #Title .title {
+    font-size: 300%;
+    font-weight: bold;
+  }
+  #Type #Content {
+    background: url('../img/bg-duhoc-2.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
   }
 }

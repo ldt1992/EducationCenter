@@ -10,7 +10,7 @@ public partial class ThemeDinhCu_Blog_Detail : System.Web.UI.Page
 {
     private BLL_Post _Post = new BLL_Post();
     private BLL_Category _Category = new BLL_Category();
-
+    public string CurrentPageUrl = "";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
@@ -19,6 +19,7 @@ public partial class ThemeDinhCu_Blog_Detail : System.Web.UI.Page
             CungChuDe();
             XemNhieu();
             Permalink();
+            CurrentPageUrl = Request.RawUrl;
         }
     }
     //Chi Tiết
