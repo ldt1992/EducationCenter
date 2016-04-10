@@ -127,6 +127,7 @@
     <a href="#" id="Backtop"><i class="fa fa-chevron-up"></i></a>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="//cdn.rawgit.com/tonystar/bootstrap-hover-tabs/master/bootstrap-hover-tabs.js"></script>
     <script src="js/DucTai.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -211,6 +212,9 @@
                     + '<span class="sec">%S</span> '
                     ));
             });
+
+            //Set Active
+
         });
     </script>
 </body>

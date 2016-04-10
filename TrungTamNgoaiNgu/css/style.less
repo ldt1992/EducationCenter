@@ -19,9 +19,9 @@
     padding-right: 0;
 }
 
-.container{
-    padding-right:0px;
-    padding-left:0px;
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 a:hover {
@@ -219,10 +219,11 @@ a:hover {
                     font-size: 250%;
                     font-weight: bolder;
                     margin-bottom: 4%;
-                    background:#DC3C00;
-                    padding:2% 0;
-                    a{
-                        color:white;
+                    background: #DC3C00;
+                    padding: 2% 0;
+
+                    a {
+                        color: white;
                     }
                 }
 
@@ -798,24 +799,31 @@ a:hover {
         }
 
         #Content {
-            .breadcrumb {
-                margin: 0 2% 5%;
+            background-color:#EFEBE9;
+            ul.breadcrumb {
+                background-color:white;
+                .border-radius(0);
+                li{
+                    font-size:150%;
+                }
             }
 
             #MainContent {
 
                 .blog {
                     border: none;
+                    background-color: white;
                     height: 200px;
-                    margin-bottom: 5%;
+                    margin-bottom: 2%;
                     padding: 0;
                     .border-radius(0px);
 
                     > a {
-                        margin-right: 2%;
+                        margin-right: 1%;
 
                         img {
-                            margin-bottom: 2%;
+                            .border-radius(0);
+                            padding:2%;
                             width: 300px;
                             height: 200px;
                         }
@@ -825,33 +833,42 @@ a:hover {
                         padding: 0;
 
                         .title {
+                            //border: 1px solid black;
+                            padding-top: 1%;
                             margin: 0 0 1px 0;
-                            color: black;
                             height: 50px;
                             overflow: hidden;
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 2;
 
-                            &:hover {
-                                color: #2196F3;
+                            a {
+                                color: black;
+                                font-weight:bold;
+                                font-size:150%;
+                                .transition(all, 0.3s, linear);
+                                &:hover {
+                                    color: #f44336;
+                                }
                             }
                         }
 
                         .meta {
-                            line-height: 170%;
+                            //border:1px solid black;
+                            line-height: 150%;
                             overflow: hidden;
                             height: 100px;
-                            margin: 0 0 10px 0;
+                            margin: 0 0 5px 0;
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 4;
-                            font-size: 110%;
+                            font-size: 120%;
                             padding: 0 1% 1% 0;
                             text-align: justify;
                         }
 
                         p.btnXem {
+                            margin-bottom:1%;
                             .btn {
                                 .border-radius(0px);
 
@@ -866,14 +883,12 @@ a:hover {
             }
 
             #Sidebar {
-                .title {
-                    margin-top: 0;
-                }
+                background-color:white;
 
                 #TinMoiNhat {
                     h3.title {
                         font-weight: bold;
-                        font-size: 180%;
+                        font-size: 200%;
                     }
 
                     .post {
@@ -881,9 +896,8 @@ a:hover {
 
                         > a {
                             img {
-                                margin-bottom: 5%;
-                                width: 50%;
-                                height: 120px;
+                                width: 40%;
+                                height: 80px;
                             }
                         }
 
@@ -1179,12 +1193,13 @@ a:hover {
     //Trang Danh Mục
     #DanhMuc {
         #Title {
-            background:white;
+            background: white;
             color: orange;
             padding: 0.5% 0 1%;
-            .title{
-                font-size:300%;
-                font-weight:bold;
+
+            .title {
+                font-size: 300%;
+                font-weight: bold;
             }
         }
 
@@ -1201,13 +1216,89 @@ a:hover {
                     font-size: 180%;
                     color: black;
                     font-weight: bold;
-                    border:1px solid white;
-                    background:white;
-                    margin-top:2%;
+                    border: 1px solid white;
+                    background: white;
+                    margin-top: 2%;
                 }
 
                 img {
                     height: 170px;
+                }
+            }
+        }
+    }
+
+    #DanhMuc2 {
+        #Title {
+            background: Orange;
+            color: white;
+            padding: 0.5% 0 1%;
+
+            .title {
+                font-size: 300%;
+                font-weight: bold;
+            }
+        }
+
+        #MainContent {
+            .tab-left {
+                ul.nav-tabs {
+                    float: left;
+
+                    li {
+                        float: none;
+                        margin: 0;
+
+                        a {
+                            border: none;
+                            margin: 0;
+                            .border-radius(0);
+                            background-color: #f44336;
+                            color: white;
+                            font-size: 120%;
+                            padding-top: 10%;
+                            padding-bottom: 10%;
+
+                            &:hover {
+                                background-color: #FF8A65;
+                            }
+                        }
+                    }
+                }
+
+                div.tab-content {
+                    div.thumbnail {
+                        .border-radius(0);
+                        padding: 0;
+                        margin-bottom: 10%;
+
+                        .caption {
+                            padding: 0;
+
+                            .title {
+                                margin: 0;
+                                padding: 2% 5%;
+                                line-height: 150%;
+
+                                a {
+                                    color: black;
+                                    .transition(all, 0.2s, linear);
+
+                                    &:hover {
+                                        color: #f44336;
+                                    }
+                                }
+                            }
+
+                            .meta {
+                                height: 50px;
+                                overflow: hidden;
+                                padding: 0 5%;
+                                margin: 0;
+                                font-size: 120%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1218,20 +1309,20 @@ a:hover {
             background-color: white;
             color: orange;
             padding: 0.5% 0 1%;
-            .title{
-                font-size:300%;
-                font-weight:bold;
+
+            .title {
+                font-size: 300%;
+                font-weight: bold;
             }
         }
 
-        #Content{
-            background:url('../img/bg-duhoc-2.jpg') no-repeat;
-            background-size:100% 100%;
-            background-attachment:fixed;
+        #Content {
+            background: url('../img/bg-duhoc-2.jpg') no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
         }
 
         #MainContent {
-
         }
     }
 }
