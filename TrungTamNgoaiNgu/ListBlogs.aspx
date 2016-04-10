@@ -7,23 +7,22 @@
         <!-- Title-->
         <div id="Title">
             <div class="container">
-                <h1 class="title" runat="server" id="TieuDe"></h1>
+                <h1 class="title"><%=Title %></h1>
             </div>
         </div>
 
         <!-- Content-->
         <div id="Content" class="container">
             <ul class="breadcrumb">
-                <li><a href="Default.aspx">Trang Chủ</a></li>
-                <li><a href="DanhMuc.aspx?id=<%=id_parent2 %>"><%=name_parent2 %></a></li>
-                <li><a href="Loai.aspx?id=<%=id_parent1 %>"><%=name_parent1 %></a></li>
-                <li class="active"><%=ActivedPage %></li>
+                <li><a href="Default.aspx">TRANG CHỦ</a></li>
+                <li><a href="DanhMuc.aspx?id=<%=id_parent2 %>"><%=name_parent2.ToUpper() %></a></li>
+                <li><a href="Loai.aspx?id=<%=id_parent1 %>"><%=name_parent1.ToUpper() %></a></li>
+                <li class="active"><%=ActivedPage.ToUpper() %></li>
             </ul>
 
             <div class="row">
                 <!-- MainContent -->
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 maincontent">
-                    <%--<div id="MainContent" runat="server"></div>--%>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="MainContent">
                     <asp:DataList ID="dlBaiViet" runat="server">
                         <ItemTemplate>
                             <div class="thumbnail blog">
@@ -63,9 +62,8 @@
 
                 <!-- Sidebar -->
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="Sidebar">
-                    <div id="FeaturedPosts">
+                    <div id="TinMoiNhat">
                         <h3 class="title">TIN MỚI NHẤT</h3>
-                        <%--<div id="TinMoiNhat" runat="server"></div>--%>
                         <asp:Repeater ID="repTinMoiNhat" runat="server">
                             <ItemTemplate>
                                 <div class="media post">
