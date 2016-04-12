@@ -24,7 +24,7 @@
 
             <div class="container">
                 <div class="row">
-                    <!-- MainContent -->
+                    <!-- Main Content -->
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="MainContent">
                         <asp:DataList ID="dlBaiViet" runat="server">
                             <ItemTemplate>
@@ -53,7 +53,7 @@
                             PageNumbersDisplay="Numbers" ResultsLocation="None"
                             BackNextDisplay="Buttons" QueryStringKey="page" ControlCssClass="phantrang">
                         </cc1:CollectionPager>
-                        <!-- End phân trang-->
+                        <!-- End phân trang -->
                     </div>
                     <!-- End MainContent-->
 
@@ -65,10 +65,10 @@
                                 <ItemTemplate>
                                     <div class="thumbnail post">
                                         <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
-                                            <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail pull-left" />
+                                            <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" />
                                         </a>
                                         <div class="caption">
-                                            <h4 class="title"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
+                                            <h4 class="title media-heading"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
                                             <p class="btnXem"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem Thêm</a></p>
                                         </div>
                                     </div>

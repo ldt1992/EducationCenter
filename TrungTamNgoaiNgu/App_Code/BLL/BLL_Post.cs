@@ -113,7 +113,19 @@ public class BLL_Post
             this.OpenConnect();
 
         string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where FREETEXT((PostContentVN , PostTitle), '" + keyword + "')";
-        //string query = "select * from POST where PostContentVN like N'%" + keyword + "%'";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lấy posts từ CategoryID
+    public DataTable PostByCategoryID(int top, string idCategory)
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select top " + top + " * from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID  join Images img on p.PostImage = img.ImagesID where p_ct.CategoryID = " + idCategory;
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

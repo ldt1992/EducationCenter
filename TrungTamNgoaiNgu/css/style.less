@@ -629,74 +629,6 @@ a:hover {
                 }
             }
         }
-
-        #Invent {
-            padding: 0;
-            padding-top: 4%;
-
-            .title {
-                font-size: 300%;
-                margin-bottom: 2%;
-            }
-
-            hr {
-                width: 30%;
-                border: 1px solid #2196F3;
-                margin-bottom: 5%;
-            }
-
-            label {
-                font-size: 250%;
-                font-weight: initial;
-                margin-right: 7%;
-
-                &:hover {
-                    color: gray;
-                }
-            }
-        }
-
-        #Countdown {
-            padding: 3% 0;
-            background-color: #E64A19;
-            color: white;
-
-            .form {
-                background-color: white;
-                padding: 5% 15%;
-
-                .title {
-                    color: black;
-                }
-            }
-
-            #countdown {
-                text-align: center;
-
-                hr {
-                    width: 10%;
-                    border: 2px solid white;
-                }
-
-                .meta {
-                    font-size: 180%;
-                }
-
-                #timer {
-                    span {
-                        padding: 1% 2%;
-                        color: white;
-                        background-color: #424242;
-                        .border-radius(5px);
-                        font-size: 300%;
-                    }
-                }
-            }
-
-            #formSignup {
-                text-align: center;
-            }
-        }
     }
     //2. FAQs
     #FAQs {
@@ -799,12 +731,16 @@ a:hover {
         }
 
         #Content {
-            background-color:#EFEBE9;
-            ul.breadcrumb {
-                background-color:white;
-                .border-radius(0);
-                li{
-                    font-size:150%;
+            background-color: #EFEBE9;
+
+            .container {
+                ul.breadcrumb {
+                    background-color: white;
+                    .border-radius(0);
+
+                    li {
+                        font-size: 150%;
+                    }
                 }
             }
 
@@ -823,7 +759,7 @@ a:hover {
 
                         img {
                             .border-radius(0);
-                            padding:2%;
+                            padding: 2%;
                             width: 300px;
                             height: 200px;
                         }
@@ -844,9 +780,10 @@ a:hover {
 
                             a {
                                 color: black;
-                                font-weight:bold;
-                                font-size:150%;
+                                font-weight: bold;
+                                font-size: 150%;
                                 .transition(all, 0.3s, linear);
+
                                 &:hover {
                                     color: #f44336;
                                 }
@@ -868,7 +805,8 @@ a:hover {
                         }
 
                         p.btnXem {
-                            margin-bottom:1%;
+                            margin-bottom: 1%;
+
                             .btn {
                                 .border-radius(0px);
 
@@ -883,7 +821,7 @@ a:hover {
             }
 
             #Sidebar {
-                background-color:white;
+                background-color: white;
 
                 #TinMoiNhat {
                     h3.title {
@@ -892,37 +830,41 @@ a:hover {
                     }
 
                     .post {
-                        margin-bottom: 5%;
+                        .border-radius(0);
+                        padding: 0;
+                        border: none;
+                        margin-bottom: 15%;
 
-                        > a {
-                            img {
-                                width: 40%;
-                                height: 80px;
-                            }
+                        img {
+                            .border-radius(0);
                         }
 
-                        .media-body {
-                            margin-left: 10%;
+                        .caption {
+                            padding: 0;
 
                             .title {
-                                font-size: 120%;
-                                color: black;
-                                height: 80px;
-                                padding-left: 5%;
-                                overflow: hidden;
-                                display: -webkit-box;
-                                -webkit-box-orient: vertical;
-                                -webkit-line-clamp: 4;
-                                line-height: 150%;
-                                font-weight: bold;
+                                padding: 2% 0;
+                                margin-bottom: 2%;
 
-                                &:hover {
-                                    color: #2196F3;
+                                a {
+                                    color: black;
+                                    font-size: 150%;
+                                    .transition(all, 0.2s, linear);
+
+                                    &:hover {
+                                        color: #f44336;
+                                    }
                                 }
                             }
 
-                            p.btnXem {
-                                padding-left: 5%;
+                            .btn {
+                                .border-radius(0);
+                                .transition(all, 0.2s, linear);
+
+                                &:hover {
+                                    background-color: #FF9800;
+                                    border: 1px solid #FF9800;
+                                }
                             }
                         }
                     }

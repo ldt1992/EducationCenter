@@ -21,30 +21,25 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
     {
         if (!Page.IsPostBack)
         {
-            ListPost();
-            TinTucMoiNhat();
+            LoadData();
+            
             Permalink();
         }
     }
 
-    private void ListPost()
+    private void LoadData()
     {
-        string id = Request.QueryString["id"];
+        string idCategory = Request.QueryString["id"];
 
-        //Using ListView & DataPager
-        //dlBaiViet.DataSource = this._Post.DanhSachBaiViet(id);
-        //dlBaiViet.DataBind();
-
+        //Danh sách post theo category giảm dần lượt xem
         //Using DataList & CollectionPager
         pager.PageSize = 5;
-        pager.DataSource = this._Post.DanhSachBaiViet(id).DefaultView;
+        pager.DataSource = this._Post.DanhSachBaiViet(idCategory).DefaultView;
         pager.BindToControl = dlBaiViet;
         dlBaiViet.DataSource = pager.DataSourcePaged;
-    }
 
-    private void TinTucMoiNhat()
-    {
-        repTinMoiNhat.DataSource = this._Post.ListTinMoiNhat(3);
+        //Tin tức mới nhất theo category
+        repTinMoiNhat.DataSource = this._Post.PostByCategoryID(5, idCategory);
         repTinMoiNhat.DataBind();
     }
 

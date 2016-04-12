@@ -219,29 +219,37 @@
                 </div>
             </div>
         </div>
-        <!-- ĐẾM NGƯỢC -->
-        <div id="Countdown">
+        <!-- PHIẾU ĐĂNG KÝ TƯ VẤN -->
+        <div id="PhieuTuVan">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12" id="countdown">
-                        <h2 class="title">QUÀ TẶNG HẤP DẪN</h2>
-                        <hr class="hr_title" />
-                        <p class="meta">Số Lượng Có Hạn. Tham Gia Ngay</p>
-                        <div id="timer"></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="LoiGoi">
+                        <p>Hãy gọi cho chúng tôi</p>
+                        <p class="text-danger">(08) 62 88 35 66</p>
+                        <p>Hay để chúng tôi</p>
+                        <p class="text-info">gọi lại cho bạn</p>
+                        <%--<div id="timer"></div>--%>
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="formSignup">
-                        <div class="form">
-                            <h2 class="title">Đăng Ký</h2>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your name..." />
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="Phieu">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input  type="text" id="fullname" placeholder="Full name: " class="form-control" />
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your email..." />
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input  type="text" id="Email" placeholder="Email: " class="form-control" />
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Phone..." />
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input  type="text" id="Phone" placeholder="Phone: " class="form-control" />
                             </div>
-                            <p><a href="#" class="btn btn-primary">GET IT</a></p>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input  type="text" id="Code" placeholder="Promotion Code: " class="form-control" />
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <textarea id="Message" placeholder="Message: " rows="10" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input type="submit" value="GỬI" class="btn btn-danger btn-lg" />
+                            </div>
                         </div>
                     </div>
                 </div>
