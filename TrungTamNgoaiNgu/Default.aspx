@@ -233,22 +233,22 @@
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="Phieu">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input  type="text" id="fullname" placeholder="Full name: " class="form-control" />
+                                <input  type="text" id="Fullname" placeholder="Full name: " class="form-control" runat="server" />
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input  type="text" id="Email" placeholder="Email: " class="form-control" />
+                                <input  type="text" id="Email" placeholder="Email: " class="form-control" runat="server" />
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input  type="text" id="Phone" placeholder="Phone: " class="form-control" />
+                                <input  type="text" id="Phone" placeholder="Phone: " class="form-control" runat="server" />
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input  type="text" id="Code" placeholder="Promotion Code: " class="form-control" />
+                                <input  type="text" id="Code" placeholder="Promotion Code: " class="form-control" runat="server" />
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <textarea id="Message" placeholder="Message: " rows="10" class="form-control"></textarea>
+                                <textarea id="Message" placeholder="Message: " rows="10" class="form-control" runat="server"></textarea>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <input type="submit" value="GỬI" class="btn btn-danger btn-lg" />
+                                <asp:Button ID="btnSubmit" runat="server" Text="GỬI" CssClass="btn btn-lg btn-danger" OnClick="btnSubmit_Click" />
                             </div>
                         </div>
                     </div>

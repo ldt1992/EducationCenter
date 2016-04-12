@@ -507,6 +507,28 @@ a:hover {
     padding: 0 5%;
     z-index: 10;
   }
+  #TrangChu #PhieuTuVan {
+    background-color: #F5F5F5;
+  }
+  #TrangChu #PhieuTuVan #LoiGoi p {
+    font-size: 200%;
+  }
+  #TrangChu #PhieuTuVan #Phieu textarea,
+  #TrangChu #PhieuTuVan #Phieu input,
+  #TrangChu #PhieuTuVan #Phieu btn {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  #TrangChu #PhieuTuVan #Phieu input {
+    margin-bottom: 6%;
+  }
+  #TrangChu #PhieuTuVan #Phieu textarea {
+    margin-bottom: 3%;
+  }
+  #TrangChu #PhieuTuVan #Phieu .btn {
+    padding: 2% 7%;
+  }
   #FAQs #Path {
     background-color: #2196F3;
     color: white;
