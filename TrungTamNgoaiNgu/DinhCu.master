@@ -30,25 +30,24 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <!-- LOGO-->
                             <a href="Default.aspx" class="navbar-brand">
                                 <img src="img/logo.png" class="img-responsive" alt="logo" />
                             </a>
-                            <a href="Agile/HomePage.aspx" class="navbar-brand">
-                                <img src="img/logo-2.png" class="img-responsive" alt="logo" />
-                            </a>
+                            <!--END LOGO-->
                         </div>
-                        <div id="menu" class="collapse navbar-collapse">
-                            <%-- Search --%>
-                            <div class="navbar-form navbar-right search">
+                        <div id="menu" class="collapse navbar-collapse navbar-right">
+                            <!-- SEARCH -->
+                            <div class="navbar-form navbar-right">
                                 <div class="input-group">
                                     <asp:TextBox ID="txtTimKiem" runat="server" CssClass="form-control"></asp:TextBox>
                                     <span class="input-group-btn">
-                                        <%--<button class="btn btn-default"><i class="fa fa-search"></i></button>--%>
                                         <asp:Button ID="btnTimKiem" runat="server" Text="Tìm kiếm" CssClass="btn btn-default" OnClick="btnTimKiem_Click" />
                                     </span>
                                 </div>
                             </div>
-                            <%-- Links --%>
+                            <!-- END SEARCH -->
+                            <!-- LINKS -->
                             <ul class="nav navbar-nav navbar-right" id="MainMenu">
                                 <asp:Repeater ID="repMainMenu" runat="server">
                                     <ItemTemplate>
@@ -56,6 +55,7 @@
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </ul>
+                            <!--END LINKS -->
                         </div>
                     </div>
                 </nav>
@@ -116,13 +116,14 @@
     <!-- End Subiz Chat-->
     <!-- Start FB Comment-->
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=852610754849200";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=852610754849200";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- End FB Comment-->
     <a href="#" id="Backtop"><i class="fa fa-chevron-up"></i></a>
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -135,26 +136,7 @@
 
             $('[data-toggle="tooltip"]').tooltip();
 
-            //Hover dropdown menu
-            if (window.innerWidth >= 768) {
-                $('.dropdown').hover(function () {
-                    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn('fast');
-                }, function () {
-                    $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut('fast');
-                });
-            }
-
             new WOW().init();
-            $('#myWelcome').carousel({
-                interval: false
-            });
-
-            $("#myWelcome li").each(function () {
-                $(this).click(function () {
-                    $("#myWelcome li.active").removeClass("active");
-                    $(this).addClass("active");
-                });
-            });
 
             $(window).scroll(function () {
                 if ($(window).scrollTop() != 0) {
@@ -176,12 +158,9 @@
                 });
             }
 
+            $('[rel=prettyPhoto]').prettyPhoto();
             $('[rel="prettyPhoto[gallery1]"]').prettyPhoto();
             $('[rel="prettyPhoto[gallery2]"]').prettyPhoto();
-
-            $("#Owl-carousel-number").carousel({
-                interval: false
-            });
 
             $("#Backtop").click(function () {
                 $("body,html").animate({ scrollTop: 0 }, 800);
@@ -200,8 +179,6 @@
                 container.isotope({ filter: FilterValue });
             });
 
-            $('[rel=prettyPhoto]').prettyPhoto();
-
             //Countdown
             $('#timer').countdown('2016/04/28', function (event) {
                 $(this).html(event.strftime(
@@ -214,7 +191,7 @@
             });
 
             //Set Active
-
+            
         });
     </script>
 </body>

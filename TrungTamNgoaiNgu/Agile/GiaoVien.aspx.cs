@@ -5,20 +5,21 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class HomePage : System.Web.UI.Page
+public partial class Agile_GiaoVien : System.Web.UI.Page
 {
     private BLL_GiaoVien _GiaoVien = new BLL_GiaoVien();
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
         {
-            ListGiaoVien();
+            ThongTinGiaoVien();
         }
     }
 
-    private void ListGiaoVien()
+    private void ThongTinGiaoVien()
     {
-        rpTeacher.DataSource = this._GiaoVien.DanhSachGiaoVien();
-        rpTeacher.DataBind();
+        string idGV = Request.QueryString["id"];
+        repGiaoVien.DataSource = this._GiaoVien.GiaoVienChiTiet(idGV);
+        repGiaoVien.DataBind();
     }
 }

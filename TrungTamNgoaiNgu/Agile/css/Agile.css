@@ -52,7 +52,7 @@ a:hover {
     padding-top: 0.5%;
   }
   #header #menu li a {
-    font-size: 22px;
+    font-size: 80%;
     color: black;
     font-style: italic;
     border-bottom: 2px solid transparent;
@@ -63,6 +63,10 @@ a:hover {
   }
   #header #menu li.active a {
     border-bottom: 2px solid orange;
+  }
+  .navbar-brand img {
+    width: 100px;
+    height: 130%;
   }
   #header.navbar-fixed-top {
     background-color: white;
@@ -108,30 +112,6 @@ a:hover {
   #HomePage #Features .service .meta {
     font-weight: lighter;
     font-size: 120%;
-  }
-  #HomePage #Portfolio {
-    padding: 3% 0;
-  }
-  #HomePage #Portfolio .title {
-    font-weight: bold;
-    font-size: 400%;
-    margin-bottom: 15%;
-  }
-  #HomePage #Portfolio #BtnFilter {
-    padding: 13% 0 0 0;
-  }
-  #HomePage #Portfolio #BtnFilter .btn-highlight {
-    margin-right: 1%;
-    font-style: italic;
-  }
-  #HomePage #Portfolio .element-item {
-    margin-bottom: 3%;
-  }
-  #HomePage #Portfolio .btn-more {
-    padding: 1.5% 8%;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
   }
   #HomePage #Info {
     padding: 3% 0;
@@ -302,36 +282,6 @@ a:hover {
     border: 1px solid #F5F5F5;
     box-sizing: border-box;
   }
-  #HomePage #Contact1 {
-    padding: 1% 0;
-  }
-  #HomePage #Contact1 .title {
-    font-size: 400%;
-    font-weight: bold;
-  }
-  #HomePage #Contact1 .meta {
-    margin-bottom: 5%;
-  }
-  #HomePage #Contact1 .parallaxScroll {
-    background: url('../img/parallax-bg9.jpg') no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    padding: 5% 0;
-  }
-  #HomePage #Contact1 .parallaxScroll .title,
-  #HomePage #Contact1 .parallaxScroll address {
-    color: white;
-  }
-  #HomePage #Contact1 .parallaxScroll .title {
-    font-size: 200%;
-    margin-bottom: 5%;
-  }
-  #HomePage #Contact1 .parallaxScroll address {
-    font-size: 120%;
-  }
-  #HomePage #Contact2 {
-    padding: 1% 0 5% 0;
-  }
   footer {
     background-color: #424242;
   }
@@ -480,5 +430,57 @@ a:hover {
   #Blog_Detail #Sidebar #PopularPost .post .meta {
     line-height: 180%;
     font-size: 120%;
+  }
+  #LienHe #Title {
+    background-color: #FF5722;
+    padding: 1.5% 0;
+  }
+  #LienHe #Title .title {
+    color: white;
+    margin: 0;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #LienHe #Map {
+    height: 500px;
+  }
+  #LienHe #Map .ggmap iframe {
+    height: 500px;
+  }
+  #LienHe #Contact1 {
+    padding: 1% 0;
+  }
+  #LienHe #Contact1 .title {
+    font-size: 400%;
+    font-weight: bold;
+  }
+  #LienHe #Contact1 .meta {
+    margin-bottom: 5%;
+  }
+  #LienHe #Contact1 .parallaxScroll {
+    background: url('../img/parallax-bg9.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 5% 0;
+  }
+  #LienHe #Contact1 .parallaxScroll .title,
+  #LienHe #Contact1 .parallaxScroll address {
+    color: white;
+  }
+  #LienHe #Contact1 .parallaxScroll .title {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+  #LienHe #Contact1 .parallaxScroll address {
+    font-size: 120%;
+  }
+  #LienHe #Contact2 {
+    padding: 1% 0 5% 0;
+  }
+  #LienHe #Contact2 .btn,
+  #LienHe #Contact2 .form-control {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
   }
 }

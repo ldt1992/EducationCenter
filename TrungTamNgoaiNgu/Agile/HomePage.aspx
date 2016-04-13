@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="HomePage">
-        <%-- Slider --%>
+        <!-- Slider -->
         <div class="container-fluid">
             <!-- Start WOWSlider.com BODY section -->
             <div id="wowslider-container1">
@@ -25,18 +25,19 @@
                         <a href="img/data1/images/sliderskyline.jpg" title="slider-skyline"><span>3</span></a>
                     </div>
                 </div>
-                <%--<div class="ws_script" style="position: absolute; left: -99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.6</div>
-                <div class="ws_shadow"></div>--%>
             </div>
 
             <!-- End WOWSlider.com BODY section -->
         </div>
+        <!-- End Slider-->
+        <!-- Khau hieu-->
         <div class="container">
             <h1 id="Title">THE<br />
                 <span class="highlight">BOLD & FLAT THEME</span><br />
                 THAT MEANS BUSINESS</h1>
         </div>
-        <%-- Features --%>
+        <!-- End Khau hieu-->
+        <!-- Features -->
         <div id="Features">
             <div class="container">
                 <h1 class="text-center title">BRANDING SERVICES</h1>
@@ -69,16 +70,17 @@
                 </div>
             </div>
         </div>
-        <%-- Portfolio --%>
+        <!-- End Features -->
+        <!-- Portfolio -->
         <div id="Portfolio">
             <div class="container">
-                <div class="row">
+                <%--<div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <h1 class="title">THE<br />
                             PORTFOLIO</h1>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12 text-right">
-                        <%-- Button Filter --%>
+                        <!-- Button Filter -->
                         <div id="BtnFilter">
                             <button type="button" class="btn btn-default btn-highlight" data-filter="*">All</button>
                             <button type="button" class="btn btn-default btn-highlight" data-filter=".business">Business</button>
@@ -125,12 +127,35 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <button type="button" class="btn btn-default btn-lg btn-more">More</button>
                     </div>
+                </div>--%>
+                <h1 class="text-center">TEACHER</h1>
+                <div class="row">
+                    <!-- TEACHER-->
+                    <asp:Repeater ID="rpTeacher" runat="server">
+                        <ItemTemplate>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="thumbnail teacher">
+                                    <a href="GiaoVien.aspx?id=<%# Eval("GVID") %>"><img src="img/img-client1.jpg" class="img-responsive" alt="" /></a>
+                                    <div class="caption">
+                                        <h3 class="title"><a href="GiaoVien.aspx?id=<%# Eval("GVID") %>"><%# Eval("FirstName") + " " + Eval("LastName") %></a></h3>
+                                        <p class="meta"><%# Eval("Email") %></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    <!-- END TEACHER-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <a href="ListTeachers.aspx" class="btn btn-info">Xem thêm</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- End Portfolio -->
         <%-- Info --%>
         <div id="Info">
             <div class="container-fluid">
+                <h1 class="text-center">VIDEO LỚP HỌC</h1>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
                         <div class="preview">
@@ -166,7 +191,7 @@
             </div>
         </div>
         <%-- Team --%>
-        <div id="Team">
+        <%--<div id="Team">
             <div class="container">
                 <h1 class="title">OUR TEAM</h1>
                 <div class="carousel slide" data-ride="carousel" id="myTabSlider">
@@ -233,9 +258,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
         <%-- % --%>
-        <div id="Percent">
+        <%--<div id="Percent">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -277,10 +302,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
         <%-- Team2 --%>
         <div id="Team2">
             <div class="container">
+                <h1 class="text-center" style="margin-bottom: 5%;">CẢM NHẬN TỪ KHÁCH HÀNG</h1>
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -352,82 +378,6 @@
                 <img src="img/logo14.png" class="img-responsive pull-left" alt="" title="" />
             </div>
         </div>
-        <%-- Contact 1 --%>
-        <div id="Contact1">
-            <div class="container-fluid text-center">
-                <h1 class="title">GET IN TOUCH WITH US</h1>
-                <p class="meta">Feel free to give us a call or pop in for a cuppa, we are happy to talk you through any projects or run live demos for those wishing to see what it is to use our products and how they look like.</p>
-                <div class="parallaxScroll">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-left">
-                                <h3 class="title">CONTACT ADDRESS</h3>
-                                <address>
-                                    2201 North Sam Houston Pkwy<br />
-                                    Mark Blvd, Peach Street<br />
-                                    Seattle, WA, 66214
-                                </address>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-left">
-                                <h3 class="title">CONTACT DETAILS</h3>
-                                <address>
-                                    +1 (666) 777 9999, +33 (0)143 31 0035<br />
-                                    john.doe@example.com
-                                </address>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-left">
-                                <h3 class="title">OFFICE HOURS</h3>
-                                <address>
-                                    9-00 am to 6pm<br />
-                                    Monday to Friday
-                                </address>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <%-- Contact 2 --%>
-        <div id="Contact2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label>Email</label>
-                            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label>Url</label>
-                            <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                            <label>Message</label>
-                            <asp:TextBox ID="TextBox5" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="10"></asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button1" runat="server" Text="SEND THE MESSAGE" CssClass="btn btn-more btn-lg" />
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </asp:Content>
-

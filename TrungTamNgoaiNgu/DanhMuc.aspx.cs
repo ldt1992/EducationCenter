@@ -16,12 +16,17 @@ public partial class DuHoc : System.Web.UI.Page
         this._Category = new BLL_Category();
 
         if (!Page.IsPostBack)
+        {
             ThanhPhanDanhMuc();
+            repDanhMuc_content.DataSource = Nuoc();
+            repDanhMuc_content.DataBind();
+        }
     }
 
     private void ThanhPhanDanhMuc()
     {
         string id = Request.QueryString["id"];
+        string idCategory = "";
 
         DataTable dt = this._Category.LayDanhMucTheoID(id);
         foreach (DataRow item in dt.Rows)
@@ -29,7 +34,28 @@ public partial class DuHoc : System.Web.UI.Page
             DanhMuc = item[1].ToString();
         }
 
-        repDanhMuc.DataSource = this._Category.LayListCountry(id);
-        repDanhMuc.DataBind();
+        repDanhMuc_nav.DataSource = this._Category.LayListCountry(id);
+        repDanhMuc_nav.DataBind();
+
+        
+
+        DataTable dt2 = this._Category.LayListCountry(id);
+        foreach (DataRow item in dt2.Rows)
+        {
+            idCategory = item[0].ToString();
+        }
+    }
+
+    public DataTable Nuoc()
+    {
+        string id = Request.QueryString["id"];
+        DataTable ListCountry = this._Category.LayListCountry(id);
+        return ListCountry;
+    }
+
+    public DataTable LoaiHinh(string loaihinh_id)
+    {
+        DataTable ListLoaiHinh = this._Category.LayItemLoai(loaihinh_id);
+        return ListLoaiHinh;
     }
 }

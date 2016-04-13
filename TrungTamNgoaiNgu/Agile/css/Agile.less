@@ -72,7 +72,7 @@ a {
 
             li {
                 a {
-                    font-size: 22px;
+                    font-size: 80%;
                     color: black;
                     font-style: italic;
                     border-bottom: 2px solid transparent;
@@ -163,31 +163,6 @@ a {
         }
         //Portfolio
         #Portfolio {
-            padding: 3% 0;
-
-            .title {
-                font-weight: bold;
-                font-size: 400%;
-                margin-bottom: 15%;
-            }
-
-            #BtnFilter {
-                padding: 13% 0 0 0;
-
-                .btn-highlight {
-                    margin-right: 1%;
-                    font-style: italic;
-                }
-            }
-
-            .element-item {
-                margin-bottom: 3%;
-            }
-
-            .btn-more {
-                padding: 1.5% 8%;
-                .border-radius(0);
-            }
         }
         //Info
         #Info {
@@ -374,7 +349,7 @@ a {
         //ParallaxScroll
         #ParallaxScroll {
             padding: 10% 0;
-            background: url('/../../img/parallax-bg5.jpg') no-repeat;
+            background: url('../img/parallax-bg5.jpg') no-repeat;
             background-size: 100%;
             background-attachment: fixed;
             color: white;
@@ -404,43 +379,6 @@ a {
                 border: 1px solid #F5F5F5;
                 box-sizing: border-box;
             }
-        }
-        //Contact1
-        #Contact1 {
-            padding: 1% 0;
-
-            .title {
-                font-size: 400%;
-                font-weight: bold;
-            }
-
-            .meta {
-                margin-bottom: 5%;
-            }
-
-            .parallaxScroll {
-                background: url('/../../img/parallax-bg9.jpg') no-repeat;
-                background-size: 100%;
-                background-attachment: fixed;
-                padding: 5% 0;
-
-                .title, address {
-                    color: white;
-                }
-
-                .title {
-                    font-size: 200%;
-                    margin-bottom: 5%;
-                }
-
-                address {
-                    font-size: 120%;
-                }
-            }
-        }
-        //Contact2
-        #Contact2 {
-            padding: 1% 0 5% 0;
         }
     }
     //Footer
@@ -646,6 +584,71 @@ a {
                         font-size: 120%;
                     }
                 }
+            }
+        }
+    }
+    //Liên Hệ
+    #LienHe {
+        #Title {
+            background-color: #FF5722;
+            padding: 1.5% 0;
+
+            .title {
+                color: white;
+                margin: 0;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        }
+
+        #Map {
+            height: 500px;
+
+            .ggmap {
+                iframe {
+                    height: 500px;
+                }
+            }
+        }
+        //Contact1
+        #Contact1 {
+            padding: 1% 0;
+
+            .title {
+                font-size: 400%;
+                font-weight: bold;
+            }
+
+            .meta {
+                margin-bottom: 5%;
+            }
+
+            .parallaxScroll {
+                background: url('../img/parallax-bg9.jpg') no-repeat;
+                background-size: 100%;
+                background-attachment: fixed;
+                padding: 5% 0;
+
+                .title, address {
+                    color: white;
+                }
+
+                .title {
+                    font-size: 200%;
+                    margin-bottom: 5%;
+                }
+
+                address {
+                    font-size: 120%;
+                }
+            }
+        }
+        //Contact2
+        #Contact2 {
+            padding: 1% 0 5% 0;
+
+            .btn, .form-control {
+                .border-radius(0);
             }
         }
     }

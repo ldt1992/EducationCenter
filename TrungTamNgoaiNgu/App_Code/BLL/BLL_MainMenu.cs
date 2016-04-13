@@ -25,13 +25,26 @@ public class BLL_MainMenu
     {
         this._connect.CloseConnect();
     }
-
-    public DataTable GetMainMenu()
+    //MENU DU HỌC
+    public DataTable GetMainMenu(int top)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from MainMenu order by ItemIndex asc";
+        string query = "select top " + top + " * from MainMenu order by ItemIndex asc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //MENU NGOẠI NGỮ
+    public DataTable GetMainMenu_NgoaiNgu()
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select  * from MainMenu where MenuID >=5 order by ItemIndex asc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
