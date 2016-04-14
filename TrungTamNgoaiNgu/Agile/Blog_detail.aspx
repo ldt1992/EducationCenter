@@ -2,13 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="Blog_Detail">
-        <%-- Title --%>
+        <!-- Title -->
         <div id="Title">
             <div class="container">
                 <h1 class="title">BLOG</h1>
             </div>
         </div>
-        <%-- Content --%>
+        <!-- End Title -->
+        <!-- Content -->
         <div id="Content">
             <div class="container">
                 <%-- Path --%>
@@ -90,5 +91,6 @@
                 </div>
             </div>
         </div>
+        <!-- End Content -->
     </div>
 </asp:Content>

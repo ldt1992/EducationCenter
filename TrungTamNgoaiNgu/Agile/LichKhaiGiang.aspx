@@ -1,16 +1,16 @@
-﻿<%@ Page Title="Thông tin giáo viên" Language="C#" MasterPageFile="Agile.master" AutoEventWireup="true" CodeFile="GiaoVien.aspx.cs" Inherits="Agile_GiaoVien" %>
+﻿<%@ Page Title="LỊch Khai Giảng" Language="C#" MasterPageFile="~/Agile/Agile.master" AutoEventWireup="true" CodeFile="LichKhaiGiang.aspx.cs" Inherits="Agile_LichKhaiGiang" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="GiaoVien">
-        <!-- Title-->
+    <div id="LichKhaiGiang">
+        <!-- Title -->
         <div id="Title">
             <div class="container">
-                <h1 class="title">THÔNG TIN GIÁO VIÊN</h1>
+                <h1 class="title">LỊCH KHAI GIẢNG</h1>
             </div>
         </div>
-        <!-- End Title-->
+        <!-- End Title -->
 
-        <!-- Content-->
+        <!-- Content -->
         <div id="Content">
             <!-- Breadcrumb -->
             <div id="Breadcrumb">
@@ -23,25 +23,23 @@
                 </div>
             </div>
             <!-- End Breadcrumb -->
+
             <div class="container">
                 <div class="row">
                     <!-- MainContent -->
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="MainContent">
-                        <div class="row">
-                            <asp:Repeater ID="repGiaoVien" runat="server">
-                                <ItemTemplate>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                        <img src="img/img-client1.jpg" alt="" />
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                        <h2 class="title"><%# Eval("FirstName") + " " + Eval("LastName") %></h2>
-                                        <p class="birthday"><%# Eval("Birthday") %></p>
-                                        <p class="email"><%# Eval("Email") %></p>
-                                        <p class="meta"><%# Eval("MoTaGV") %></p>
-                                    </div>
-                                </ItemTemplate>
-                            </asp:Repeater>
-                        </div>
+                        <table class="table table-hover">
+                            <tr>
+                                <th>LỚp học</th>
+                                <th>Ngày khai giảng</th>
+                                <th>Mô tả</th>
+                            </tr>
+                            <tr>
+                                <td>Giao tiếp cơ bản</td>
+                                <td>12/12/2016</td>
+                                <td>lớp dành cho người mới bắt đầu</td>
+                            </tr>
+                        </table>
                     </div>
                     <!-- End MainContent -->
                     <!-- Sidebar -->
@@ -51,29 +49,32 @@
                                 <h2 class="title">Thông Báo Mới</h2>
                             </div>
                             <div class="thumbnail news">
-                                <a href="#"><img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
+                                <a href="#">
+                                    <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                 <div class="caption">
                                     <h3 class="title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
                             <div class="thumbnail news">
-                                <a href="#"><img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
+                                <a href="#">
+                                    <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                 <div class="caption">
                                     <h3 class="title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
                             <div class="thumbnail news">
-                                <a href="#"><img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
+                                <a href="#">
+                                    <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                 <div class="caption">
                                     <h3 class="title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Sidebar -->
+                    <!-- Sidebar -->
                 </div>
             </div>
         </div>
-        <!-- End Content-->
+        <!-- End Content -->
     </div>
 </asp:Content>

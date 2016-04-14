@@ -1,6 +1,3 @@
-body {
-  position: relative;
-}
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -52,17 +49,11 @@ a:hover {
     padding-top: 0.5%;
   }
   #header #menu li a {
-    font-size: 80%;
+    font-size: 100%;
     color: black;
-    font-style: italic;
-    border-bottom: 2px solid transparent;
   }
   #header #menu li a:hover {
     background-color: transparent;
-    border-bottom: 2px solid orange;
-  }
-  #header #menu li.active a {
-    border-bottom: 2px solid orange;
   }
   .navbar-brand img {
     width: 100px;
@@ -73,18 +64,34 @@ a:hover {
     padding: 0;
     margin-bottom: 0;
   }
+  #header.navbar-fixed-top #menu {
+    padding-top: 0.5%;
+  }
   #header.navbar-fixed-top #menu li a {
-    font-size: 22px;
+    font-size: 100%;
     color: black;
-    font-style: italic;
-    border-bottom: 2px solid transparent;
   }
   #header.navbar-fixed-top #menu li a:hover {
     background-color: transparent;
-    border-bottom: 2px solid orange;
   }
-  #header.navbar-fixed-top #menu li.active a {
-    border-bottom: 2px solid orange;
+  #HomePage {
+    /*#Client {
+            padding: 5% 0;
+
+            .title {
+                font-size: 400%;
+            }
+
+            .meta {
+                padding: 0 20%;
+                font-size: 150%;
+            }
+
+            img {
+                border: 1px solid #F5F5F5;
+                box-sizing: border-box;
+            }
+        }*/
   }
   #HomePage #Title {
     font-size: 600%;
@@ -268,19 +275,91 @@ a:hover {
   #HomePage #ParallaxScroll h2 {
     color: #fe5000;
   }
-  #HomePage #Client {
-    padding: 5% 0;
+  #HomePage #Blogs {
+    background-color: #F5F5F5;
+    padding-bottom: 5%;
   }
-  #HomePage #Client .title {
-    font-size: 400%;
+  #HomePage #Blogs .title {
+    font-size: 300%;
   }
-  #HomePage #Client .meta {
-    padding: 0 20%;
-    font-size: 150%;
+  #HomePage #Blogs hr {
+    width: 30%;
+    border: 1px solid #2196F3;
   }
-  #HomePage #Client img {
-    border: 1px solid #F5F5F5;
-    box-sizing: border-box;
+  #HomePage #Blogs .meta {
+    margin-bottom: 5%;
+    font-size: 100%;
+    padding: 0 5%;
+  }
+  #HomePage #Blogs .blog {
+    display: block;
+    padding: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+  }
+  #HomePage #Blogs .blog .overlay {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  #HomePage #Blogs .blog .overlay img {
+    transition: all 0.2s linear;
+    height: 100%;
+    width: 100%;
+  }
+  #HomePage #Blogs .blog .overlay .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 10%;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  #HomePage #Blogs .blog .overlay .mask .title {
+    color: white;
+  }
+  #HomePage #Blogs .blog .overlay .mask .btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    margin-right: 2%;
+  }
+  #HomePage #Blogs .blog .overlay .tag {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #HomePage #Blogs .blog .overlay:hover img {
+    transform: scale(1.1, 1.1);
+  }
+  #HomePage #Blogs .blog .overlay:hover .mask {
+    opacity: 0.7;
+  }
+  #HomePage #Blogs .blog .caption {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 200px;
+  }
+  #HomePage #Blogs .blog .caption .title {
+    font-size: 200%;
+    padding: 0 3%;
+  }
+  #HomePage #Blogs .blog .caption hr {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+  }
+  #HomePage #Blogs .blog .caption .meta {
+    font-size: 100%;
   }
   footer {
     background-color: #424242;
@@ -482,5 +561,19 @@ a:hover {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
+  }
+  #FAQs #Title {
+    background-color: #FF5722;
+    padding: 1.5% 0;
+    margin-bottom: 2%;
+  }
+  #FAQs #Title .title {
+    color: white;
+    margin: 0;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #FAQs #MainContent {
+    margin-bottom: 2%;
   }
 }

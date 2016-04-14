@@ -71,6 +71,69 @@
             </div>
         </div>
         <!-- End Features -->
+        <!-- BÀI VIẾT NỔI BẬT -->
+        <div id="Blogs">
+            <div class="container">
+                <h2 class="text-center">BÀI VIẾT NỔI BẬT</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                        <div class="thumbnail blog">
+                            <div class="overlay text-center">
+                                <img src="../img/news-1.jpg" alt="" class="img-responsive" />
+                                <div class="mask">
+                                    <h3 class="title">Gallery Post</h3>
+                                    <a href="../img/news-1.jpg" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
+                                    <a href="#" class="btn btn-default">DETAILS</a>
+                                </div>
+                                <a href="#" class="tag btn btn-success">Nature</a>
+                            </div>
+                            <div class="caption">
+                                <h2 class="title">Gallery Post</h2>
+                                <hr />
+                                <p class="meta">Efficiently generate cross-unit channels rather than competitive quality vectors. Dramatically</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                        <div class="thumbnail blog">
+                            <div class="overlay text-center">
+                                <img src="../img/news-2.jpg" alt="" class="img-responsive" />
+                                <div class="mask">
+                                    <h3 class="title">Gallery Post</h3>
+                                    <a href="../img/news-2.jpg" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
+                                    <a href="#" class="btn btn-default">DETAILS</a>
+                                </div>
+                                <a href="#" class="tag btn btn-danger">Nature</a>
+                            </div>
+                            <div class="caption">
+                                <h2 class="title">Gallery Post</h2>
+                                <hr />
+                                <p class="meta">Efficiently generate cross-unit channels rather than competitive quality vectors. Dramatically</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                        <div class="thumbnail blog last-item">
+                            <div class="overlay text-center">
+                                <img src="../img/news-3.jpg" alt="" class="img-responsive" />
+                                <div class="mask">
+                                    <h3 class="title">Gallery Post</h3>
+                                    <a href="../img/news-3.jpg" class="btn btn-default" rel="prettyPhoto[gallery1]">EXPAND</a>
+                                    <a href="#" class="btn btn-default">DETAILS</a>
+                                </div>
+                                <a href="#" class="tag btn btn-info">Nature</a>
+                            </div>
+                            <div class="caption">
+                                <h2 class="title">Gallery Post</h2>
+                                <hr />
+                                <p class="meta">Efficiently generate cross-unit channels rather than competitive quality vectors. Dramatically</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END BÀI VIẾT NỔI BẬT -->
         <!-- Portfolio -->
         <div id="Portfolio">
             <div class="container">
@@ -135,7 +198,8 @@
                         <ItemTemplate>
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <div class="thumbnail teacher">
-                                    <a href="GiaoVien.aspx?id=<%# Eval("GVID") %>"><img src="img/img-client1.jpg" class="img-responsive" alt="" /></a>
+                                    <a href="GiaoVien.aspx?id=<%# Eval("GVID") %>">
+                                        <img src="img/img-client1.jpg" class="img-responsive" alt="" /></a>
                                     <div class="caption">
                                         <h3 class="title"><a href="GiaoVien.aspx?id=<%# Eval("GVID") %>"><%# Eval("FirstName") + " " + Eval("LastName") %></a></h3>
                                         <p class="meta"><%# Eval("Email") %></p>
@@ -354,7 +418,7 @@
                 </div>
             </div>
         </div>
-        <%-- Pallarax Scroll --%>
+        <%-- Pallarax Scroll - SỨ MỆNH --%>
         <div id="ParallaxScroll">
             <div class="container text-center">
                 <h1>Two things are infinite: the universe and human stupidity; and I'm not sure about the universe</h1>
@@ -362,7 +426,7 @@
             </div>
         </div>
         <%-- Client --%>
-        <div id="Client">
+        <%--<div id="Client">
             <div class="container-fluid text-center">
                 <h1 class="title">OUR CLIENTS</h1>
                 <p class="meta">We have years of experience providing top notch brand development services to top quality companies throughout the World. Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -377,7 +441,6 @@
                 <img src="img/logo13.png" class="img-responsive pull-left" alt="" title="" />
                 <img src="img/logo14.png" class="img-responsive pull-left" alt="" title="" />
             </div>
-        </div>
-        
+        </div>--%>
     </div>
 </asp:Content>

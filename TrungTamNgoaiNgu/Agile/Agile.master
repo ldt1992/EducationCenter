@@ -6,13 +6,14 @@
 <head runat="server">
     <title></title>
     <%-- Links http://portfoliotheme.org/themes/?theme=Agile or http://portfoliotheme.org/agile/ --%>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/font-awesome.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/Agile.less" rel="stylesheet/less" type="text/css" />
-    <script src="js/less.js"></script>
+    <%--<link href="css/Agile.less" rel="stylesheet/less" type="text/css" />--%>
+    <link href="css/Agile.css" rel="stylesheet" />
+    <script src="../js/less.js"></script>
 </head>
 <body data-spy="scroll" data-target="#menu">
     <form id="form1" runat="server">
@@ -32,9 +33,9 @@
                             <a class="navbar-brand" href="HomePage.aspx">
                                 <img src="../img/logo-2.png" class="img-responsive" alt="" title="" />
                             </a>
-                            <a class="navbar-brand" href="../Default.aspx">
+                            <%--<a class="navbar-brand" href="../Default.aspx">
                                 <img src="../img/logo.png" class="img-responsive" alt="" title="" />
-                            </a>
+                            </a>--%>
                         </div>
                         <!-- End Brand -->
                         <div class="collapse navbar-collapse navbar-right" id="menu">
@@ -91,11 +92,11 @@
         </div>
     </form>
     <a id="BackTop" href="#"><i class="fa fa-arrow-up fa-2x"></i></a>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/DucTai.js"></script>
-    <script src="js/wowslider.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/DucTai.js"></script>
+    <script src="../js/wowslider.js"></script>
+    <script src="../js/script.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             less.watch();
@@ -111,6 +112,8 @@
             });
             //PrettyPhoto
             $('[rel="prettyPhoto"]').prettyPhoto();
+            $('[rel="prettyPhoto[gallery1]"]').prettyPhoto();
+            
             //BackTop
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= 100) {
@@ -148,20 +151,18 @@
             //animate
             new WOW().init();
             $('[data-toggle="tooltip"]').tooltip();
-            $('body').scrollspy({ target: '#menu' });
+
+
+            
             //Navigation
-            $("#header ul li a[href^='#']").on('click', function (e) {
-                e.preventDefault();
-                var hash = this.hash;
-                $('html,body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 1000, function () {
-                    window.location.hash = hash;
-                });
-            });
-            //$(" #header #menu ul li").click(function () {
-            //    $("#header #menu ul li").find("li.active").removeClass("active");
-            //    $(this).addClass("active");
+            //$("#header ul li a[href^='#']").on('click', function (e) {
+            //    e.preventDefault();
+            //    var hash = this.hash;
+            //    $('html,body').animate({
+            //        scrollTop: $(hash).offset().top
+            //    }, 1000, function () {
+            //        window.location.hash = hash;
+            //    });
             //});
         })
     </script>
