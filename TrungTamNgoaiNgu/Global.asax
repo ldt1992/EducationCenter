@@ -3,17 +3,18 @@
 
 <script runat="server">
 
-    //void RegisterRoutes(RouteCollection routes)
-    //{
-    //    routes.MapPageRoute("Home", "", "~/Default.aspx");
-    //    routes.MapPageRoute("Category", "danh-muc-{CategoryID}", "~/DanhMuc.aspx?id={CategoryID}");
-    //}
+    void RegisterRoutes(RouteCollection routes)
+    {
+        //Du Học
+        routes.MapPageRoute("Home", "", "~/Default.aspx");
+        routes.MapPageRoute("About", "gioi-thieu", "~/GioiThieu.aspx");
+        routes.MapPageRoute("Contact", "lien-he", "~/LienHe.aspx");
+    }
 
     void Application_Start(object sender, EventArgs e)
     {
-        //RegisterRoutes(RouteTable.Routes);
+        RegisterRoutes(RouteTable.Routes);
         // Code that runs on application startup
-
     }
 
     void Application_End(object sender, EventArgs e)

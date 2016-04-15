@@ -33,9 +33,6 @@
                             <a class="navbar-brand" href="HomePage.aspx">
                                 <img src="../img/logo-2.png" class="img-responsive" alt="" title="" />
                             </a>
-                            <%--<a class="navbar-brand" href="../Default.aspx">
-                                <img src="../img/logo.png" class="img-responsive" alt="" title="" />
-                            </a>--%>
                         </div>
                         <!-- End Brand -->
                         <div class="collapse navbar-collapse navbar-right" id="menu">
@@ -91,6 +88,9 @@
             </footer>
         </div>
     </form>
+    <!-- Start Subiz Chat-->
+    <script type='text/javascript'>window._sbzq || function (e) { e._sbzq = []; var t = e._sbzq; t.push(["_setAccount", 38851]); var n = e.location.protocol == "https:" ? "https:" : "http:"; var r = document.createElement("script"); r.type = "text/javascript"; r.async = true; r.src = n + "//static.subiz.com/public/js/loader.js"; var i = document.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) }(window);</script>
+    <!-- End Subiz Chat-->
     <a id="BackTop" href="#"><i class="fa fa-arrow-up fa-2x"></i></a>
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.js"></script>
@@ -113,7 +113,7 @@
             //PrettyPhoto
             $('[rel="prettyPhoto"]').prettyPhoto();
             $('[rel="prettyPhoto[gallery1]"]').prettyPhoto();
-            
+
             //BackTop
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= 100) {
@@ -153,7 +153,7 @@
             $('[data-toggle="tooltip"]').tooltip();
 
 
-            
+
             //Navigation
             //$("#header ul li a[href^='#']").on('click', function (e) {
             //    e.preventDefault();
