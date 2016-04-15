@@ -131,4 +131,17 @@ public class BLL_Post
         this.CloseConnect();
         return result;
     }
+
+    //LẤY POST TUYỂN DỤNG
+    public DataTable TuyenDung()
+    {
+        if (!this.OpenConnect())
+            this.OpenConnect();
+
+        string query = "select * from POST where PostTitle = N'TUYỂN DỤNG'";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
 }

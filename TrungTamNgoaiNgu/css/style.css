@@ -51,9 +51,6 @@ a:hover {
     }
 }*/
 @media (min-width: 1024px) {
-  a:hover {
-    text-decoration: none;
-  }
   #Login {
     background-color: #2F2E3C;
     padding: 0.5% 0;

@@ -45,9 +45,7 @@
                     <!-- Sidebar -->
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="Sidebar">
                         <div id="ThongBao">
-                            <div class="page-header">
                                 <h2 class="title">Thông Báo Mới</h2>
-                            </div>
                             <div class="thumbnail news">
                                 <a href="#">
                                     <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
@@ -69,6 +67,12 @@
                                     <h3 class="title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
+                        </div>
+                        <!-- Hỏi đáp nhanh Faqs -->
+                        <div id="FAQs">
+                            <h2 class="title">HỎI ĐÁP NHANH</h2>
+                            <a href="FAQs.aspx">
+                                <img src="img/faqs.jpg" alt="" class="img-responsive" /></a>
                         </div>
                     </div>
                     <!-- Sidebar -->

@@ -44,16 +44,16 @@
                 <p class="text-center meta">We simply want to make sure your brand is getting the nourishment it needs and that our service is providing the best bang for your buck. Aliquam lorem ante, dapibus in.</p>
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-6 service wow fadeIn">
-                        <h3 class="title"><i class="fa fa-heart highlight"></i>&nbsp;&nbsp;TIMELESS DESIGN</h3>
-                        <p class="meta">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet accusam takimata sanctus.</p>
+                        <h3 class="title"><i class="fa fa-heart highlight"></i>&nbsp;&nbsp;ĐỘI NGŨ TƯ VẤN CHUYÊN NGHIỆP</h3>
+                        <p class="meta">Chúng tôi có đội ngũ tư vấn chuyên nghiệp, trẻ trung, năng động, đã từng tham dự các kỳ thi tuyển sinh hoa khôi, hoa hậu và hoàng thái hậu (^_^).</p>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6 service wow fadeIn">
-                        <h3 class="title"><i class="fa fa-cloud highlight"></i>&nbsp;&nbsp;TIMELESS DESIGN</h3>
-                        <p class="meta">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet accusam takimata sanctus.</p>
+                        <h3 class="title"><i class="fa fa-cloud highlight"></i>&nbsp;&nbsp;THƯỜNG XUYÊN TỔ CHỨC CÁC TRÒ CHƠI</h3>
+                        <p class="meta">Nhằm  giảm bớt căng thẳng trong giờ học. Trung tâm có tổ chức các hoạt động vừa học vừa chơi để tăng phần hứng thú cho các em tới học.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6 service wow fadeIn">
-                        <h3 class="title"><i class="fa fa-euro highlight"></i>&nbsp;&nbsp;TIMELESS DESIGN</h3>
-                        <p class="meta">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet accusam takimata sanctus.</p>
+                        <h3 class="title"><i class="fa fa-camera highlight"></i>&nbsp;&nbsp;QUAY PHIM QUÁ TRÌNH HỌC TẬP</h3>
+                        <p class="meta">Nhằm hỗ trợ quý phụ huynh tiện theo dõi chương trình học tập của con em mình. Trung tâm có trang bị hệ thống camera quay phim để lưu lại những phút giây học tập của các em.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6 service wow fadeIn">
                         <h3 class="title"><i class="fa fa-safari highlight"></i>&nbsp;&nbsp;TIMELESS DESIGN</h3>
@@ -442,5 +442,43 @@
                 <img src="img/logo14.png" class="img-responsive pull-left" alt="" title="" />
             </div>
         </div>--%>
+
+        <!-- PHIẾU ĐĂNG KÝ TƯ VẤN -->
+        <div id="PhieuTuVan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="LoiGoi">
+                        <p>Hãy gọi cho chúng tôi</p>
+                        <p class="text-danger">(08) 62 88 35 66</p>
+                        <p>Hay để chúng tôi</p>
+                        <p class="text-info">gọi lại cho bạn</p>
+                        <%--<div id="timer"></div>--%>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="Phieu">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="Fullname" placeholder="Họ tên quý phụ huynh: " class="form-control" runat="server" />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="Email" placeholder="Email: " class="form-control" runat="server" />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="Phone" placeholder="Điện thoại: " class="form-control" runat="server" />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="Code" placeholder="Promotion Code: " class="form-control" runat="server" />
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <textarea id="Message" placeholder="Nội dung cần tư vấn: " rows="10" class="form-control" runat="server"></textarea>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <asp:Button ID="btnSubmit" runat="server" Text="GỬI" CssClass="btn btn-lg btn-danger" OnClick="btnSubmit_Click" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END LẤY THÔNG TIN KHÁCH HÀNG -->
     </div>
 </asp:Content>
