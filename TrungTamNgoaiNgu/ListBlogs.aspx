@@ -29,30 +29,30 @@
                         <asp:DataList ID="dlBaiViet" runat="server">
                             <ItemTemplate>
                                 <div class="thumbnail blog">
-                                    <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="pull-left">
+                                    <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>" class="pull-left">
                                         <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesUrl") %>" class="img-responsive img-thumbnail" />
                                     </a>
                                     <div class="caption">
-                                        <h3 class="title"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
+                                        <h3 class="title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
                                         <p class="meta"><%# Eval("MetaDescription") %></p>
-                                        <p class="btnXem"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem thêm</a></p>
+                                        <p class="btnXem"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>" class="btn btn-info">Xem thêm</a></p>
                                     </div>
                                 </div>
                             </ItemTemplate>
                         </asp:DataList>
                         <!-- Phân trang-->
-                        <cc1:CollectionPager ID="pager"
-                            FirstText="First"
-                            BackText="«"
-                            LabelText=""
-                            LastText="Last"
-                            NextText="»"
-                            ShowFirstLast="True"
-                            SliderSize="5" PagingMode="QueryString"
-                            runat="server" BackNextLinkSeparator="" BackNextLocation="Split"
-                            PageNumbersDisplay="Numbers" ResultsLocation="None"
-                            BackNextDisplay="Buttons" QueryStringKey="page" ControlCssClass="phantrang">
-                        </cc1:CollectionPager>
+                        <cc1:collectionpager id="pager"
+                            firsttext="First"
+                            backtext="«"
+                            labeltext=""
+                            lasttext="Last"
+                            nexttext="»"
+                            showfirstlast="True"
+                            slidersize="5" pagingmode="QueryString"
+                            runat="server" backnextlinkseparator="" backnextlocation="Split"
+                            pagenumbersdisplay="Numbers" resultslocation="None"
+                            backnextdisplay="Buttons" querystringkey="page" controlcssclass="phantrang">
+                        </cc1:collectionpager>
                         <!-- End phân trang -->
                     </div>
                     <!-- End MainContent-->
@@ -64,12 +64,13 @@
                             <asp:Repeater ID="repTinMoiNhat" runat="server">
                                 <ItemTemplate>
                                     <div class="thumbnail post">
-                                        <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                        <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>">
                                             <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" />
                                         </a>
                                         <div class="caption">
-                                            <h4 class="title media-heading"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
-                                            <p class="btnXem"><a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem Thêm</a></p>
+                                            <h4 class="title media-heading"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>"><%# Eval("PostTitle") %></a>
+                                            </h3>
+                                            <p class="btnXem"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>" class="btn btn-info">Xem Thêm</a></p>
                                         </div>
                                     </div>
                                 </ItemTemplate>
@@ -79,7 +80,6 @@
                     <!-- End Sidebar-->
                 </div>
             </div>
-
         </div>
         <!-- End Content-->
     </div>

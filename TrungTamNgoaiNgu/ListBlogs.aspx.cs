@@ -31,6 +31,7 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
         }
     }
 
+    //DANH SÁCH POST
     private void DanhSachPost()
     {
         string idCategory = RouteData.Values["id"].ToString();
@@ -41,21 +42,17 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
         pager.DataSource = this._Post.DanhSachBaiViet(idCategory).DefaultView;
         pager.BindToControl = dlBaiViet;
         dlBaiViet.DataSource = pager.DataSourcePaged;
-
-        //Lấy ra PostTitle để URL Friendly
-        string title = "";
-        DataTable dt = this._Post.DanhSachBaiViet(idCategory);
-        foreach (DataRow item in dt.Rows)
-        {
-            title = item[1].ToString();
-            //Chuyển tiêu đề tiếng việt có dấu sang không dấu dạng URL abc-def-ghi
-            title = title.Replace(" ", "-");
-            Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
-            string temp = title.Normalize(NormalizationForm.FormD);
-            title_url_main = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
-        }
     }
 
+    //Chuyển tiêu đề tiếng việt có dấu sang không dấu dạng URL abc-def-ghi
+    public string XoaKyTuDacBiet(string str)
+    {
+        str = str.Replace(" ", "-");
+        Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
+        string temp = str.Normalize(NormalizationForm.FormD);
+        title_url_main = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
+        return title_url_main;
+    }
     //TIN TỨC MỚI NHẤT SIDEBAR
     private void TinTucMoiNhat_Sidebar()
     {
@@ -64,20 +61,9 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
         //Tin tức mới nhất theo category
         repTinMoiNhat.DataSource = this._Post.PostByCategoryID(5, idCategory);
         repTinMoiNhat.DataBind();
-
-        string title = "";
-        DataTable dt2 = this._Post.PostByCategoryID(5, idCategory);
-        foreach (DataRow item in dt2.Rows)
-        {
-            title = item[1].ToString();
-            //Chuyển tiêu đề tiếng việt có dấu sang không dấu dạng URL abc-def-ghi
-            title = title.Replace(" ", "-");
-            Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
-            string temp = title.Normalize(NormalizationForm.FormD);
-            title_url_sidebar = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
-        }
     }
 
+    //PERMALINK
     private void Permalink()
     {
         string id = RouteData.Values["id"].ToString();

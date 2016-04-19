@@ -10,7 +10,7 @@
         routes.MapPageRoute("About", "gioi-thieu", "~/GioiThieu.aspx");
         routes.MapPageRoute("Contact", "lien-he", "~/LienHe.aspx");
         routes.MapPageRoute("Category", "danh-muc-{id}", "~/DanhMuc.aspx");
-        routes.MapPageRoute("ListBlogs", "bai-viet-{id}", "~/ListBlogs.aspx");
+        routes.MapPageRoute("ListBlogs", "danh-sach-truong-{id}", "~/ListBlogs.aspx");
         routes.MapPageRoute("BlogDetail", "{title}-{id}", "~/Blog_Detail.aspx");
     }
 
