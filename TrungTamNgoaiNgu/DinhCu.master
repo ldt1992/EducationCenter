@@ -12,6 +12,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet" />
     <link href="css/slider.css" rel="stylesheet" />
     <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.less" rel="stylesheet/less" type="text/css" />
     <script src="js/less.js"></script>
     <%--<link href="css/DinhCu.css" rel="stylesheet" />--%>
@@ -51,7 +52,7 @@
                             <ul class="nav navbar-nav navbar-right" id="MainMenu">
                                 <asp:Repeater ID="repMainMenu" runat="server">
                                     <ItemTemplate>
-                                        <li><a href="<%# Eval("Permalink") %>"><%# Eval("ItemName") %></a></li>
+                                        <li><a href="/<%# Eval("Permalink") %>"><%# Eval("ItemName") %></a></li>
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </ul>

@@ -25,7 +25,11 @@ public partial class DuHoc : System.Web.UI.Page
 
     private void ThanhPhanDanhMuc()
     {
-        string id = Request.QueryString["id"];
+        //Rewrite URL
+        string id = RouteData.Values["id"].ToString();
+
+        //string id = Request.QueryString["id"].ToString();
+
         string idCategory = "";
 
         DataTable dt = this._Category.LayDanhMucTheoID(id);
@@ -37,8 +41,6 @@ public partial class DuHoc : System.Web.UI.Page
         repDanhMuc_nav.DataSource = this._Category.LayListCountry(id);
         repDanhMuc_nav.DataBind();
 
-        
-
         DataTable dt2 = this._Category.LayListCountry(id);
         foreach (DataRow item in dt2.Rows)
         {
@@ -48,7 +50,11 @@ public partial class DuHoc : System.Web.UI.Page
 
     public DataTable Nuoc()
     {
-        string id = Request.QueryString["id"];
+        //Rewrite URL
+        string id = RouteData.Values["id"].ToString();
+
+        //string id = Request.QueryString["id"].ToString();
+
         DataTable ListCountry = this._Category.LayListCountry(id);
         return ListCountry;
     }

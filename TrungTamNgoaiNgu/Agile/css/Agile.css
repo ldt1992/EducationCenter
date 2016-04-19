@@ -361,6 +361,29 @@ a:hover {
   #HomePage #Blogs .blog .caption .meta {
     font-size: 100%;
   }
+  #HomePage #PhieuTuVan {
+    background-color: #F5F5F5;
+    padding-top: 2%;
+  }
+  #HomePage #PhieuTuVan #LoiGoi p {
+    font-size: 200%;
+  }
+  #HomePage #PhieuTuVan #Phieu textarea,
+  #HomePage #PhieuTuVan #Phieu input,
+  #HomePage #PhieuTuVan #Phieu btn {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+  }
+  #HomePage #PhieuTuVan #Phieu input {
+    margin-bottom: 6%;
+  }
+  #HomePage #PhieuTuVan #Phieu textarea {
+    margin-bottom: 3%;
+  }
+  #HomePage #PhieuTuVan #Phieu .btn {
+    padding: 2% 7%;
+  }
   footer {
     background-color: #424242;
   }

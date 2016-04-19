@@ -20,15 +20,6 @@
                 </div>
                 <div class="ws_bullets">
                     <div>
-                        <%--<a href="#" title="bg-slide1"><span>
-                            <img src="img/wowslider/tooltips/bgslide1.jpg" alt="bg-slide1" />1</span></a>
-                        <a href="#" title="bg-slide2"><span>
-                            <img src="img/wowslider/tooltips/bgslide2.jpg" alt="bg-slide2" />2</span></a>
-                        <a href="#" title="bg-slide3"><span>
-                            <img src="img/wowslider/tooltips/bgslide3.jpg" alt="bg-slide3" />3</span></a>
-                        <a href="#" title="bg-slide4"><span>
-                            <img src="img/wowslider/tooltips/bgslide4.jpg" alt="bg-slide4" />4</span></a>--%>
-
                         <a href="#" title="bg-slide1"><span>1</span></a>
                         <a href="#" title="bg-slide2"><span>2</span></a>
                         <a href="#" title="bg-slide3"><span>3</span></a>
@@ -45,9 +36,11 @@
                     <asp:Repeater ID="dlDanhMuc" runat="server">
                         <ItemTemplate>
                             <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 act wow fadeIn">
-                                <h2 class="title text-center"><a href="<%# Eval("Permalink") + "?id=" + Eval("CategoryID") %>"><%# Eval("CategoryName") %></a></h2>
+                                <h2 class="title text-center"><a href="danh-muc-<%# Eval("CategoryID") %>"><%# Eval("CategoryName") %></a></h2>
                                 <div>
-                                    <a href="<%# Eval("Permalink") + "?id=" + Eval("CategoryID") %>">
+                                    <%--<a href="<%# Eval("Permalink") + "?id=" + Eval("CategoryID") %>">
+                                        <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" /></a>--%>
+                                    <a href="danh-muc-<%# Eval("CategoryID") %>">
                                         <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" /></a>
                                 </div>
                             </div>

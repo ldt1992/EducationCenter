@@ -10,7 +10,7 @@
     <link href="../css/font-awesome.css" rel="stylesheet" />
     <link href="../css/prettyPhoto.css" rel="stylesheet" />
     <link href="../css/animate.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/normalize.css" rel="stylesheet" />
     <%--<link href="css/Agile.less" rel="stylesheet/less" type="text/css" />--%>
     <link href="css/Agile.css" rel="stylesheet" />
     <script src="../js/less.js"></script>
