@@ -47,6 +47,8 @@ a:hover {
   }
   #header #menu {
     padding-top: 0.5%;
+    border: 1px solid black;
+    background-color: red;
   }
   #header #menu li a {
     font-size: 100%;
@@ -598,5 +600,64 @@ a:hover {
   }
   #FAQs #MainContent {
     margin-bottom: 2%;
+  }
+  #GioiThieu #Title {
+    background-color: orangered;
+  }
+  #GioiThieu #Title .title {
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #GioiThieu #MainContent {
+    margin-top: 2%;
+    font-size: 150%;
+    text-align: justify;
+    line-height: 180%;
+  }
+  #GioiThieu #Sidebar #ThongBao {
+    margin-bottom: 15%;
+  }
+  #ChuongTrinhHoc #Title {
+    background-color: orangered;
+  }
+  #ChuongTrinhHoc #Title .title {
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #ChuongTrinhHoc #MainContent {
+    margin-top: 5%;
+  }
+  #ChuongTrinhHoc #Sidebar #ThongBao {
+    margin-bottom: 15%;
+  }
+  #LichKhaiGiang #Title {
+    background-color: orangered;
+  }
+  #LichKhaiGiang #Title .title {
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #LichKhaiGiang #MainContent {
+    margin-top: 5%;
+  }
+  #LichKhaiGiang #Sidebar #ThongBao {
+    margin-bottom: 15%;
+  }
+  #TuyenDung #Title {
+    background-color: orangered;
+  }
+  #TuyenDung #Title .title {
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #TuyenDung #MainContent {
+    margin-top: 5%;
+  }
+  #TuyenDung #Sidebar #ThongBao {
+    margin-bottom: 15%;
   }
 }

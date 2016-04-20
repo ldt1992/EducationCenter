@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="Agile.master" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
+﻿<%@ Page Title="Trang Chủ" Language="C#" MasterPageFile="~/NgoaiNgu/NgoaiNgu.master" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="NgoaiNgu_HomePage" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="HomePage">
         <!-- Slider -->
         <div class="container-fluid">
@@ -198,10 +198,10 @@
                         <ItemTemplate>
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <div class="thumbnail teacher">
-                                    <a href="GiaoVien.aspx?id=<%# Eval("GVID") %>">
+                                    <a href="/NgoaiNgu/giao-vien-<%# Eval("GVID") %>">
                                         <img src="img/img-client1.jpg" class="img-responsive" alt="" /></a>
                                     <div class="caption">
-                                        <h3 class="title"><a href="GiaoVien.aspx?id=<%# Eval("GVID") %>"><%# Eval("FirstName") + " " + Eval("LastName") %></a></h3>
+                                        <h3 class="title"><a href="/NgoaiNgu/giao-vien-<%# Eval("GVID") %>"><%# Eval("FirstName") + " " + Eval("LastName") %></a></h3>
                                         <p class="meta"><%# Eval("Email") %></p>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@
                     </asp:Repeater>
                     <!-- END TEACHER-->
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                        <a href="ListTeachers.aspx" class="btn btn-info">Xem thêm</a>
+                        <a href="/NgoaiNgu/nhom-giao-vien" class="btn btn-info">Xem thêm</a>
                     </div>
                 </div>
             </div>

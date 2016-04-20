@@ -1,4 +1,4 @@
-﻿<%@ Page Title="LỊch Khai Giảng" Language="C#" MasterPageFile="~/Agile/Agile.master" AutoEventWireup="true" CodeFile="LichKhaiGiang.aspx.cs" Inherits="Agile_LichKhaiGiang" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NgoaiNgu/NgoaiNgu.master" AutoEventWireup="true" CodeFile="LichKhaiGiang.aspx.cs" Inherits="NgoaiNgu_LichKhaiGiang" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="LichKhaiGiang">
@@ -16,9 +16,8 @@
             <div id="Breadcrumb">
                 <div class="container">
                     <ul class="breadcrumb">
-                        <li><a href="#">TRANG CHỦ</a></li>
-                        <li><a href="#">CẤP 2</a></li>
-                        <li class="active">BÀI VIẾT</li>
+                        <li><a href="/NgoaiNgu/trang-chu">TRANG CHỦ</a></li>
+                        <li class="active">LỊCH KHAI GIẢNG</li>
                     </ul>
                 </div>
             </div>
@@ -28,7 +27,7 @@
                 <div class="row">
                     <!-- MainContent -->
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="MainContent">
-                        <table class="table table-hover">
+                        <table class="table table-hover table-bordered">
                             <tr>
                                 <th>LỚp học</th>
                                 <th>Ngày khai giảng</th>
@@ -45,7 +44,7 @@
                     <!-- Sidebar -->
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="Sidebar">
                         <div id="ThongBao">
-                                <h2 class="title">Thông Báo Mới</h2>
+                            <h2 class="title">Thông Báo Mới</h2>
                             <div class="thumbnail news">
                                 <a href="#">
                                     <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
@@ -82,3 +81,4 @@
         <!-- End Content -->
     </div>
 </asp:Content>
+

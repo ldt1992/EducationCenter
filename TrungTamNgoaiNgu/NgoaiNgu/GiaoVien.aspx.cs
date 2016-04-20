@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Agile_GiaoVien : System.Web.UI.Page
+public partial class NgoaiNgu_GiaoVien : System.Web.UI.Page
 {
     private BLL_GiaoVien _GiaoVien = new BLL_GiaoVien();
     protected void Page_Load(object sender, EventArgs e)
@@ -18,7 +18,8 @@ public partial class Agile_GiaoVien : System.Web.UI.Page
 
     private void ThongTinGiaoVien()
     {
-        string idGV = Request.QueryString["id"];
+        //string idGV = Request.QueryString["id"];
+        string idGV = RouteData.Values["id"].ToString();
         repGiaoVien.DataSource = this._GiaoVien.GiaoVienChiTiet(idGV);
         repGiaoVien.DataBind();
     }

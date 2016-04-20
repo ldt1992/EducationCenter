@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class HomePage : System.Web.UI.Page
+public partial class NgoaiNgu_HomePage : System.Web.UI.Page
 {
     private BLL_GiaoVien _GiaoVien = new BLL_GiaoVien();
     private BLL_PhieuTuVan _PhieuTuVan = new BLL_PhieuTuVan();
@@ -16,7 +16,6 @@ public partial class HomePage : System.Web.UI.Page
             ListGiaoVien();
         }
     }
-
     private void ListGiaoVien()
     {
         rpTeacher.DataSource = this._GiaoVien.DanhSachGiaoVien();

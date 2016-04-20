@@ -18,8 +18,6 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
     public string id_parent2 = "";
     public string name_parent2 = "";
     public string ActivedPage = "";
-    public string title_url_main = "";
-    public string title_url_sidebar = "";
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -47,11 +45,12 @@ public partial class ThemeDinhCu_ListBlogs : System.Web.UI.Page
     //Chuyển tiêu đề tiếng việt có dấu sang không dấu dạng URL abc-def-ghi
     public string XoaKyTuDacBiet(string str)
     {
+        string title_url = "";
         str = str.Replace(" ", "-");
         Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
         string temp = str.Normalize(NormalizationForm.FormD);
-        title_url_main = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
-        return title_url_main;
+        title_url = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
+        return title_url;
     }
     //TIN TỨC MỚI NHẤT SIDEBAR
     private void TinTucMoiNhat_Sidebar()

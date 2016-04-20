@@ -39,13 +39,13 @@
                             <asp:Repeater ID="repPostLienQuan" runat="server">
                                 <ItemTemplate>
                                     <div class="media post">
-                                        <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                        <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>">
                                             <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" class="img-responsive pull-left img-thumbnail" alt="<%# Eval("ImagesName") %>" /></a>
                                         <div class="media-body">
                                             <h3 class="title media-heading">
-                                                <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a>
+                                                <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>"><%# Eval("PostTitle") %></a>
                                             </h3>
-                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-default">Xem tiếp</a>
+                                            <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>" class="btn btn-default">Xem tiếp</a>
                                         </div>
                                     </div>
                                 </ItemTemplate>
@@ -57,15 +57,15 @@
                             <asp:Repeater ID="repXemNhieu" runat="server">
                                 <ItemTemplate>
                                     <div class="media post">
-                                        <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>">
+                                        <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>">
                                             <img src="<%# "http://192.168.10.3:8686/" + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail" />
                                         </a>
                                         <div class="media-body">
                                             <h3 class="title media-heading">
-                                                <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a>
+                                                <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>"><%# Eval("PostTitle") %></a>
                                             </h3>
                                             <p class="view">Views: <%# Eval("ViewCount") %></p>
-                                            <a href="Blog_Detail.aspx?id=<%# Eval("PostID") %>" class="btn btn-info">Xem tiếp</a>
+                                            <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>" class="btn btn-info">Xem tiếp</a>
                                         </div>
                                     </div>
                                 </ItemTemplate>

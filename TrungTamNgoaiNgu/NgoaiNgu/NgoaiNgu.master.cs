@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Agile : System.Web.UI.MasterPage
+public partial class NgoaiNgu_NgoaiNgu : System.Web.UI.MasterPage
 {
     BLL_MainMenu _Menu = new BLL_MainMenu();
     protected void Page_Load(object sender, EventArgs e)

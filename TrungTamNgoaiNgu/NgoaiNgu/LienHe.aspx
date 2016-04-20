@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Liên Hệ" Language="C#" MasterPageFile="~/Agile/Agile.master" AutoEventWireup="true" CodeFile="LienHe.aspx.cs" Inherits="Agile_LienHe" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NgoaiNgu/NgoaiNgu.master" AutoEventWireup="true" CodeFile="LienHe.aspx.cs" Inherits="NgoaiNgu_LienHe" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="LienHe">
@@ -26,7 +26,7 @@
                     <div class="container">
                         <h1 class="title">GIỮ LIÊN LẠC VỚI CHÚNG TÔI</h1>
                         <p class="meta">
-                            Cụ thể, theo Báo cáo tài chính hợp nhất đã được kiểm toán thì năm 2015, HAGL chỉ đạt 502 tỷ đồng lợi nhuận sau thuế, giảm tới 65% so với cùng kỳ năm 2014. Nguyên nhân dẫn tới kết quả kinh doanh bết bát của HAGL chủ yếu đến từ việc giá cao su giảm thê thảm, có lúc xuống dưới giá thành 1.300 USD/tấn so với mức giá 5.500 USD/tấn ở thời điểm cao nhất. 
+                            Cụ thể, theo Báo cáo tài chính hợp nhất đã được kiểm toán thì năm 2015, HAGL chỉ đạt 502 tỷ đồng lợi nhuận sau thuế, giảm tới 65% so với cùng kỳ năm 2014. Nguyên nhân dẫn tới kết quả kinh doanh bết bát của HAGL chủ yếu đến từ việc giá cao su giảm thê thảm, có lúc xuống dưới giá thành 1.300 USD/tấn so với mức giá 5.500 USD/tấn ở thời điểm cao nhất.
                         </p>
                     </div>
                     <div class="parallaxScroll">
@@ -108,3 +108,4 @@
         <!-- End MainContent-->
     </div>
 </asp:Content>
+

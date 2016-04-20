@@ -1,8 +1,4 @@
-﻿body {
-    //position: relative;
-}
-
-.container-fluid {
+﻿.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
@@ -61,6 +57,7 @@ a {
     }
 }
 
+//Min -  1024px
 @media (min-width: 1024px) {
     //Header
     #header {
@@ -69,6 +66,8 @@ a {
 
         #menu {
             padding-top: 0.5%;
+            border:1px solid black;
+            background-color:red;
 
             li {
                 a {
@@ -82,12 +81,10 @@ a {
             }
         }
     }
-
     .navbar-brand img {
         width: 100px;
         height: 130%;
     }
-
     #header.navbar-fixed-top {
         background-color: white;
         padding: 0;
@@ -464,26 +461,31 @@ a {
             }
         }
         //PHIẾU ĐĂNG KÝ TƯ VẤN
-        #PhieuTuVan{
-            background-color:#F5F5F5;
-            padding-top:2%;
-            #LoiGoi{
-                p{
-                    font-size:200%;
+        #PhieuTuVan {
+            background-color: #F5F5F5;
+            padding-top: 2%;
+
+            #LoiGoi {
+                p {
+                    font-size: 200%;
                 }
             }
-            #Phieu{
-                textarea,input, btn{
+
+            #Phieu {
+                textarea, input, btn {
                     .border-radius(0);
                 }
-                input{
-                    margin-bottom:6%;
+
+                input {
+                    margin-bottom: 6%;
                 }
-                textarea{
-                    margin-bottom:3%;
+
+                textarea {
+                    margin-bottom: 3%;
                 }
-                .btn{
-                    padding:2% 7%;
+
+                .btn {
+                    padding: 2% 7%;
                 }
             }
         }
@@ -759,7 +761,7 @@ a {
             }
         }
     }
-    //GIẢI ĐÁP NHANH
+    //Giải đáp nhanh
     #FAQs {
         #Title {
             background-color: #FF5722;
@@ -778,13 +780,94 @@ a {
             margin-bottom: 2%;
         }
     }
-    //CHƯƠNG TRÌNH HỌC
-    #ChuongTrinhHoc{
-        #Sidebar{
-            #ThongBao{
-                .news{
+    //Giới thiệu
+    #GioiThieu {
+        #Title {
+            background-color: orangered;
 
-                }
+            .title {
+                color: white;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        }
+
+        #MainContent {
+            margin-top: 2%;
+            font-size: 150%;
+            text-align: justify;
+            line-height: 180%;
+        }
+
+        #Sidebar {
+            #ThongBao {
+                margin-bottom: 15%;
+            }
+        }
+    }
+    //Chương trình học
+    #ChuongTrinhHoc{
+        #Title {
+            background-color: orangered;
+
+            .title {
+                color: white;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        }
+
+        #MainContent{
+            margin-top:5%;
+        }
+
+        #Sidebar {
+            #ThongBao {
+                margin-bottom: 15%;
+            }
+        }
+    }
+    //Lịch khai giảng
+    #LichKhaiGiang{
+        #Title {
+            background-color: orangered;
+
+            .title {
+                color: white;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        }
+
+        #MainContent{
+            margin-top:5%;
+        }
+
+        #Sidebar {
+            #ThongBao {
+                margin-bottom: 15%;
+            }
+        }
+    }
+    //Tuyển dụng
+    #TuyenDung{
+        #Title {
+            background-color: orangered;
+
+            .title {
+                color: white;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        }
+
+        #MainContent{
+            margin-top:5%;
+        }
+
+        #Sidebar {
+            #ThongBao {
+                margin-bottom: 15%;
             }
         }
     }

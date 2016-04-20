@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Thông tin giáo viên" Language="C#" MasterPageFile="Agile.master" AutoEventWireup="true" CodeFile="GiaoVien.aspx.cs" Inherits="Agile_GiaoVien" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NgoaiNgu/NgoaiNgu.master" AutoEventWireup="true" CodeFile="GiaoVien.aspx.cs" Inherits="NgoaiNgu_GiaoVien" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="GiaoVien">
         <!-- Title-->
         <div id="Title">
@@ -77,3 +77,4 @@
         <!-- End Content-->
     </div>
 </asp:Content>
+

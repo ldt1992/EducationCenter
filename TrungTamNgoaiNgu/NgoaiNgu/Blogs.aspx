@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Blogs" Language="C#" MasterPageFile="Agile.master" AutoEventWireup="true" CodeFile="Blogs.aspx.cs" Inherits="Blogs" %>
+﻿<%@ Page Title="Blogs" Language="C#" MasterPageFile="~/NgoaiNgu/NgoaiNgu.master" AutoEventWireup="true" CodeFile="Blogs.aspx.cs" Inherits="NgoaiNgu_Blogs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="Blogs">
@@ -100,12 +100,16 @@
                             <h1 class="title">MOST POPULAR POSTS</h1>
                             <hr />
                             <div class="post">
-                                <a href="#"><h2 class="title">Blog Post – Right Sidebar</h2></a>
+                                <a href="#">
+                                    <h2 class="title">Blog Post – Right Sidebar</h2>
+                                </a>
                                 <p class="meta">Nunc tempus faucibus porttitor. Mauris commodo augue auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
                                 <hr />
                             </div>
                             <div class="post">
-                                <a href="#"><h2 class="title">Blog Post – Right Sidebar</h2></a>
+                                <a href="#">
+                                    <h2 class="title">Blog Post – Right Sidebar</h2>
+                                </a>
                                 <p class="meta">Nunc tempus faucibus porttitor. Mauris commodo augue auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
                                 <hr />
                             </div>

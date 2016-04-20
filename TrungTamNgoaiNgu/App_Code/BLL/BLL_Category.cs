@@ -59,7 +59,7 @@ public class BLL_Category
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from Category ct join Images img on ct.CateogryImage=img.ImagesID where Parent =  " + id;
+        string query = "select * from Category ct join Images img on ct.CateogryImage=img.ImagesID where Parent =  " + id + " order by ItemIndex asc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
