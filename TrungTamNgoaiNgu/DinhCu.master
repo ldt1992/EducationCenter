@@ -159,23 +159,21 @@
                 });
             }
 
-            $('[rel=prettyPhoto]').prettyPhoto();
-            $('[rel="prettyPhoto[gallery1]"]').prettyPhoto();
-            $('[rel="prettyPhoto[gallery2]"]').prettyPhoto();
+            $('[rel="prettyPhoto[visa]"], [rel="prettyPhoto[gallery1]"], [rel=prettyPhoto]').prettyPhoto();
 
             $("#Backtop").click(function () {
                 $("body,html").animate({ scrollTop: 0 }, 800);
             });
 
             //Isotope Filter
-            var container = $(".album").isotope({
+            var container = $(".isotope").isotope({
                 itemSelector: '.element-item',
                 layoutMode: 'fitRows'
             });
 
             container.isotope({ filter: '*' });
 
-            $('#FilterGroup button').click(function (e) {
+            $('#BtnFilter button').click(function (e) {
                 var FilterValue = $(this).attr("data-filter");
                 container.isotope({ filter: FilterValue });
             });

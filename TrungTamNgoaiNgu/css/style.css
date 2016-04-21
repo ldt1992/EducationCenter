@@ -41,15 +41,9 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
-/*.btn-info {
-    .border-radius(0px);
-    .transition(all, 0.2s, linear);
-
-    &:hover {
-        background-color: #FF9800;
-        border-color: #FF9800;
-    }
-}*/
+.pp_gallery {
+  opacity: 0;
+}
 @media (min-width: 1024px) {
   #Login {
     background-color: #2F2E3C;

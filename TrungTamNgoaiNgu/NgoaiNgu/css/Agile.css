@@ -700,4 +700,23 @@ a:hover {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
   }
+  #VideoLopHoc #Title {
+    background-color: orangered;
+    padding: 2% 0;
+  }
+  #VideoLopHoc #Title .title {
+    color: white;
+    margin: 0;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #VideoLopHoc #MainContent #Breadcrumb {
+    margin-left: -1%;
+  }
+  #VideoLopHoc #MainContent #BtnFilter {
+    margin-bottom: 2%;
+  }
+  #VideoLopHoc #MainContent .element-item {
+    margin-bottom: 3%;
+  }
 }

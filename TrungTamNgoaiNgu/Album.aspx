@@ -18,95 +18,75 @@
                 </ul>
 
                 <%-- Filters --%>
-                <div id="FilterGroup">
-                    <button type="button" class="btn btn-default is-checked" data-filter="*">Show All</button>
+                <div id="BtnFilter">
+                    <button type="button" class="btn btn-default" data-filter="*">Show All</button>
                     <button type="button" class="btn btn-default" data-filter=".duhoc">Du Học</button>
                     <button type="button" class="btn btn-default" data-filter=".dulich">Du Lich</button>
                     <button type="button" class="btn btn-default" data-filter=".dinhcu">Định Cư</button>
                 </div>
 
-                <%-- Isotope --%>
-                <div class="row album" id="HinhAnh" runat="server">
-                    <%--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item duhoc">
-                        <div class="post">
-                            <img src="img/featured-post-1.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-1.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                <!-- Isotope Filter-->
+                <div class="row isotope">
+                    <div class="col-lg-3 element-item duhoc">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item dulich">
-                        <div class="post">
-                            <img src="img/featured-post-2.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-2.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item dinhcu">
-                        <div class="post">
-                            <img src="img/featured-post-3.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-3.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 element-item dinhcu">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item dulich">
-                        <div class="post">
-                            <img src="img/featured-post-1.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-1.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item dinhcu">
-                        <div class="post">
-                            <img src="img/featured-post-2.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-2.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item duhoc">
-                        <div class="post">
-                            <img src="img/featured-post-3.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-3.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item dulich">
-                        <div class="post">
-                            <img src="img/featured-post-1.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-1.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 element-item dinhcu">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 element-item dinhcu">
-                        <div class="post">
-                            <img src="img/featured-post-3.jpg" class="img-responsive img-thumbnail" alt="" />
-                            <div class="caption">
-                                <h3 class="title">The King Lion</h3>
-                                <a href="img/featured-post-3.jpg" class="btn btn-default" rel="prettyPhoto">EXPAND</a>
-                                <a href="#" class="btn btn-default">DETAILS</a>
-                            </div>
-                        </div>
-                    </div>--%>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-3 element-item dulich">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-3 element-item duhoc">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-lg-3 element-item dinhcu">
+                        <a href="#" rel="prettyPhoto[gallery4]">
+                            <img src="img/hinh-1.jpg" alt="" class="img-responsive img-thumbnail" />
+                        </a>
+                    </div>
                 </div>
 
                 <nav>
