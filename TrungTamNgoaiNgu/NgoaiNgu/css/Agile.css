@@ -1,3 +1,39 @@
+#Breadcrumb ul.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-top: 2%;
+}
+#Breadcrumb ul.breadcrumb li a {
+  color: orangered;
+}
+#Sidebar #ThongBao {
+  margin-bottom: 15%;
+}
+#Sidebar #ThongBao .title {
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  margin-bottom: 10%;
+}
+#Sidebar #ThongBao .news {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+}
+#Sidebar #ThongBao .news .news-title a {
+  color: orangered;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+}
+#Sidebar #ThongBao .news .news-title a:hover {
+  color: gray;
+}
+#Sidebar #FAQs .title {
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+  margin-bottom: 10%;
+}
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -35,65 +71,62 @@ a:hover {
   transition: all 0.2s linear;
   background-color: #fe5000;
   color: white;
+  padding: 1% 4%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
 }
 .btn-more:hover {
   background-color: gray;
   color: white;
 }
+.btn-info,
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-primary {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
 @media (min-width: 1024px) {
   #header {
     padding: 1% 0 1.5% 0;
     margin-bottom: 0;
+    background-color: white;
+  }
+  #header .navbar-brand img {
+    width: 100px;
+    height: 130%;
   }
   #header #menu {
     padding-top: 0.5%;
-    border: 1px solid black;
-    background-color: red;
   }
   #header #menu li a {
-    font-size: 100%;
+    font-size: 125%;
+    padding-left: 8px;
+    padding-right: 8px;
     color: black;
   }
   #header #menu li a:hover {
     background-color: transparent;
   }
-  .navbar-brand img {
-    width: 100px;
-    height: 130%;
-  }
   #header.navbar-fixed-top {
     background-color: white;
-    padding: 0;
+    padding: 1% 0 1.5% 0;
     margin-bottom: 0;
   }
   #header.navbar-fixed-top #menu {
     padding-top: 0.5%;
   }
   #header.navbar-fixed-top #menu li a {
-    font-size: 100%;
+    font-size: 125%;
     color: black;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   #header.navbar-fixed-top #menu li a:hover {
     background-color: transparent;
-  }
-  #HomePage {
-    /*#Client {
-            padding: 5% 0;
-
-            .title {
-                font-size: 400%;
-            }
-
-            .meta {
-                padding: 0 20%;
-                font-size: 150%;
-            }
-
-            img {
-                border: 1px solid #F5F5F5;
-                box-sizing: border-box;
-            }
-        }*/
   }
   #HomePage #Title {
     font-size: 600%;
@@ -122,195 +155,139 @@ a:hover {
     font-weight: lighter;
     font-size: 120%;
   }
-  #HomePage #Info {
-    padding: 3% 0;
+  #HomePage #Teachers {
+    padding: 1% 0;
+    background-color: #CFD8DC;
   }
-  #HomePage #Info .info {
+  #HomePage #Teachers .title {
+    color: orangered;
+  }
+  #HomePage #Teachers .teacher {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     padding: 0;
   }
-  #HomePage #Info .info .preview {
-    height: 400px;
+  #HomePage #Teachers .teacher .caption .teacher-title {
+    height: 60px;
+    margin-top: 5px;
   }
-  #HomePage #Info .info .preview .video {
-    height: 400px;
+  #HomePage #Teachers .teacher .caption .teacher-title a {
+    color: forestgreen;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    line-height: 120%;
   }
-  #HomePage #Info .info .preview img {
-    width: 100%;
-    height: 400px;
+  #HomePage #Teachers .teacher .caption .teacher-title a:hover {
+    color: orangered;
   }
-  #HomePage #Info .info .title {
-    padding-left: 3%;
-    font-weight: bold;
+  #HomePage #Teachers .teacher .caption .teacher-meta {
+    font-size: 150%;
+    color: gray;
+  }
+  #HomePage #Teachers .btn {
+    font-size: 180%;
+  }
+  #HomePage #VideoLopHoc {
+    padding: 1% 0;
+  }
+  #HomePage #VideoLopHoc .title {
+    margin-bottom: 1%;
     font-size: 200%;
-  }
-  #HomePage #Info .info .meta {
-    padding: 0 3%;
-    font-size: 120%;
-  }
-  #HomePage #Info .info .btn {
-    margin-left: 1%;
-    font-size: 120%;
-    color: #fe5000;
-    font-style: italic;
-    transition: all 0.2s linear;
-  }
-  #HomePage #Info .info .btn:hover {
-    color: gray;
-  }
-  #HomePage #Team {
-    padding: 3% 0;
-    background-color: #EEEEEE;
-  }
-  #HomePage #Team .title {
-    font-weight: bold;
-    font-size: 300%;
-    margin-bottom: 2%;
-  }
-  #HomePage #Team #myTabSlider .nav-tabs {
-    border-bottom-color: #fe5000;
-    margin-bottom: 5%;
-  }
-  #HomePage #Team #myTabSlider .nav-tabs li {
-    margin-right: 2%;
-  }
-  #HomePage #Team #myTabSlider .nav-tabs li a {
-    color: black;
-    font-size: 150%;
-    padding-left: 0;
-    padding-right: 0;
-    border: 0;
-    border-bottom: 5px solid transparent;
-    transition: all 0.2s linear;
-  }
-  #HomePage #Team #myTabSlider .nav-tabs li a:hover {
-    background-color: transparent;
-    color: #fe5000;
-  }
-  #HomePage #Team #myTabSlider .nav-tabs li.active a {
-    background-color: transparent;
-    border-bottom: 5px solid #fe5000;
-  }
-  #HomePage #Team #myTabSlider .item img {
-    margin-left: 10%;
-  }
-  #HomePage #Team #myTabSlider .item hr {
-    border-color: black;
-  }
-  #HomePage #Team #myTabSlider .item .title {
     font-weight: bold;
   }
-  #HomePage #Team #myTabSlider .item .meta {
-    line-height: 180%;
-    font-size: 120%;
+  #HomePage #VideoLopHoc .info {
+    margin-bottom: 7%;
   }
-  #HomePage #Team #myTabSlider .item .conn {
-    font-size: 150%;
+  #HomePage #VideoLopHoc .info .video {
+    height: 250px;
   }
-  #HomePage #Team #myTabSlider .item .conn a {
-    margin-left: 3%;
+  #HomePage #VideoLopHoc .info .video .preview {
+    height: 250px;
   }
-  #HomePage #Team #myTabSlider .item .conn a .fa {
-    color: gray;
-    font-size: 120%;
+  #HomePage #VideoLopHoc .btn {
+    font-size: 180%;
   }
-  #HomePage #Percent {
-    padding: 5% 0;
-    background: url('../img/parallax-bg10.jpg') no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+  #HomePage #Testimonials {
+    padding: 1% 0 3% 0;
+    background-color: #ECEFF1;
   }
-  #HomePage #Percent img {
-    margin-left: 15%;
-    width: 70%;
+  #HomePage #Testimonials .title {
+    font-size: 250%;
+    font-weight: bolder;
   }
-  #HomePage #Percent .title {
-    color: white;
-  }
-  #HomePage #Percent .progress {
-    margin-bottom: 5%;
-  }
-  #HomePage #Percent .progress-bar {
-    transition: all 2s linear;
-  }
-  #HomePage #Percent .name,
-  #HomePage #Percent .role {
-    color: white;
-  }
-  #HomePage #Team2 {
-    padding: 5% 0;
-  }
-  #HomePage #Team2 .name {
+  #HomePage #Testimonials .name {
     margin-bottom: 3%;
   }
-  #HomePage #Team2 .name .fa {
+  #HomePage #Testimonials .name .fa {
     color: #fe5000;
     font-size: 120%;
   }
-  #HomePage #Team2 .meta {
+  #HomePage #Testimonials .meta {
     font-size: 180%;
     line-height: 180%;
     font-style: italic;
   }
-  #HomePage #Team2 .carousel-indicators {
-    bottom: -30%;
+  #HomePage #Testimonials .carousel-indicators {
+    bottom: -10%;
     width: 60%;
   }
-  #HomePage #Team2 .carousel-indicators li {
+  #HomePage #Testimonials .carousel-indicators li {
     background-color: #E0E0E0;
     width: 20px;
     height: 20px;
   }
-  #HomePage #Team2 .carousel-indicators .active {
+  #HomePage #Testimonials .carousel-indicators .active {
     background-color: #fe5000;
   }
-  #HomePage #ParallaxScroll {
-    padding: 10% 0;
+  #HomePage #Testimonials .pic img {
+    width: 80%;
+  }
+  #HomePage #SuMenh {
+    padding: 5% 0;
     background: url('../img/parallax-bg5.jpg') no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     color: white;
   }
-  #HomePage #ParallaxScroll h1,
-  #HomePage #ParallaxScroll h2 {
+  #HomePage #SuMenh h1,
+  #HomePage #SuMenh h2 {
     font-size: 370%;
   }
-  #HomePage #ParallaxScroll h2 {
+  #HomePage #SuMenh h2 {
     color: #fe5000;
   }
-  #HomePage #Blogs {
+  #HomePage #PostNoiBat {
     background-color: #F5F5F5;
-    padding-bottom: 5%;
+    padding: 1% 0;
   }
-  #HomePage #Blogs .title {
-    font-size: 300%;
+  #HomePage #PostNoiBat .title {
+    font-size: 200%;
+    margin-bottom: 2%;
   }
-  #HomePage #Blogs hr {
-    width: 30%;
-    border: 1px solid #2196F3;
-  }
-  #HomePage #Blogs .meta {
-    margin-bottom: 5%;
-    font-size: 100%;
-    padding: 0 5%;
-  }
-  #HomePage #Blogs .blog {
+  #HomePage #PostNoiBat .post {
     display: block;
     padding: 0;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
   }
-  #HomePage #Blogs .blog .overlay {
+  #HomePage #PostNoiBat .post hr {
+    width: 30%;
+    border: 1px solid #2196F3;
+  }
+  #HomePage #PostNoiBat .post .overlay {
     position: relative;
     overflow: hidden;
     height: 200px;
   }
-  #HomePage #Blogs .blog .overlay img {
+  #HomePage #PostNoiBat .post .overlay img {
     transition: all 0.2s linear;
     height: 100%;
     width: 100%;
   }
-  #HomePage #Blogs .blog .overlay .mask {
+  #HomePage #PostNoiBat .post .overlay .mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -321,10 +298,10 @@ a:hover {
     opacity: 0;
     transition: all 0.2s linear;
   }
-  #HomePage #Blogs .blog .overlay .mask .title {
+  #HomePage #PostNoiBat .post .overlay .mask .post-title {
     color: white;
   }
-  #HomePage #Blogs .blog .overlay .mask .btn {
+  #HomePage #PostNoiBat .post .overlay .mask .btn {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -333,7 +310,7 @@ a:hover {
     border: 3px solid white;
     margin-right: 2%;
   }
-  #HomePage #Blogs .blog .overlay .tag {
+  #HomePage #PostNoiBat .post .overlay .tag {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -341,26 +318,26 @@ a:hover {
     right: 0;
     bottom: 0;
   }
-  #HomePage #Blogs .blog .overlay:hover img {
+  #HomePage #PostNoiBat .post .overlay:hover img {
     transform: scale(1.1, 1.1);
   }
-  #HomePage #Blogs .blog .overlay:hover .mask {
+  #HomePage #PostNoiBat .post .overlay:hover .mask {
     opacity: 0.7;
   }
-  #HomePage #Blogs .blog .caption {
+  #HomePage #PostNoiBat .post .caption {
     padding-left: 5%;
     padding-right: 5%;
     height: 200px;
   }
-  #HomePage #Blogs .blog .caption .title {
+  #HomePage #PostNoiBat .post .caption .post-title {
     font-size: 200%;
     padding: 0 3%;
   }
-  #HomePage #Blogs .blog .caption hr {
+  #HomePage #PostNoiBat .post .caption hr {
     width: 100%;
     border: 1px solid #E0E0E0;
   }
-  #HomePage #Blogs .blog .caption .meta {
+  #HomePage #PostNoiBat .post .caption .post-meta {
     font-size: 100%;
   }
   #HomePage #PhieuTuVan {
@@ -536,8 +513,8 @@ a:hover {
     font-size: 120%;
   }
   #LienHe #Title {
-    background-color: #FF5722;
-    padding: 1.5% 0;
+    background-color: orangered;
+    padding: 2% 0;
   }
   #LienHe #Title .title {
     color: white;
@@ -602,62 +579,125 @@ a:hover {
     margin-bottom: 2%;
   }
   #GioiThieu #Title {
-    background-color: orangered;
+    background: url('../img/bg-title-header.jpg') no-repeat;
+    background-size: 100% 100%;
+    padding: 5% 0;
   }
   #GioiThieu #Title .title {
     color: white;
     font-size: 300%;
     font-weight: bolder;
   }
-  #GioiThieu #MainContent {
-    margin-top: 2%;
+  #GioiThieu #Content #MainContent {
+    margin-bottom: 10%;
+    margin-top: 0%;
     font-size: 150%;
     text-align: justify;
     line-height: 180%;
+    padding-right: 3%;
   }
-  #GioiThieu #Sidebar #ThongBao {
-    margin-bottom: 15%;
+  #GioiThieu #Content #MainContent .title {
+    border: none;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+  }
+  #GioiThieu #Content #MainContent p.meta {
+    margin-bottom: 3%;
   }
   #ChuongTrinhHoc #Title {
     background-color: orangered;
+    padding: 2% 0;
   }
   #ChuongTrinhHoc #Title .title {
     color: white;
+    margin: 0;
     font-size: 300%;
     font-weight: bolder;
   }
-  #ChuongTrinhHoc #MainContent {
-    margin-top: 5%;
+  #ChuongTrinhHoc #MainContent .title {
+    border: none;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+  }
+  #ChuongTrinhHoc #MainContent p.meta {
+    margin-bottom: 3%;
   }
   #ChuongTrinhHoc #Sidebar #ThongBao {
     margin-bottom: 15%;
   }
   #LichKhaiGiang #Title {
     background-color: orangered;
+    padding: 2% 0;
   }
   #LichKhaiGiang #Title .title {
     color: white;
+    margin: 0;
     font-size: 300%;
     font-weight: bolder;
   }
-  #LichKhaiGiang #MainContent {
-    margin-top: 5%;
+  #LichKhaiGiang #MainContent .title {
+    border: none;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
   }
-  #LichKhaiGiang #Sidebar #ThongBao {
-    margin-bottom: 15%;
+  #LichKhaiGiang #MainContent p.meta {
+    margin-bottom: 3%;
   }
   #TuyenDung #Title {
     background-color: orangered;
+    padding: 2% 0;
   }
   #TuyenDung #Title .title {
     color: white;
+    margin: 0;
     font-size: 300%;
     font-weight: bolder;
   }
-  #TuyenDung #MainContent {
-    margin-top: 5%;
+  #TuyenDung #MainContent .title {
+    border: none;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
   }
-  #TuyenDung #Sidebar #ThongBao {
-    margin-bottom: 15%;
+  #TuyenDung #MainContent p.meta {
+    margin-bottom: 3%;
+  }
+  #ListTeachers #Title {
+    background-color: orangered;
+    padding: 2% 0;
+  }
+  #ListTeachers #Title .title {
+    color: white;
+    margin: 0;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  #ListTeachers #MainContent .title {
+    border: none;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+  }
+  #ListTeachers #MainContent p.meta {
+    margin-bottom: 3%;
+  }
+  #ListTeachers #MainContent .teacher {
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
   }
 }

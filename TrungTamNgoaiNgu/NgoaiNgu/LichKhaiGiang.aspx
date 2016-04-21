@@ -27,6 +27,8 @@
                 <div class="row">
                     <!-- MainContent -->
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="MainContent">
+                        <h1 class="title">LỊch Khai Giảng</h1>
+                        <p class="meta">Đăng bởi: ABC vào ngày 12/04/2016</p>
                         <table class="table table-hover table-bordered">
                             <tr>
                                 <th>LỚp học</th>
@@ -49,21 +51,21 @@
                                 <a href="#">
                                     <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                 <div class="caption">
-                                    <h3 class="title"><a href="#">Thông báo 1</a></h3>
+                                    <h3 class="news-title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
                             <div class="thumbnail news">
                                 <a href="#">
                                     <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                 <div class="caption">
-                                    <h3 class="title"><a href="#">Thông báo 1</a></h3>
+                                    <h3 class="news-title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
                             <div class="thumbnail news">
                                 <a href="#">
                                     <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                 <div class="caption">
-                                    <h3 class="title"><a href="#">Thông báo 1</a></h3>
+                                    <h3 class="news-title"><a href="#">Thông báo 1</a></h3>
                                 </div>
                             </div>
                         </div>

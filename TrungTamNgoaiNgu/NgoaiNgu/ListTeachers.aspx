@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NgoaiNgu/NgoaiNgu.master" AutoEventWireup="true" CodeFile="ListTeachers.aspx.cs" Inherits="NgoaiNgu_ListTeachers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="ListGiaoVien">
+    <div id="ListTeachers">
         <!-- Title -->
         <div id="Title">
             <div class="container">
@@ -13,6 +13,20 @@
         <!-- Main Content -->
         <div id="MainContent">
             <div class="container">
+                <!-- Breadcrumb -->
+                <div id="Breadcrumb">
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li><a href="/NgoaiNgu/trang-chu">TRANG CHỦ</a></li>
+                            <li class="active">ĐỘI NGŨ GIÁO VIÊN</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Breadcrumb -->
+
+                <h1 class="title">ĐỘI NGŨ GIÁO VIÊN</h1>
+                <p class="meta">Đăng bởi: ABC vào ngày 12/04/2016</p>
+
                 <div class="row">
                     <!-- Danh Sách giáo viên -->
                     <asp:Repeater ID="rpDSGiaoVien" runat="server">
@@ -22,8 +36,7 @@
                                     <a href="#">
                                         <img src="img/img-client3.jpg" alt="" class="img-responsive" /></a>
                                     <div class="caption">
-                                        <h3 class="title"><a href="#">Teacher 1</a></h3>
-                                        <p class="meta">MÔ tả về giáo viên</p>
+                                        <h3 class="teacher-title"><a href="/NgoaiNgu/giao-vien-<%# Eval("GVID") %>"><%# Eval("LastName") + " " + Eval("FirstName") %></a></h3>
                                     </div>
                                 </div>
                             </div>

@@ -23,6 +23,7 @@
         routes.MapPageRoute("GiaoVienNgoaiNgu", "NgoaiNgu/nhom-giao-vien", "~/NgoaiNgu/ListTeachers.aspx");
         routes.MapPageRoute("ChiTietGiaoVienNgoaiNgu", "NgoaiNgu/giao-vien-{id}", "~/NgoaiNgu/GiaoVien.aspx");
         routes.MapPageRoute("FAQsNgoaiNgu", "NgoaiNgu/hoidap", "~/NgoaiNgu/FAQs.aspx");
+        routes.MapPageRoute("Video","NgoaiNgu/video","~/NgoaiNgu/VideoLopHoc.aspx");
     }
 
     void Application_Start(object sender, EventArgs e)

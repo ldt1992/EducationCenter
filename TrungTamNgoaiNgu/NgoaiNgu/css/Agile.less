@@ -1,4 +1,55 @@
-﻿.container-fluid {
+﻿//Breadcrumb of MainContent for Blogs
+#Breadcrumb {
+    ul.breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-top: 2%;
+
+        li {
+            a {
+                color: orangered;
+            }
+        }
+    }
+}
+
+//#ThongBao for Sidebar
+#Sidebar {
+    #ThongBao {
+        margin-bottom: 15%;
+
+        .title {
+            border-bottom: 1px solid black;
+            padding-bottom: 5%;
+            margin-bottom: 10%;
+        }
+
+        .news {
+            .border-radius(0);
+            padding: 0;
+
+            .news-title a {
+                color: orangered;
+                .transition(all, 0.2s, linear);
+
+                &:hover {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    #FAQs {
+        .title {
+            border-bottom: 1px solid black;
+            padding-bottom: 5%;
+            margin-bottom: 10%;
+        }
+    }
+}
+
+
+.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
@@ -32,6 +83,12 @@ a {
     -moz-border-radius: @radius;
 }
 
+.transition(@property, @duration, @type) {
+    transition: @property @duration @type;
+    -webkit-transition: @property @duration @type;
+    -moz-transition: @property @duration @type;
+}
+
 .highlight {
     color: #fe5000;
 }
@@ -50,11 +107,17 @@ a {
     transition: all 0.2s linear;
     background-color: #fe5000;
     color: white;
+    padding: 1% 4%;
+    .border-radius(0);
 
     &:hover {
         background-color: gray;
         color: white;
     }
+}
+
+.btn-info, .btn-success, .btn-warning, .btn-danger, .btn-primary, .btn-default {
+    .border-radius(0);
 }
 
 //Min -  1024px
@@ -63,15 +126,21 @@ a {
     #header {
         padding: 1% 0 1.5% 0;
         margin-bottom: 0;
+        background-color: white;
+
+        .navbar-brand img {
+            width: 100px;
+            height: 130%;
+        }
 
         #menu {
             padding-top: 0.5%;
-            border:1px solid black;
-            background-color:red;
 
             li {
                 a {
-                    font-size: 100%;
+                    font-size: 125%;
+                    padding-left: 8px;
+                    padding-right: 8px;
                     color: black;
 
                     &:hover {
@@ -81,13 +150,10 @@ a {
             }
         }
     }
-    .navbar-brand img {
-        width: 100px;
-        height: 130%;
-    }
+
     #header.navbar-fixed-top {
         background-color: white;
-        padding: 0;
+        padding: 1% 0 1.5% 0;
         margin-bottom: 0;
 
         #menu {
@@ -95,8 +161,10 @@ a {
 
             li {
                 a {
-                    font-size: 100%;
+                    font-size: 125%;
                     color: black;
+                    padding-left: 8px;
+                    padding-right: 8px;
 
                     &:hover {
                         background-color: transparent;
@@ -105,7 +173,7 @@ a {
             }
         }
     }
-    //1. HomePgae
+    //1. HomePage
     #HomePage {
         //Title
         #Title {
@@ -142,160 +210,82 @@ a {
                 }
             }
         }
-        //Portfolio
-        #Portfolio {
-        }
-        //Info
-        #Info {
-            padding: 3% 0;
+        //Giáo viên
+        #Teachers {
+            padding: 1% 0;
+            background-color: #CFD8DC;
 
-            .info {
+            .title {
+                color: orangered;
+            }
+
+            .teacher {
+                .border-radius(0);
                 padding: 0;
 
-                .preview {
-                    height: 400px;
+                .caption {
 
-                    .video {
-                        height: 400px;
+                    .teacher-title {
+                        height: 60px;
+                        margin-top: 5px;
+
+                        a {
+                            color: forestgreen;
+                            .transition(all, 0.2s, linear);
+                            line-height: 120%;
+
+                            &:hover {
+                                color: orangered;
+                            }
+                        }
                     }
 
-                    img {
-                        width: 100%;
-                        height: 400px;
-                    }
-                }
-
-                .title {
-                    padding-left: 3%;
-                    font-weight: bold;
-                    font-size: 200%;
-                }
-
-                .meta {
-                    padding: 0 3%;
-                    font-size: 120%;
-                }
-
-                .btn {
-                    margin-left: 1%;
-                    font-size: 120%;
-                    color: #fe5000;
-                    font-style: italic;
-                    transition: all 0.2s linear;
-
-                    &:hover {
+                    .teacher-meta {
+                        font-size: 150%;
                         color: gray;
                     }
                 }
             }
+
+            .btn {
+                font-size: 180%;
+            }
         }
-        //Team
-        #Team {
-            padding: 3% 0;
-            background-color: #EEEEEE;
+        //Video Lớp Học
+        #VideoLopHoc {
+            padding: 1% 0;
 
             .title {
+                margin-bottom: 1%;
+                font-size: 200%;
                 font-weight: bold;
-                font-size: 300%;
-                margin-bottom: 2%;
             }
 
-            #myTabSlider {
-                .nav-tabs {
-                    border-bottom-color: #fe5000;
-                    margin-bottom: 5%;
+            .info {
+                margin-bottom: 7%;
 
-                    li {
-                        margin-right: 2%;
+                .video {
+                    height: 250px;
 
-                        a {
-                            color: black;
-                            font-size: 150%;
-                            padding-left: 0;
-                            padding-right: 0;
-                            border: 0;
-                            border-bottom: 5px solid transparent;
-                            transition: all 0.2s linear;
-
-                            &:hover {
-                                background-color: transparent;
-                                color: #fe5000;
-                            }
-                        }
-                    }
-
-                    li.active {
-                        a {
-                            background-color: transparent;
-                            border-bottom: 5px solid #fe5000;
-                        }
+                    .preview {
+                        height: 250px;
                     }
                 }
+            }
 
-                .item {
-                    img {
-                        margin-left: 10%;
-                    }
-
-                    hr {
-                        border-color: black;
-                    }
-
-                    .title {
-                        font-weight: bold;
-                    }
-
-                    .meta {
-                        line-height: 180%;
-                        font-size: 120%;
-                    }
-
-                    .conn {
-                        font-size: 150%;
-
-                        a {
-                            margin-left: 3%;
-
-                            .fa {
-                                color: gray;
-                                font-size: 120%;
-                            }
-                        }
-                    }
-                }
+            .btn {
+                font-size: 180%;
             }
         }
-        //Percent
-        #Percent {
-            padding: 5% 0;
-            background: url('/../../img/parallax-bg10.jpg') no-repeat;
-            background-size: 100%;
-            background-attachment: fixed;
-
-            img {
-                margin-left: 15%;
-                width: 70%;
-            }
+        //Cảm Nhận Của Khách Hàng
+        #Testimonials {
+            padding: 1% 0 3% 0;
+            background-color: #ECEFF1;
 
             .title {
-                color: white;
+                font-size: 250%;
+                font-weight: bolder;
             }
-
-            .progress {
-                margin-bottom: 5%;
-            }
-
-            .progress-bar {
-                transition: all 2s linear;
-            }
-
-            .name, .role {
-                color: white;
-            }
-        }
-        //Team2
-        #Team2 {
-            padding: 5% 0;
 
             .name {
                 margin-bottom: 3%;
@@ -313,7 +303,7 @@ a {
             }
 
             .carousel-indicators {
-                bottom: -30%;
+                bottom: -10%;
                 width: 60%;
             }
 
@@ -326,10 +316,16 @@ a {
             .carousel-indicators .active {
                 background-color: #fe5000;
             }
+
+            .pic {
+                img {
+                    width: 80%;
+                }
+            }
         }
-        //ParallaxScroll
-        #ParallaxScroll {
-            padding: 10% 0;
+        //Sứ Mệnh
+        #SuMenh {
+            padding: 5% 0;
             background: url('../img/parallax-bg5.jpg') no-repeat;
             background-size: 100%;
             background-attachment: fixed;
@@ -343,48 +339,25 @@ a {
                 color: #fe5000;
             }
         }
-        //Client
-        /*#Client {
-            padding: 5% 0;
-
-            .title {
-                font-size: 400%;
-            }
-
-            .meta {
-                padding: 0 20%;
-                font-size: 150%;
-            }
-
-            img {
-                border: 1px solid #F5F5F5;
-                box-sizing: border-box;
-            }
-        }*/
-        //Blogs
-        #Blogs {
+        //Post nổi bật
+        #PostNoiBat {
             background-color: #F5F5F5;
-            padding-bottom: 5%;
+            padding: 1% 0;
 
             .title {
-                font-size: 300%;
+                font-size: 200%;
+                margin-bottom: 2%;
             }
 
-            hr {
-                width: 30%;
-                border: 1px solid #2196F3;
-            }
-
-            .meta {
-                margin-bottom: 5%;
-                font-size: 100%;
-                padding: 0 5%;
-            }
-
-            .blog {
+            .post {
                 display: block;
                 padding: 0;
                 .border-radius(0px);
+
+                hr {
+                    width: 30%;
+                    border: 1px solid #2196F3;
+                }
 
                 .overlay {
                     position: relative;
@@ -408,7 +381,7 @@ a {
                         opacity: 0;
                         transition: all 0.2s linear;
 
-                        .title {
+                        .post-title {
                             color: white;
                         }
 
@@ -444,7 +417,7 @@ a {
                     padding-right: 5%;
                     height: 200px;
 
-                    .title {
+                    .post-title {
                         font-size: 200%;
                         padding: 0 3%;
                     }
@@ -454,13 +427,13 @@ a {
                         border: 1px solid #E0E0E0;
                     }
 
-                    .meta {
+                    .post-meta {
                         font-size: 100%;
                     }
                 }
             }
         }
-        //PHIẾU ĐĂNG KÝ TƯ VẤN
+        //Phiếu đăng ký tư vấn
         #PhieuTuVan {
             background-color: #F5F5F5;
             padding-top: 2%;
@@ -699,8 +672,8 @@ a {
     //Liên Hệ
     #LienHe {
         #Title {
-            background-color: #FF5722;
-            padding: 1.5% 0;
+            background-color: orangered;
+            padding: 2% 0;
 
             .title {
                 color: white;
@@ -783,42 +756,70 @@ a {
     //Giới thiệu
     #GioiThieu {
         #Title {
-            background-color: orangered;
+            background: url('../img/bg-title-header.jpg') no-repeat;
+            background-size: 100% 100%;
+            padding: 5% 0;
 
             .title {
                 color: white;
+                font-size: 300%;
+                font-weight: bolder;
+            }
+        }
+
+        #Content {
+
+            #MainContent {
+                margin-bottom: 10%;
+
+                .title {
+                    border: none;
+                    margin-top: 1%;
+                    padding-bottom: 2%;
+                    font-weight: bolder;
+                    border-bottom: 1px solid black;
+                    margin-bottom: 1%;
+                }
+
+                p.meta {
+                    margin-bottom: 3%;
+                }
+
+                margin-top: 0%;
+                font-size: 150%;
+                text-align: justify;
+                line-height: 180%;
+                padding-right: 3%;
+            }
+        }
+    }
+    //Chương trình học
+    #ChuongTrinhHoc {
+        #Title {
+            background-color: orangered;
+            padding: 2% 0;
+
+            .title {
+                color: white;
+                margin: 0;
                 font-size: 300%;
                 font-weight: bolder;
             }
         }
 
         #MainContent {
-            margin-top: 2%;
-            font-size: 150%;
-            text-align: justify;
-            line-height: 180%;
-        }
-
-        #Sidebar {
-            #ThongBao {
-                margin-bottom: 15%;
-            }
-        }
-    }
-    //Chương trình học
-    #ChuongTrinhHoc{
-        #Title {
-            background-color: orangered;
-
             .title {
-                color: white;
-                font-size: 300%;
+                border: none;
+                margin-top: 1%;
+                padding-bottom: 2%;
                 font-weight: bolder;
+                border-bottom: 1px solid black;
+                margin-bottom: 1%;
             }
-        }
 
-        #MainContent{
-            margin-top:5%;
+            p.meta {
+                margin-bottom: 3%;
+            }
         }
 
         #Sidebar {
@@ -828,46 +829,95 @@ a {
         }
     }
     //Lịch khai giảng
-    #LichKhaiGiang{
+    #LichKhaiGiang {
         #Title {
             background-color: orangered;
+            padding: 2% 0;
 
             .title {
                 color: white;
+                margin: 0;
                 font-size: 300%;
                 font-weight: bolder;
             }
         }
 
-        #MainContent{
-            margin-top:5%;
-        }
+        #MainContent {
+            .title {
+                border: none;
+                margin-top: 1%;
+                padding-bottom: 2%;
+                font-weight: bolder;
+                border-bottom: 1px solid black;
+                margin-bottom: 1%;
+            }
 
-        #Sidebar {
-            #ThongBao {
-                margin-bottom: 15%;
+            p.meta {
+                margin-bottom: 3%;
             }
         }
     }
     //Tuyển dụng
-    #TuyenDung{
+    #TuyenDung {
         #Title {
             background-color: orangered;
+            padding: 2% 0;
 
             .title {
                 color: white;
+                margin: 0;
                 font-size: 300%;
                 font-weight: bolder;
             }
         }
 
-        #MainContent{
-            margin-top:5%;
+        #MainContent {
+            .title {
+                border: none;
+                margin-top: 1%;
+                padding-bottom: 2%;
+                font-weight: bolder;
+                border-bottom: 1px solid black;
+                margin-bottom: 1%;
+            }
+
+            p.meta {
+                margin-bottom: 3%;
+            }
+        }
+    }
+    //Nhóm Giáo Viên
+    #ListTeachers {
+        #Title {
+            background-color: orangered;
+            padding: 2% 0;
+
+            .title {
+                color: white;
+                margin: 0;
+                font-size: 300%;
+                font-weight: bolder;
+            }
         }
 
-        #Sidebar {
-            #ThongBao {
-                margin-bottom: 15%;
+        #MainContent {
+            
+            .title {
+                border: none;
+                margin-top: 1%;
+                padding-bottom: 2%;
+                font-weight: bolder;
+                border-bottom: 1px solid black;
+                margin-bottom: 1%;
+            }
+
+            p.meta {
+                margin-bottom: 3%;
+            }
+
+            .teacher{
+                padding:0;
+                .border-radius(0);
             }
         }
     }

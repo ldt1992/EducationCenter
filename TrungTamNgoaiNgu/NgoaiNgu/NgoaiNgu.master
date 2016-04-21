@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <%-- Links http://portfoliotheme.org/themes/?theme=Agile or http://portfoliotheme.org/agile/ --%>
+    <!-- Links http://portfoliotheme.org/themes/?theme=Agile or http://portfoliotheme.org/agile/ -->
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/font-awesome.css" rel="stylesheet" />
     <link href="../css/prettyPhoto.css" rel="stylesheet" />
@@ -42,7 +42,6 @@
                             <ul class="nav navbar-nav">
                                 <asp:Repeater ID="rpMenu" runat="server">
                                     <ItemTemplate>
-                                        <%--<li><a href="<%# Eval("Permalink") %>"><%# Eval("ItemName")%></a></li>--%>
                                         <li><a href="/<%# Eval("Permalink") %>"><%# Eval("ItemName")%></a></li>
                                     </ItemTemplate>
                                 </asp:Repeater>
